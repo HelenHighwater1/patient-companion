@@ -124,7 +124,7 @@ def create_app() -> FastAPI:
     @app.get("/api/documents/{filename}")
     def serve_document(filename: str):
         path = _sample_path(filename)
-        return FileResponse(path, filename=filename)
+        return FileResponse(path, filename=filename, content_disposition_type="inline")
 
     @app.get("/api/documents/{filename}/text", response_class=PlainTextResponse)
     def document_text(filename: str):
