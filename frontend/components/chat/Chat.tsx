@@ -151,12 +151,12 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
             id: msgId,
             role: "assistant",
             kind: "answer",
-            text: e.patient_response,
-            questions: e.doctor_questions,
-            citations: e.citations,
-            sources: e.sources,
-            flaggedGaps: e.flagged_gaps,
-            disclaimer: e.disclaimer,
+            text: e.patient_response ?? "",
+            questions: e.doctor_questions ?? [],
+            citations: e.citations ?? [],
+            sources: e.sources ?? [],
+            flaggedGaps: e.flagged_gaps ?? [],
+            disclaimer: e.disclaimer ?? "",
           });
           setHistory((h) => [...h, { question, patient_response: e.patient_response }].slice(-10));
         }
