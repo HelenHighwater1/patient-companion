@@ -50,12 +50,11 @@ def _load_questions() -> list[dict]:
     ]
 
 
-def _fixture_store(tmp: Path) -> KnowledgeStore:
+def _fixture_store(tmp: Path, embedder) -> KnowledgeStore:
     """Tiny in-memory corpus so --mock exercises the whole retrieval path."""
     from patient_companion.rag.chunking import chunk_paragraphs, text_to_paragraphs
 
     store = KnowledgeStore(tmp)
-    embedder = get_embedder()
     rows = []
     docs = []
     for name, text in _FIXTURE_DOCS:
@@ -76,11 +75,15 @@ def _fixture_store(tmp: Path) -> KnowledgeStore:
 
 def run_eval(*, mock: bool, skip_rewrite: bool) -> dict:
     settings = get_settings()
+    if mock:
+        settings = settings.model_copy(
+            update={"llm_provider": "mock", "embed_provider": "mock"}
+        )
     questions = _load_questions()
     tmp: tempfile.TemporaryDirectory | None = None
     if mock:
         tmp = tempfile.TemporaryDirectory()
-        store = _fixture_store(Path(tmp.name))
+        store = _fixture_store(Path(tmp.name), get_embedder(settings))
     else:
         store = KnowledgeStore(settings.store_dir)
         if not store.load():

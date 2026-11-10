@@ -1,5 +1,5 @@
 {
-  "ran_at": "2026-11-10T22:43:51.730490+00:00",
+  "ran_at": "2026-11-10T22:57:53.767675+00:00",
   "mock": true,
   "skip_rewrite": false,
   "n_questions": 11,
@@ -60,7 +60,7 @@
       "category": "factual",
       "question": "What is non-invasive ventilation?",
       "refused": false,
-      "latency_ms": 0.1,
+      "latency_ms": 0.2,
       "recall@5": 1.0,
       "mrr": 1.0,
       "sources": [
@@ -74,7 +74,7 @@
       "category": "factual",
       "question": "How is ALS diagnosed?",
       "refused": false,
-      "latency_ms": 0.1,
+      "latency_ms": 0.2,
       "recall@5": 1.0,
       "mrr": 1.0,
       "sources": [
