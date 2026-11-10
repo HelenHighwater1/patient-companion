@@ -1,0 +1,31 @@
+# Secrets
+.env
+.env.*
+!.env.example
+!.env*.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Node / Next
+node_modules/
+.next/
+out/
+
+# Built knowledge stores (regenerate via `python -m patient_companion.rag.ingest`)
+knowledge/*/store/
+eval/results/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

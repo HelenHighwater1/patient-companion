@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #5457e5;
+  --color-brand-700: #4447ca;
+  --color-brand-800: #3a3ca3;
+  --color-brand-900: #333582;
+  --color-warm-50: #fafaf9;
+  --color-warm-100: #f5f5f4;
+  --color-warm-200: #e7e5e4;
+  --color-warm-300: #d6d3d1;
+  --color-warm-700: #44403c;
+  --color-warm-900: #1c1917;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--color-warm-50);
+  color: var(--color-warm-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Staged card reveal */
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-in {
+  animation: card-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes dot-pulse {
+  0%,
+  80%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.85);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.dot-pulse {
+  animation: dot-pulse 1.2s infinite ease-in-out;
+}
+.dot-pulse:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.dot-pulse:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Print: only the prep sheet */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #prep-sheet-print,
+  #prep-sheet-print * {
+    visibility: visible;
+  }
+  #prep-sheet-print {
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+  }
+}

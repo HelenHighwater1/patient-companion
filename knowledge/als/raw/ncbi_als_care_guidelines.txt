@@ -1,0 +1,1231 @@
+Blue Rubber Bleb Nevus Syndrome - StatPearls - NCBI Bookshelf
+
+Warning:
+
+The NCBI web site requires JavaScript to function.
+
+more...
+
+The .gov means it's official.
+
+Federal government websites often end in .gov or .mil. Before
+
+sharing sensitive information, make sure you're on a federal
+
+government site.
+
+The site is secure.
+
+The
+
+https://
+
+ensures that you are connecting to the
+
+official website and that any information you provide is encrypted
+
+and transmitted securely.
+
+Access keys
+
+NCBI Homepage
+
+MyNCBI Homepage
+
+Main Content
+
+Main Navigation
+
+Bookshelf
+
+Search database
+
+Books
+
+All Databases
+
+Assembly
+
+Biocollections
+
+BioProject
+
+BioSample
+
+Books
+
+ClinVar
+
+Conserved Domains
+
+dbGaP
+
+dbVar
+
+Gene
+
+Genome
+
+GEO DataSets
+
+GEO Profiles
+
+GTR
+
+Identical Protein Groups
+
+MedGen
+
+MeSH
+
+NLM Catalog
+
+Nucleotide
+
+OMIM
+
+PMC
+
+Protein
+
+Protein Clusters
+
+Protein Family Models
+
+PubChem BioAssay
+
+PubChem Compound
+
+PubChem Substance
+
+PubMed
+
+SNP
+
+SRA
+
+Structure
+
+Taxonomy
+
+ToolKit
+
+ToolKitAll
+
+ToolKitBookgh
+
+Search term
+
+Search
+
+Browse Titles
+
+Advanced
+
+Help
+
+Disclaimer
+
+NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health.
+
+StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jan-.
+
+StatPearls [Internet].
+
+Show details
+
+Treasure Island (FL):
+
+StatPearls Publishing
+
+; 2025 Jan-.
+
+Search term
+
+Blue Rubber Bleb Nevus Syndrome
+
+Dana Baigrie
+
+;
+
+Ashley S. Rice
+
+;
+
+In C. An
+
+.
+
+Author Information and Affiliations
+
+Authors
+
+Dana Baigrie
+
+1
+
+;
+
+Ashley S. Rice
+
+2
+
+;
+
+In C. An
+
+3
+
+.
+
+Affiliations
+
+1
+
+Campbell University School of Medicine
+
+2
+
+CUSOM/Sampson Regional Medical Center
+
+3
+
+Michigan State/Mclaren Greater Lansing
+
+Last Update:
+
+July 4, 2023
+
+.
+
+Continuing Education Activity
+
+Blue rubber bleb nevus syndrome is also known as Bean syndrome. It is a rare syndrome of venous malformations that arise in the skin and gastrointestinal tract. Patients present with multiple venous malformations in various organ systems including the liver, spleen, heart, eye, and central nervous system. Patients with blue rubber bleb nevus syndrome are at increased risk for gastrointestinal hemorrhage and severe iron deficiency anemia. This activity reviews the evaluation and management of blue rubber bleb nevus syndrome and highlights the role of the interprofessional team in improving care for patients with this condition.
+
+Objectives:
+
+Explain the etiology of blue rubber bleb nevus syndrome.
+
+Describe the presentation of a patient with blue rubber bleb nevus syndrome.
+
+Summarize the treatment considerations for patients with blue rubber bleb nevus syndrome.
+
+Outline the importance of collaboration and communication amongst the interprofessional team to improve outcomes for patients affected by blue rubber bleb nevus syndrome.
+
+Access free multiple choice questions on this topic.
+
+Introduction
+
+Blue rubber bleb nevus syndrome is also known as Bean syndrome. It is a rare syndrome of venous malformations that arise in the skin and gastrointestinal tract. Patients present with multiple venous malformations in various organ systems including the liver, spleen, heart, eye, and central nervous system. Patients with blue rubber bleb nevus syndrome are at increased risk for gastrointestinal hemorrhage and severe iron deficiency anemia. They require a multifaceted medical management approach with hematology, dermatology, gastroenterology, and other specialties involved in their care. Treatment is largely supportive and involves managing potential complications such as volvulus, intussusception, infarction, and gastrointestinal bleeding.
+
+[1]
+
+[2]
+
+[3]
+
+[4]
+
+Etiology
+
+Blue rubber bleb nevus syndrome is usually a sporadic disorder; however, autosomal dominant modes of inheritance are reported, specifically with a locus found on chromosome 9p.
+
+[5]
+
+[6]
+
+[7]
+
+Recently, somatic mutations in TIE2, an endothelial cell tyrosine kinase receptor for angiopoietins, have been discovered to cause the disorder. Soblet et al. studied 17 patients with blue rubber bleb nevus syndrome and six individuals with multifocal vascular malformations. The majority of patients with blue rubber bleb nevus syndrome were associated with mutations in TEK
+
+(
+
+also known as TIE2), which encodes TEK receptor tyrosine kinase. In contrast to common unifocal venous malformation, multifocal malformations are associated with two somatic activating mutations on the same allele (double [cis] mutations).
+
+[8]
+
+Epidemiology
+
+Blue rubber bleb nevus syndrome is a rare disorder. Approximately 200 cases have been reported in the literature.
+
+[9]
+
+[10]
+
+It has been identified in all races, with Whites most frequently affected. The syndrome affects both males and females with equal frequency, and the cutaneous manifestations typically present at birth or early childhood. Visceral involvement tends to present in early adulthood.
+
+[11]
+
+Pathophysiology
+
+As previously mentioned, blue rubber bleb nevus syndrome is caused by double (cis) mutations in the TEK gene (otherwise known as TIE2). The TEK gene encodes a protein called TEK receptor tyrosine kinase. TEK receptor tyrosine kinase is a transmembrane receptor involved in multiple steps of angiogenesis, including destabilization of existing vessels, endothelial cell migration, tube formation, and stabilization of newly formed tubes by mesenchymal cells. When the TEK receptor is activated, it triggers a release of chemical signals that facilitates cell-cell communication between endothelial cells and smooth muscle cells. This communication leads to new blood vessel formation and safeguards the structure and integrity of these blood vessels. The TEK receptor is constitutively active in blue rubber bleb nevus syndrome due to somatic activating mutations. This leads to unregulated angiogenesis.
+
+[12]
+
+[13]
+
+[14]
+
+Histopathology
+
+Histopathologic features of cutaneous lesions are non-specific and have features of venous malformations. Large, tortuous, dilated vessels with a single endothelial lining are noted, and smooth muscle may be present in the vessel walls. Calcification may also be seen.
+
+[15]
+
+History and Physical
+
+Patients with blue rubber bleb syndrome present at birth or in early childhood with multiple blue to violaceous soft compressible nodules on the skin or mucous membranes. They are often born with a "dominant" lesion and develop numerous venous malformations over their lifetime.
+
+[8]
+
+The typical skin lesions are described as rubbery in consistency and may be painful or tender when compressed. Pain is especially prevalent at nighttime. These lesions can range in size from only a few millimeters in diameter to up to 4 to 5 cm in diameter. They can increase in size with time, and more lesions may develop in the skin or gastrointestinal tract. Blue marks that are large and disfiguring may appear as well. Uniquely, lesions tend to swell in gravity-dependent positions, and patients have focal areas of hyperhidrosis overlying these lesions.
+
+[9]
+
+Venous malformations can be seen in various locations throughout the body, which makes physical examination difficult. Venous malformations may be located in the heart, spleen, liver, central nervous system, and gastrointestinal tract. The small bowel is the most common site of gastrointestinal tract involvement; however, lesions can occur anywhere from the mouth to the anus. As a result, patients may present with severe iron deficiency anemia from recurrent gastrointestinal hemorrhage.
+
+[16]
+
+Angiomas and venous malformations of the retina, conjunctiva, iris, and orbit may occur.
+
+[17]
+
+[18]
+
+There are case reports of thyroid, parotid, musculoskeletal, lung, and bladder involvement as well.
+
+[9]
+
+Venous malformations are slow-flow lesions, making them prone to thrombosis. Thrombosis presents as an erythematous, warm swelling that may be tender to palpation.
+
+[9]
+
+Evaluation
+
+Aside from clinical diagnosis, other diagnostic modalities include imaging studies. Ultrasound is the initial diagnostic study of choice as it is the least invasive. Ultrasound may be performed endoscopically if gastrointestinal venous malformations are suspected. Ultrasound should be performed by a radiologist or ultrasound technician who is experienced in vascular anomalies. Since the radiologist reading the study may not have the clinical history or benefit of seeing the patient in real-time, it is recommended by some sources to send the patient for an ultrasound at the vascular anomalies center. If ultrasound is inconclusive or not possible, then magnetic resonance imaging (MRI) with intravenous contrast, arterial and venous phases, and fat suppression is indicated. Other diagnostic modalities include computed tomography (CT), barium studies, and skin biopsy. Technetium Tc-99m-labeled red blood cell imaging may help localize the source and extent of blood loss.
+
+[19]
+
+Blue rubber bleb nevi can be examined under dermoscopy with features of superficial, light red arborizing veins, maculae with undefined borders on the palms and soles, and blue-purple nodules with lacunae divided by white linear structures.
+
+[20]
+
+Other laboratory studies that may be helpful in evaluation and management include fecal occult blood tests, complete blood counts, iron panels, and urinalysis to screen for hematuria and bladder involvement.
+
+[21]
+
+Treatment / Management
+
+Treatment of blue rubber bleb nevus syndrome is largely symptomatic. The most important step is monitoring the evolution of gastrointestinal lesions and preventing severe bleeding. Patients may benefit from iron replacement or transfusions if iron deficiency anemia occurs from gastrointestinal bleeding. Other treatment options for vascular malformations include endoscopic sclerotherapy, band ligation, or laser photocoagulation. Resection of portions of the gastrointestinal tract may become necessary if there is significant intestinal involvement in order to prevent life-threatening gastrointestinal hemorrhage.
+
+[22]
+
+Pharmacologic agents have been tried with variable responses.
+
+[4]
+
+Somatostatin analogs like subcutaneous octreotide can be used to decrease splanchnic blood flow in patients with gastrointestinal hemorrhage. This may help decrease the need for blood transfusions in these patients. Other pharmacologic agents reported efficacious include corticosteroids, interferon-alpha, IVIG, and vincristine.
+
+[23]
+
+Sirolimus was recently reported in the literature as a successful treatment option for this condition; however, the dose and treatment duration remains uncertain. Sirolimus is an angiogenesis inhibitor that has been used to avoid blood transfusions in these patients, who often require multiple in their lifetime.
+
+[23]
+
+[24]
+
+[25]
+
+[26]
+
+The patient may require evaluation by an orthopedic surgeon if they develop complications from venous malformations in the bone leading to deformation such as bowing or pathologic fractures. They will also need to be managed by a gastroenterologist, hematologist, ophthalmologist, and possibly, cardiovascular or neurosurgeon if central nervous system involvement occurs.
+
+[9]
+
+[18]
+
+Differential Diagnosis
+
+Differential diagnosis of blue rubber bleb nevus syndrome includes other congenital vascular malformation syndromes such as diffuse neonatal hemangiomatosis, familial glomangiomatosis, Klippel-Trenaunay-Weber syndrome, Maffucci syndrome, and mucosal venous malformation syndrome.
+
+[27]
+
+[28]
+
+Prognosis
+
+Individuals with blue rubber bleb nevus syndrome usually have a normal lifespan as long as gastrointestinal bleeding is controlled and no serious complications such as gastrointestinal hemorrhage occur. The venous malformations will persist throughout the patient’s life.
+
+[2]
+
+Complications
+
+The most concerning complications of blue rubber bleb nevus syndrome are severe gastrointestinal hemorrhage or intestinal intussusception. As a result, patients often require multiple blood transfusions throughout their lifetime.
+
+[7]
+
+[29]
+
+Consultations
+
+Patients with blue rubber bleb nevus syndrome will require a multispecialty approach to management. They may need evaluation by an orthopedic surgeon if they develop complications from deforming venous malformations in the bone. They will also need monitoring by a gastroenterologist, hematologist, ophthalmologist, and possibly, cardiovascular or neurosurgeon if central nervous system involvement occurs.
+
+[9]
+
+[18]
+
+Deterrence and Patient Education
+
+It is important to counsel patients and parents about the risk of severe gastrointestinal bleeding and intussusception in blue rubber bleb nevus syndrome. There should be a low threshold for patients to present for medical evaluation if they have abnormal bowel function or abdominal pain.
+
+Enhancing Healthcare Team Outcomes
+
+Blue Rubber Bleb Nevus Syndrome is also known as Bean syndrome. It is a rare syndrome of venous malformations that arise in the skin and gastrointestinal tract. Patients present with multiple venous malformations in various organ systems including the liver, spleen, heart, eye, and central nervous system. Blue rubber bleb nevus syndrome patients are at increased risk for gastrointestinal hemorrhage and severe iron deficiency anemia. They require an interprofessional team approach with hematology, dermatology, gastroenterology, surgery, nurse practitioners, and other specialties caring for the patient. There is no cure for the disorder and treatment is supportive. Patients do need to be monitored as they are prone to potential complications such as volvulus, intussusception, infarction, and gastrointestinal bleeding. [Level 5]
+
+Review Questions
+
+Access free multiple choice questions on this topic.
+
+Click here for a simplified version.
+
+Comment on this article.
+
+References
+
+1.
+
+RICE JS, FISCHER DS. Blue rubber-bleb nevus syndrome. Generalized cavernous hemangiomatosis or venous hamartoma with medulloblastoma of the cerebellum: case report and review of the literature.
+
+Arch Dermatol.
+
+1962 Oct;
+
+86
+
+:503-11.
+
+[
+
+PubMed
+
+: 13982068
+
+]
+
+2.
+
+Nahm WK, Moise S, Eichenfield LF, Paller AS, Nathanson L, Malicki DM, Friedlander SF. Venous malformations in blue rubber bleb nevus syndrome: variable onset of presentation.
+
+J Am Acad Dermatol.
+
+2004 May;
+
+50
+
+(5 Suppl):S101-6.
+
+[
+
+PubMed
+
+: 15097941
+
+]
+
+3.
+
+Ishii T, Asuwa N, Suzuki S, Suwa H, Shimada K. Blue rubber bleb naevus syndrome.
+
+Virchows Arch A Pathol Anat Histopathol.
+
+1988;
+
+413
+
+(6):485-90.
+
+[
+
+PubMed
+
+: 3144084
+
+]
+
+4.
+
+Boente MD, Cordisco MR, Frontini MD, Asial RA. Blue rubber bleb nevus (Bean syndrome): evolution of four cases and clinical response to pharmacologic agents.
+
+Pediatr Dermatol.
+
+1999 May-Jun;
+
+16
+
+(3):222-7.
+
+[
+
+PubMed
+
+: 10383782
+
+]
+
+5.
+
+Liu Q, Chen YP, Li YM. Blue rubber bleb nevus syndrome: a report of one case associated with recurrent epistaxis.
+
+Chin Med J (Engl).
+
+2007 Apr 20;
+
+120
+
+(8):731-3.
+
+[
+
+PubMed
+
+: 17517196
+
+]
+
+6.
+
+Dòmini M, Aquino A, Fakhro A, Tursini S, Marino N, Di Matteo S, Lelli Chiesa P. Blue rubber bleb nevus syndrome and gastrointestinal haemorrhage: which treatment?
+
+Eur J Pediatr Surg.
+
+2002 Apr;
+
+12
+
+(2):129-33.
+
+[
+
+PubMed
+
+: 12015660
+
+]
+
+7.
+
+Ertem D, Acar Y, Kotiloglu E, Yucelten D, Pehlivanoglu E. Blue rubber bleb nevus syndrome.
+
+Pediatrics.
+
+2001 Feb;
+
+107
+
+(2):418-20.
+
+[
+
+PubMed
+
+: 11158481
+
+]
+
+8.
+
+Soblet J, Kangas J, Nätynki M, Mendola A, Helaers R, Uebelhoer M, Kaakinen M, Cordisco M, Dompmartin A, Enjolras O, Holden S, Irvine AD, Kangesu L, Léauté-Labrèze C, Lanoel A, Lokmic Z, Maas S, McAleer MA, Penington A, Rieu P, Syed S, van der Vleuten C, Watson R, Fishman SJ, Mulliken JB, Eklund L, Limaye N, Boon LM, Vikkula M. Blue Rubber Bleb Nevus (BRBN) Syndrome Is Caused by Somatic TEK (TIE2) Mutations.
+
+J Invest Dermatol.
+
+2017 Jan;
+
+137
+
+(1):207-216.
+
+[
+
+PubMed
+
+: 27519652
+
+]
+
+9.
+
+Jin XL, Wang ZH, Xiao XB, Huang LS, Zhao XY. Blue rubber bleb nevus syndrome: a case report and literature review.
+
+World J Gastroenterol.
+
+2014 Dec 07;
+
+20
+
+(45):17254-9.
+
+[
+
+PMC free article
+
+: PMC4258599
+
+] [
+
+PubMed
+
+: 25493043
+
+]
+
+10.
+
+Xu Y, Zhou B, Zhang M, Luo D. An unusual case of blue rubber bleb nevus syndrome with unilateral linear distribution.
+
+Indian J Dermatol Venereol Leprol.
+
+2013 Mar-Apr;
+
+79
+
+(2):269-70.
+
+[
+
+PubMed
+
+: 23442488
+
+]
+
+11.
+
+Zahedi MJ, Darvish Moghadam S, Seyed Mirzaei SM, Dehghani M, Shafiei Pour S, Rasti A. Blue Rubber Bleb Nevus Syndrome as a rare Cause of Iron Deficiency Anemia: a Case Report and Review of Literature.
+
+Middle East J Dig Dis.
+
+2013 Oct;
+
+5
+
+(4):235-9.
+
+[
+
+PMC free article
+
+: PMC3990150
+
+] [
+
+PubMed
+
+: 24829697
+
+]
+
+12.
+
+Eklund L, Olsen BR. Tie receptors and their angiopoietin ligands are context-dependent regulators of vascular remodeling.
+
+Exp Cell Res.
+
+2006 Mar 10;
+
+312
+
+(5):630-41.
+
+[
+
+PubMed
+
+: 16225862
+
+]
+
+13.
+
+Limaye N, Boon LM, Vikkula M. From germline towards somatic mutations in the pathophysiology of vascular anomalies.
+
+Hum Mol Genet.
+
+2009 Apr 15;
+
+18
+
+(R1):R65-74.
+
+[
+
+PMC free article
+
+: PMC2657941
+
+] [
+
+PubMed
+
+: 19297403
+
+]
+
+14.
+
+Morris PN, Dunmore BJ, Tadros A, Marchuk DA, Darland DC, D'Amore PA, Brindle NP. Functional analysis of a mutant form of the receptor tyrosine kinase Tie2 causing venous malformations.
+
+J Mol Med (Berl).
+
+2005 Jan;
+
+83
+
+(1):58-63.
+
+[
+
+PubMed
+
+: 15526080
+
+]
+
+15.
+
+Dobru D, Seuchea N, Dorin M, Careianu V. Blue rubber bleb nevus syndrome: case report and literature review.
+
+Rom J Gastroenterol.
+
+2004 Sep;
+
+13
+
+(3):237-40.
+
+[
+
+PubMed
+
+: 15470538
+
+]
+
+16.
+
+Aravindan U, Ganesan R, Thamarai Kannan M. Surgery for Blue Rubber Bleb Nevus Syndrome-a Case Report.
+
+Indian J Surg.
+
+2018 Jun;
+
+80
+
+(3):272-274.
+
+[
+
+PMC free article
+
+: PMC6014949
+
+] [
+
+PubMed
+
+: 29973759
+
+]
+
+17.
+
+Wynford-Thomas R, Johnston A, Halpin S, Hamandi K. Rarities in neurology: blue rubber bleb naevus syndrome.
+
+Pract Neurol.
+
+2014 Oct;
+
+14
+
+(5):360-2.
+
+[
+
+PubMed
+
+: 24614007
+
+]
+
+18.
+
+Petek B, Jones RL. The management of ophthalmic involvement in blue rubber bleb nevus syndrome.
+
+GMS Ophthalmol Cases.
+
+2014;
+
+4
+
+:Doc04.
+
+[
+
+PMC free article
+
+: PMC5015613
+
+] [
+
+PubMed
+
+: 27625939
+
+]
+
+19.
+
+Kassarjian A, Fishman SJ, Fox VL, Burrows PE. Imaging characteristics of blue rubber bleb nevus syndrome.
+
+AJR Am J Roentgenol.
+
+2003 Oct;
+
+181
+
+(4):1041-8.
+
+[
+
+PubMed
+
+: 14500226
+
+]
+
+20.
+
+Mejía-Rodríguez S, Valencia-Herrera A, Escobar-Sánchez A, Mena-Cedillos C. Dermoscopic features in Bean (blue rubber bleb nevus) syndrome.
+
+Pediatr Dermatol.
+
+2008 Mar-Apr;
+
+25
+
+(2):270-2.
+
+[
+
+PubMed
+
+: 18429801
+
+]
+
+21.
+
+Martinez CA, Rodrigues MR, Sato DT, Silveira Júnior PP, Gama RF, Mattavelli CB, Pereira JA. Blue rubber bleb nevus syndrome as a cause of lower digestive bleeding.
+
+Case Rep Surg.
+
+2014;
+
+2014
+
+:683684.
+
+[
+
+PMC free article
+
+: PMC3932640
+
+] [
+
+PubMed
+
+: 24653853
+
+]
+
+22.
+
+Arena M, Virdis M, Morandi E, Viaggi P, Pisani A, Opocher E, Masci E. Blue rubber bleb nevus syndrome: combined surgical and endoscopic treatment.
+
+Endoscopy.
+
+2015;
+
+47 Suppl 1 UCTN
+
+:E372-3.
+
+[
+
+PubMed
+
+: 26273767
+
+]
+
+23.
+
+Garzon MC, Huang JT, Enjolras O, Frieden IJ. Vascular malformations. Part II: associated syndromes.
+
+J Am Acad Dermatol.
+
+2007 Apr;
+
+56
+
+(4):541-64.
+
+[
+
+PubMed
+
+: 17367610
+
+]
+
+24.
+
+Aihara M, Konuma Y, Okawa K, Komai R, Kudo I, Morioka R, Kariya K, Takami H, Sawada Y, Munakata A. Blue rubber bleb nevus syndrome with disseminated intravascular coagulation and thrombocytopenia: successful treatment with high-dose intravenous gammaglobulin.
+
+Tohoku J Exp Med.
+
+1991 Feb;
+
+163
+
+(2):111-7.
+
+[
+
+PubMed
+
+: 2048121
+
+]
+
+25.
+
+Wang KL, Ma SF, Pang LY, Zhang MN, Hu LY, Liu MJ, Zou LP. Sirolimus alternative to blood transfusion as a life saver in blue rubber bleb nevus syndrome: A case report.
+
+Medicine (Baltimore).
+
+2018 Feb;
+
+97
+
+(8):e9453.
+
+[
+
+PMC free article
+
+: PMC5841973
+
+] [
+
+PubMed
+
+: 29465551
+
+]
+
+26.
+
+Akyuz C, Susam-Sen H, Aydin B. Blue Rubber Bleb Nevus Syndrome: Promising Response To Sirolimus.
+
+Indian Pediatr.
+
+2017 Jan 15;
+
+54
+
+(1):53-54.
+
+[
+
+PubMed
+
+: 28141567
+
+]
+
+27.
+
+Kaur T, Singh S. Blue rubber bleb nevus syndrome: a case report.
+
+Indian J Dermatol.
+
+2014 Jan;
+
+59
+
+(1):98-9.
+
+[
+
+PMC free article
+
+: PMC3884943
+
+] [
+
+PubMed
+
+: 24470675
+
+]
+
+28.
+
+Rodrigues D, Bourroul ML, Ferrer AP, Monteiro Neto H, Gonçalves ME, Cardoso SR. Blue rubber bleb nevus syndrome.
+
+Rev Hosp Clin Fac Med Sao Paulo.
+
+2000 Jan-Feb;
+
+55
+
+(1):29-34.
+
+[
+
+PubMed
+
+: 10881076
+
+]
+
+29.
+
+Esposito C, Giurin I, Farina A, Ascione G, Miele E, Staiano A, Di Benedetto V, Settimi A. Blue rubber bleb nevus: an uncommon cause of intestinal intussusception.
+
+Eur J Pediatr.
+
+2012 Jul;
+
+171
+
+(7):1139-40.
+
+[
+
+PubMed
+
+: 22374252
+
+]
+
+Disclosure:
+
+Dana Baigrie declares no relevant financial relationships with ineligible companies.
+
+Disclosure:
+
+Ashley Rice declares no relevant financial relationships with ineligible companies.
+
+Disclosure:
+
+In An declares no relevant financial relationships with ineligible companies.
+
+Copyright
+
+© 2025, StatPearls Publishing LLC.
+
+This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+
+(
+
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+
+), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.
+
+Bookshelf ID: NBK541085
+
+PMID:
+
+31082129
+
+Share
+
+Views
+
+PubReader
+
+Print View
+
+Cite this Page
+
+Baigrie D, Rice AS, An IC. Blue Rubber Bleb Nevus Syndrome. [Updated 2023 Jul 4]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jan-.
+
+In this Page
+
+Continuing Education Activity
+
+Introduction
+
+Etiology
+
+Epidemiology
+
+Pathophysiology
+
+Histopathology
+
+History and Physical
+
+Evaluation
+
+Treatment / Management
+
+Differential Diagnosis
+
+Prognosis
+
+Complications
+
+Consultations
+
+Deterrence and Patient Education
+
+Enhancing Healthcare Team Outcomes
+
+Review Questions
+
+References
+
+Related information
+
+PMC
+
+PubMed Central citations
+
+PubMed
+
+Links to PubMed
+
+Similar articles in PubMed
+
+Review
+
+Blue rubber bleb nevus syndrome: a case report and literature review.
+
+[World J Gastroenterol. 2014]
+
+Review
+
+Blue rubber bleb nevus syndrome: a case report and literature review.
+
+Jin XL, Wang ZH, Xiao XB, Huang LS, Zhao XY.
+
+World J Gastroenterol. 2014 Dec 7; 20(45):17254-9.
+
+Blue rubber bleb nevus: a rare cause of GI bleeding-review of management.
+
+[BMJ Case Rep. 2019]
+
+Blue rubber bleb nevus: a rare cause of GI bleeding-review of management.
+
+Ur Rashid M, Muhammad Khan M, Ullah W, Hussain I, Hurairah A.
+
+BMJ Case Rep. 2019 Dec 16; 12(12). Epub 2019 Dec 16.
+
+Surgery for Blue Rubber Bleb Nevus Syndrome-a Case Report.
+
+[Indian J Surg. 2018]
+
+Surgery for Blue Rubber Bleb Nevus Syndrome-a Case Report.
+
+Aravindan U, Ganesan R, Thamarai Kannan M.
+
+Indian J Surg. 2018 Jun; 80(3):272-274. Epub 2017 Dec 19.
+
+Blue rubber bleb nevus syndrome in a Malay girl: A case report and literature review.
+
+[Int J Surg Case Rep. 2020]
+
+Blue rubber bleb nevus syndrome in a Malay girl: A case report and literature review.
+
+Mat Johar F, Wan Sulaiman WA, Mat Saad AZ, Basiron N, Sahid NA.
+
+Int J Surg Case Rep. 2020; 72:202-206. Epub 2020 Jun 1.
+
+Review
+
+Blue rubber bleb nevus syndrome: case report and literature review.
+
+[Rom J Gastroenterol. 2004]
+
+Review
+
+Blue rubber bleb nevus syndrome: case report and literature review.
+
+Dobru D, Seuchea N, Dorin M, Careianu V.
+
+Rom J Gastroenterol. 2004 Sep; 13(3):237-40.
+
+See reviews...
+
+See all...
+
+Recent Activity
+
+Clear
+
+Turn Off
+
+Turn On
+
+Blue Rubber Bleb Nevus Syndrome - StatPearls
+
+Blue Rubber Bleb Nevus Syndrome - StatPearls
+
+Your browsing activity is empty.
+
+Activity recording is turned off.
+
+Turn recording back on
+
+See more...
+
+Follow NCBI
+
+Twitter
+
+Facebook
+
+LinkedIn
+
+GitHub
+
+NCBI Insights Blog
+
+Connect with NLM
+
+Twitter
+
+Facebook
+
+Youtube
+
+National Library of Medicine
+
+8600 Rockville Pike
+
+Bethesda, MD 20894
+
+Web Policies
+
+FOIA
+
+HHS Vulnerability Disclosure
+
+Help
+
+Accessibility
+
+Careers

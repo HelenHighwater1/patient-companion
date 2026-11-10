@@ -1,0 +1,5299 @@
+Amyotrophic Lateral Sclerosis Overview - GeneReviews® - NCBI Bookshelf
+
+Warning:
+
+The NCBI web site requires JavaScript to function.
+
+more...
+
+The .gov means it's official.
+
+Federal government websites often end in .gov or .mil. Before
+
+sharing sensitive information, make sure you're on a federal
+
+government site.
+
+The site is secure.
+
+The
+
+https://
+
+ensures that you are connecting to the
+
+official website and that any information you provide is encrypted
+
+and transmitted securely.
+
+Access keys
+
+NCBI Homepage
+
+MyNCBI Homepage
+
+Main Content
+
+Main Navigation
+
+Bookshelf
+
+Search database
+
+Books
+
+All Databases
+
+Assembly
+
+Biocollections
+
+BioProject
+
+BioSample
+
+Books
+
+ClinVar
+
+Conserved Domains
+
+dbGaP
+
+dbVar
+
+Gene
+
+Genome
+
+GEO DataSets
+
+GEO Profiles
+
+GTR
+
+Identical Protein Groups
+
+MedGen
+
+MeSH
+
+NLM Catalog
+
+Nucleotide
+
+OMIM
+
+PMC
+
+Protein
+
+Protein Clusters
+
+Protein Family Models
+
+PubChem BioAssay
+
+PubChem Compound
+
+PubChem Substance
+
+PubMed
+
+SNP
+
+SRA
+
+Structure
+
+Taxonomy
+
+ToolKit
+
+ToolKitAll
+
+ToolKitBookgh
+
+Search term
+
+Search
+
+Browse Titles
+
+Advanced
+
+Help
+
+Disclaimer
+
+NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health.
+
+Adam MP, Bick S, Mirzaa GM, et al., editors. GeneReviews® [Internet]. Seattle (WA): University of Washington, Seattle; 1993-2026.
+
+GeneReviews
+
+®
+
+[Internet].
+
+Show details
+
+Adam MP, Bick S, Mirzaa GM, et al., editors.
+
+Seattle (WA):
+
+University of Washington, Seattle
+
+; 1993-2026.
+
+GeneReviews by Title
+
+Search term
+
+GeneReviews Advanced Search
+
+Help
+
+< Prev
+
+Next >
+
+Amyotrophic Lateral Sclerosis Overview
+
+Synonym: Lou Gehrig Disease
+
+Nailah Siddique
+
+, RN, MSN and
+
+Teepu Siddique
+
+, MD, DSc (hc).
+
+Author Information and Affiliations
+
+Nailah Siddique
+
+, RN, MSN
+
+Division of Neuromuscular Medicine
+
+Davee Department of Neurology and Clinical Neurosciences
+
+Northwestern University Feinberg School of Medicine
+
+Chicago, Illinois
+
+Email:
+
+ude.nretsewhtron@euqiddisn
+
+Teepu Siddique
+
+, MD, DSc (hc)
+
+Division of Neuromuscular Medicine
+
+Davee Department of Neurology and Clinical Neurosciences;
+
+Department of Cell and Molecular Biology
+
+Northwestern University Feinberg School of Medicine
+
+Chicago, Illinois
+
+Email:
+
+ude.nretsewhtron@euqiddis-t
+
+Initial Posting:
+
+March 23, 2001
+
+; Last Revision:
+
+September 28, 2023
+
+.
+
+Estimated reading time: 37 minutes
+
+Summary
+
+The purpose of this overview is to:
+
+1.
+
+Describe the
+
+clinical characteristics
+
+of amyotrophic lateral sclerosis (ALS);
+
+2.
+
+Review
+
+genetic causes
+
+of ALS;
+
+3.
+
+Provide an
+
+evaluation strategy
+
+to identify the genetic cause of ALS in a
+
+proband
+
+(when possible);
+
+4.
+
+Provide a high-level view of
+
+management
+
+of ALS;
+
+5.
+
+Inform
+
+genetic counseling
+
+of family members of an individual with ALS.
+
+1.  Clinical Characteristics of ALS
+
+Clinical Manifestations of ALS
+
+Amyotrophic lateral sclerosis (ALS) is a progressive, fatal neurodegenerative disease involving both the brain and spinal cord. While it has traditionally been perceived to be a syndrome primarily affecting motor neurons, there is increasing recognition that additional areas within the frontal and temporal lobes are involved to varying degrees in a subset of individuals. In addition, other systems outside the nervous system may be involved, such as bone (Paget disease of the bone) and muscle (inclusion body myopathy). The location and extent of the degeneration determines the clinical picture, which by definition includes motor decline, and may include cognitive and/or behavioral symptoms as well. There is wide variability in presentation, progression, and survival [
+
+Hardiman et al 2017
+
+].
+
+Motor Involvement
+
+Motor symptoms occur as the result of degeneration of both upper and lower motor neurons. Upper motor neurons (UMNs), located in the motor cortex of the frontal lobe, send their axons through the great corticofugal tracts to the brain stem (corticobulbar neurons) and the spinal cord (corticospinal neurons) to influence patterned activity of the lower motor neurons (LMNs). Additional UMN influences on the LMN are carried over descending pathways of the brain stem. UMN signs in ALS include hyperreflexia, extensor plantar response, and increased muscle tone. LMNs, located in the brain stem and spinal cord, innervate striated muscle. LMN signs in ALS include weakness, muscle wasting (atrophy), hyporeflexia, muscle cramps, and fasciculations.
+
+Early manifestations may vary, with affected individuals most often presenting with either asymmetric focal weakness of the extremities (stumbling or poor handgrip) or bulbar findings (dysarthria, dysphagia). Other findings may include muscle fasciculations, muscle cramps, and lability of affect, but not necessarily mood. A diagnostic feature of ALS, typically not seen in other neurodegenerative disorders, is the presence of hyperreflexia in segmental regions of muscle atrophy, unaccompanied by sensory disturbance.
+
+At presentation, limb involvement occurs more often than bulbar involvement. Various subtypes of ALS have been identified:
+
+"Progressive bulbar palsy," which presents with speech disturbance and swallowing difficulties
+
+Limb-onset ALS
+
+Progressive muscular atrophy, where lower motor neurons are primarily involved
+
+UMN-predominant ALS
+
+Neuropsychological Involvement
+
+Recent studies of both the genetics and neuropathology of ALS have reinforced the understanding that while the syndrome of ALS by definition involves the motor system, wider frontotemporal degeneration may give rise to at least some degree of cognitive and behavioral dysfunction. White matter structural abnormalities in the frontal and temporal lobes of individuals with ALS who do not demonstrate evidence of cognitive decline have also been identified [
+
+Abrahams et al 2005
+
+].
+
+It has been reported that upwards of 45% of individuals with ALS have some degree of cognitive impairment at some time during their illness [
+
+Raaphorst et al 2012
+
+,
+
+Beeldman et al 2016
+
+]. Several neuropsychological domains may be affected. The most common deficits are in executive function (demonstrated by difficulties with emotional and impulse control, flexible thinking, self-monitoring, planning and prioritizing, organization, task initiation, and working memory), verbal fluency, and social cognition (demonstrated by difficulties interpreting the emotional states of others and lack of insight in social situations) [
+
+Beeldman et al 2016
+
+].
+
+Symptoms can range from mild to severe.
+
+On the severe end of the spectrum, frontotemporal dementia (FTD), particularly the behavioral variant of FTD (bvFTD), marked by severe apathy and progressive declines in socially appropriate behavior, judgment, and self-control, as well as personality change, has been reported to range from 5% to 27% in various series [
+
+Raaphorst et al 2012
+
+]. However, a more recent Italian population-based study suggests that the incidence may be closer to 10% [
+
+Montuschi et al 2015
+
+], or perhaps close to 5%. Additionally, individuals with ALS with FTD (ALS/FTD) experience more language disturbance (difficulty with grammar and sentence and syntactic comprehension) than is generally associated with bvFTD alone [
+
+Saxon et al 2017
+
+]. Generally, visuospatial dysfunction is not present.
+
+ALS/FTD tends to be associated with bulbar-onset ALS, with its incidence reported to be 39%-61% [
+
+Raaphorst et al 2012
+
+]. Either motor or neuropsychological manifestations may appear first in individuals with ALS/FTD. When features of ALS appear first, FTD becomes apparent on average 16 months later, whereas when features of FTD appear first, ALS becomes apparent on average 18 months later [
+
+Raaphorst et al 2012
+
+].
+
+Individuals with ALS with milder neuropsychological manifestations may exhibit executive dysfunction and deficits in verbal and nonverbal fluency and concept formation early in the disease course, particularly in the presence of bulbar onset of disease [
+
+Schreiber et al 2005
+
+]. These more subtle manifestations may well be missed with routine mental status examination. Formal neuropsychological testing can be helpful in identifying subtle alterations, particularly alterations that may be masked by socially favorable traits such as empathy and optimism. These favorable traits, well known to specialists dealing with ALS, may lead to considerable bonding between the health care team and persons with ALS. Affected individuals are also generally well liked by their families, as social connections are retained and their "positive" attitudes are appreciated.
+
+Course
+
+Regardless of the initial manifestations, atrophy and weakness eventually spread to other muscles in additional regions. Oculomotor neurons are generally resistant to degeneration in ALS but may be affected in individuals with a long disease course, particularly when life is extended by ventilatory support. Once all muscles of communication and expression are paralyzed, the individual is "locked in." In some instances, eye movements may remain intact, allowing communication by way of special devices.
+
+Death most often results from failure of the respiratory muscles, but other causes, such as pulmonary embolism or cardiac arrhythmias, may supervene.
+
+Overall, ALS is a highly heterogeneous disorder with widely varying ages of onset, ranging from childhood to the ninth decade. Males are more commonly affected than females in a ratio of about 1.3/1. The mean age of onset in males is approximately 55 years, while females are most commonly affected in their mid-60s. Individuals with genetic forms of ALS tend to have an earlier onset of symptoms. Disease duration is similarly variable, ranging from months to several decades. About half of affected individuals expire within five years of symptom onset. Individuals (both male and female) younger than age 55 years at onset tend to survive longer [
+
+Magnus et al 2002
+
+].
+
+Traditionally, ALS has been discussed in light of the individual's family history, with "
+
+familial
+
+ALS" indicating that two or more close relatives are known to be affected with ALS and "
+
+sporadic
+
+ALS" indicating that no other relatives are known to have ALS. As genetic research in ALS has evolved and the clinical use of genetic testing has increased, this terminology is shifting. In this
+
+GeneReview
+
+, "genetic ALS" refers to ALS caused by a
+
+pathogenic variant
+
+in a known ALS
+
+gene
+
+, regardless of family history. "ALS of unknown cause" will refer to ALS in which a pathogenic variant in a known ALS gene has
+
+not
+
+been identified, regardless of family history.
+
+It is estimated that about 10%-15% of individuals with ALS have genetic ALS. Some of the genetic forms of ALS may confer particular clinical characteristics, although intra- and
+
+interfamilial variability
+
+of age at onset and disease progression is common (see
+
+Table 2a
+
+and
+
+Table 2b
+
+).
+
+Establishing the Diagnosis of ALS
+
+The diagnosis of ALS requires characteristic clinical features and specific findings on electrodiagnostic testing, as well as exclusion of other health conditions with related manifestations (see
+
+Differential Diagnosis of ALS
+
+). The most commonly employed consensus criteria for its diagnosis are the revised Escorial criteria [
+
+Brooks et al 2000
+
+]. Additional evaluation of electromyographic information as outlined in the Awaji criteria [
+
+de Carvalho et al 2008
+
+] may establish the diagnosis more quickly than the Escorial criteria alone. Due to variability in clinical presentation and the lack of biomarkers for the disease, it is not uncommon for several months to a year to pass from symptom onset to a firm diagnosis.
+
+Clinical Features
+
+The
+
+Escorial criteria (revised)
+
+[
+
+Brooks et al 2000
+
+] were developed to standardize diagnosis of ALS for research studies, while the
+
+Awaji criteria
+
+incorporate changes that allow earlier diagnosis. Although not all clinicians employ such stringent criteria, these are increasingly used in everyday practice. They include:
+
+The
+
+presence
+
+of all of the following:
+
+Evidence of lower motor neuron (LMN) degeneration by clinical, electrophysiologic, or neuropathologic examination
+
+Evidence of upper motor neuron (UMN) degeneration by clinical examination
+
+Progressive spread of symptoms or signs within a region or to other regions, as determined by history or examination
+
+Together with the
+
+absence
+
+of both of the following:
+
+Electrophysiologic or pathologic evidence of other disease processes that could explain the signs of LMN and/or UMN degeneration
+
+Neuroimaging evidence of other disease processes that could explain the observed clinical and electrophysiologic signs
+
+Clinical evidence of UMN and LMN signs in the four regions of the central nervous system (i.e., brain stem, cervical, thoracic, or lumbosacral spinal cord) can be obtained through detailed or focused history and physical and neurologic examinations.
+
+The clinical diagnosis of ALS, without pathologic confirmation, may be categorized into various levels of certainty by clinical and laboratory assessment based on the revised Escorial criteria [
+
+Brooks et al 2000
+
+]:
+
+Clinically definite ALS.
+
+The presence of UMN and LMN signs in three regions
+
+Clinically definite
+
+familial
+
+, laboratory-supported ALS.
+
+Progressive upper and/or lower motor neuron signs in at least a single region (in the absence of another cause for the abnormal neurologic signs) in an individual with an identified ALS-causing variant
+
+Clinically probable ALS.
+
+The presence of UMN signs and LMN signs in at least two regions with some UMN signs necessarily rostral to the LMN signs
+
+Clinically probable, laboratory-supported ALS.
+
+Clinical signs of UMN and LMN dysfunction in only one region, or UMN signs alone present in one region, and LMN signs defined by electromyographic (EMG) criteria present in at least two limbs in an individual with an identified ALS-causing variant
+
+Clinically possible ALS.
+
+Clinical signs of UMN and LMN dysfunction found together in only one region, UMN signs found alone in two or more regions, or LMN signs found rostral to UMN signs when the diagnosis of clinically probable, laboratory-supported ALS cannot be established
+
+Clinically suspected ALS.
+
+A pure LMN syndrome
+
+Electrodiagnostic Testing
+
+Electromyography (EMG) can demonstrate electrophysiologic evidence of LMN involvement in clinically affected or clinically uninvolved regions. The Awaji consensus criteria [
+
+de Carvalho et al 2008
+
+] amend the Escorial criteria to allow electrophysiologic evidence of chronic neurogenic change in a given limb to be taken as equivalent to clinical evidence of involvement of that limb. Additionally, within the category of suspected ALS, the criteria propose equating fasciculation potentials with denervation. These changes make the Escorial category "clinical probable, laboratory-supported ALS" unnecessary.
+
+Establishing Frontotemporal Spectrum Involvement
+
+Level 1 of the
+
+revised Strong consensus ALS-frontotemporal spectrum disorder diagnostic criteria
+
+(2017) provides a framework appropriate for use in the clinical setting for establishing the extent of frontotemporal involvement in ALS. The Strong criteria propose a three-"axis" strategy for evaluation:
+
+Axis 1. Defining the motor neuron disease variant using the Escorial criteria while incorporating the Awaji recommendations and testing for genetic variants known to cause ALS
+
+Axis 2. Defining neuropsychological deficits:
+
+a.
+
+ALS with behavioral impairment (ALSbi): presence of apathy with or without behavior change OR presence of two non-overlapping supportive diagnostic features from the Raskovsky criteria [2011], which include disinhibition, inertia, loss of sympathy/empathy, perseverative/compulsive behaviors, hyperorality, and dysexecutive neuropsychological profile.
+
+b.
+
+ALS with cognitive impairment (ALSci): evidence of either executive dysfunction (including social cognition) or language dysfunction, or a combination of both. Executive impairment is defined as impaired verbal frequency (letter) OR impairment in two other non-overlapping measures of executive function, which may include social cognition.
+
+c.
+
+ALS with both behavioral and cognitive impairment (ALScbi): both criteria for ALSci and ALSbi are met.
+
+d.
+
+ALS/FTD: evidence of progressive deterioration of behavior and/or cognition by observation or history AND the presence of three behavioral/cognitive symptoms from Raskovsky criteria (2011) OR the presence of at least two behavioral/cognitive symptoms together with loss of insight and/or psychotic symptoms OR the presence of language impairment meeting criteria for semantic dementia / semantic variant of primary progressive aphasia (PPA) or nonfluent PPA.
+
+Axis 3. Identification of any additional nonmotor manifestations, such as extrapyramidal signs, cerebellar or autonomic dysfunction, sensory impairment, and/or eye movement abnormalities
+
+Neuropsychological Evaluation
+
+The gold standard for neuropsychological evaluation is a neuropsychological examination administered by a neuropsychologist that includes an interview and a series of standardized tests that assess intelligence, executive function (including planning, abstraction, and conceptualization), attention, memory, language, perception, sensorimotor functions, motivation, mood state and emotion, quality of life, and personality style. Since this testing requires several hours and a specialized practitioner, it is generally not readily available in most clinical settings. Therefore, several tools have been developed that are appropriate for screening and brief assessments. The revised Strong criteria recommend use of the following:
+
+Edinburgh Cognitive and Behavioral ALS Screen (ECALS).
+
+Designed for use by non-neuropsychology health professionals, the ECALS assesses a range of functions typically affected in ALS, such as fluency, executive functions, and language functions, in addition to functions that are not typically altered in ALS, including nonspecific memory and visuospatial functions. It includes a separate semistructured interview with an informant/caregiver that addresses the five key behavioral domains altered in FTD. The cognitive components of the test were designed to accommodate persons with verbal and motor disability [
+
+Abrahams et al 2014
+
+]. ECALS has been validated against standard neuropsychological testing, and good
+
+sensitivity
+
+and specificity (85% each) have been demonstrated [
+
+Niven et al 2015
+
+]. It is available at
+
+ecas.psy.ed.ac.uk
+
+.
+
+ALS Cognitive Behavioral Screen (ALS-CBS).
+
+The ALS-CBS can be administered by any clinic staff member in about five minutes. Since responses can be written, spoken, or indicated by mouthing or eye movements or with assistive technology, it is useful in individuals with marked motor impairment. Scores at or below ten on the cognitive section, which addresses attention, concentration, working memory, fluency, and tracking, are reliably associated (100%) with diagnosis of FTD in persons with ALS/FTD diagnosed by comprehensive neuropsychological testing. The behavioral component is a 15-item Likert scale questionnaire completed by an informant/caregiver which addresses behavioral change since symptom onset. Scores ≤36 suggest behavioral impairment, while scores ≤32 suggest FTD [
+
+Woolley et al 2010
+
+]. The ALS-CBS is available at
+
+cp.neurology.org
+
+.
+
+Pathologic Criteria
+
+It is helpful to remember that both ALS and FTD are clinical diagnoses. Pathologic verification is required for either diagnosis to be considered definitive. See
+
+Bigio [2013]
+
+for a discussion of pathologic criteria.
+
+Differential Diagnosis of ALS
+
+Depending on the clinical presentation, several other hereditary and acquired conditions may need to be considered before establishing the diagnosis of ALS (
+
+Table 1
+
+). See
+
+Goutman [2017]
+
+for a diagnostic algorithm. For specific genetic disorders see
+
+Table 1
+
+.
+
+Table 1.
+
+Single-Gene Disorders of Interest in the Differential Diagnosis of ALS
+
+View in own window
+
+Gene
+
+1
+
+Disorder
+
+MOI
+
+Clinical Features of Disorder
+
+Overlapping w/ALS
+
+Distinguishing from ALS
+
+AR
+
+Spinal and bulbar muscular atrophy
+
+XL
+
+LMN signs: weakness, atrophy, fasciculations
+
+No UMN involvement
+
+Proximal weakness
+
+Sensory involvement
+
+Slowly progressive
+
+Males only affected
+
+May have gynecomastia, testicular atrophy, & ↓ fertility
+
+BSCL2
+
+BSCL2
+
+-related neurologic disorders
+
+2
+
+AD
+
+UMN & LMN involvement
+
+Slowly progressive
+
+Abnormal vibration sense
+
+Pes cavus
+
+GBE1
+
+Adult polyglucosan body disease
+
+AR
+
+UMN & LMN involvement, cognitive impairment
+
+Slowly progressive
+
+Distal sensory loss
+
+Early neurogenic bladder
+
+Cerebellar dysfunction
+
+HEXA
+
+Chronic and adult-onset hexosaminidase A deficiency
+
+AR
+
+LMN > UMN involvement, possible cognitive impairment
+
+Spinocerebellar degeneration
+
+Dystonia
+
+Slowly progressive
+
+SMN1
+
+Spinal muscular atrophy IV
+
+AR
+
+Proximal > distal muscle weakness & atrophy
+
+Onset typically in 2nd-3rd decade
+
+No UMN involvement
+
+Symmetric weakness & atrophy
+
+AD =
+
+autosomal dominant
+
+; AR =
+
+autosomal recessive
+
+; LMN = lower motor neuron; MOI =
+
+mode of inheritance
+
+; UMN = upper motor neuron; XL =
+
+X-linked
+
+1.
+
+Genes are in alphabetic order.
+
+2.
+
+The spectrum of
+
+BSCL2
+
+-related neurologic disorders includes Silver syndrome and variants of Charcot-Marie-Tooth neuropathy type 2, distal hereditary motor neuropathy (dHMN) type V, and spastic paraplegia 17.
+
+Other genetic disorders
+
+include the following:
+
+The distal hereditary motor neuropathies, or Charcot-Marie-Tooth disease (CMT). See
+
+Charcot-Marie-Tooth Hereditary Neuropathy Overview
+
+.
+
+The hereditary spastic paraplegias, or HSP. See
+
+Hereditary Spastic Paraplegia Overview
+
+.
+
+Primary lateral sclerosis (PLS) refers to the presence of slowly progressive, uncomplicated signs of upper motor neuron disease in persons in whom all other known causes of spasticity have been eliminated. Controversy exists as to whether PLS is a separate disorder or a subtype of ALS. Upper motor neuron-predominant ALS has little, often late, involvement of LMNs. Adult-onset PLS is not known to be a genetic disorder, although at least a portion of juvenile-onset PLS is an
+
+autosomal recessive
+
+genetic condition that may present as a progressive ascending paralysis first noted in infancy [
+
+Strong & Gordon 2005
+
+]. Pathogenic variants in at least one
+
+gene
+
+(
+
+ALS2
+
+) are associated with both ALS and PLS (see
+
+Table 2b
+
+).
+
+Acquired disorders
+
+include cervical spine disease, brain stem or spinal cord tumors, thyroid disorders, lead poisoning, vitamin B
+
+12
+
+deficiency, multiple sclerosis, paraneoplastic syndrome with occult cancer, motor neuropathies, myasthenia gravis, myasthenic syndrome, and inclusion body myositis.
+
+If there are UMN signs in the legs and LMN signs in the arms, cervical spondylosis with cervical stenosis should be considered as well. However, cervical spondylosis is common, so it may be identified concomitantly in individuals who have ALS.
+
+Environmental exposures
+
+have long been suspected of contributing to development of ALS, particularly in the context of specific genetic backgrounds. Numerous studies have implicated a large number of environmental factors, ranging from place of residence, to work exposures, to athletic endeavors. Most of these studies have been small due to the relative rarity of available subjects and may suffer from methodologic limitations as well. In 2016 Belbasis et al examined 16 unique meta-analyses of ALS and various risk factors. They conclude that only one factor, chronic occupational exposure to lead, convincingly demonstrated a robust association with ALS. Less convincingly associated were exposures to farming and heavy metals other than lead, intake of β-carotene, and head injury. Weak associations were identified with n-3 fatty acid intake, extremely low-frequency electromagnetic field exposure, pesticide exposure, and uric acid level. Rural living, serum lipid levels, statin use, and smoking were not found to be associated with ALS [
+
+Belbasis et al [2016]
+
+.
+
+An excess of ALS cases has been reported in younger Gulf War veterans, particularly in the decade following the war [
+
+Haley 2003
+
+,
+
+Horner et al 2003
+
+]. Environmental exposures, including desert dust that contained cyanobacteria and β-N-methylamino-L-alanine (BMAA), have been posited to be the explanation [
+
+Cox et al 2009
+
+].
+
+2.  Genetic Causes of ALS
+
+For the purposes of this
+
+GeneReview
+
+, individuals with "genetic ALS" are defined as those having a
+
+pathogenic variant
+
+in a known ALS
+
+gene
+
+, regardless of family history, while individuals with "ALS of unknown cause" are those who do not have a pathogenic variant in a known ALS gene, regardless of family history (see Clinical Manifestations,
+
+Course
+
+).
+
+GeneReviews
+
+does not use the term "
+
+sporadic
+
+" to refer to an individual with no known family history of a disorder; rather, the term "
+
+simplex
+
+case" refers to a single occurrence of a disorder in a family.
+
+It is estimated that 10% of individuals with ALS have at least one other family member affected with ALS. Although the frequency of known genetic causes reported in such families ranges widely in various series, it is safe to say that the ALS genes that have been identified account for at least half of ALS that occurs in families with a history of more than one affected relative. Thirty genes implicated with varying degrees of certainty are presented below, with the four most robust and common genes presented in order of prevalence (
+
+Table 2a
+
+), followed by the remaining in alphabetic order (
+
+Table 2b
+
+).
+
+Table 2a.
+
+Genetic Amyotrophic Lateral Sclerosis: Most Common Genes and Associated Clinical Features
+
+View in own window
+
+Gene
+
+% of
+
+MOI
+
+Associated Phenotype(s)
+
+Onset/Penetrance
+
+Other Clinical Features / Comments
+
+ALS w/family history
+
+Simplex ALS
+
+ALS
+
+ALS/
+
+FTD
+
+FTD
+
+Other
+
+C9orf72
+
+(
+
+C9orf72
+
+- ALS/FTD
+
+)
+
+39%-45%
+
+3%-7%
+
+AD
+
++
+
++
+
++
+
+PLS
+
+PSP
+
+Psychiatric symptoms
+
+Parkinsonism
+
+Chorea
+
+50% are symptomatic by age 58 yrs.
+
+~100% by 80 yrs
+
+Assoc w/bvFTD
+
+SOD1
+
+(OMIM
+
+105400
+
+)
+
+15%-20%
+
+3%
+
+AD
+
+AR
+
++
+
+50% symptomatic by age 46 yrs
+
+1
+
+90% by 70 yrs
+
+1 report of cognitive involvement (assoc w/Ile113Thr variant)
+
+2
+
+FUS
+
+(OMIM
+
+608030
+
+)
+
+~4%-8%
+
+Very rare
+
+AD
+
++
+
++
+
++
+
+Parkinsonism
+
+Earlier average onset than
+
+SOD1
+
+-ALS &
+
+C9orf72
+
+-ALS
+
+50%-70% symptomatic by age 51
+
+>90% by 71 yrs
+
+ALS occurs w/or w/out mild cognitive impairment.
+
+1/3 of affected individuals have bulbar onset.
+
+More common in Asian cohorts
+
+TARDBP
+
+(
+
+TDP-43
+
+) (
+
+TARDBP
+
+-ALS-FTD
+
+)
+
+1%-4%
+
+Yes
+
+AD
+
++
+
++
+
++
+
+Mean onset age 53.5 ±12 yrs
+
+AD =
+
+autosomal dominant
+
+; ALS = amyotrophic lateral sclerosis; AR =
+
+autosomal recessive
+
+; bvFTD = behavioral variant of FTD; FTD = frontotemporal dementia; LMN = lower motor neuron; MOI =
+
+mode of inheritance
+
+; PLS = primary lateral sclerosis; PSP = progressive supranuclear palsy; UMN = upper motor neuron
+
+1.
+
+SOD1
+
+variants other than p.Ala4Val may have a wide range of disease duration within the same family.
+
+2.
+
+Katz et al [2012]
+
+Notable Variants
+
+C9orf72
+
+.
+
+Expansion of a noncoding GGGGCC hexanucleotide repeat is causative. The exact repeat size that is pathogenic is not firmly established: >60 repeats is widely accepted, although >23 was deemed sufficient in recent meta-analysis [
+
+Iacoangeli et al 2019
+
+].
+
+SOD1
+
+(Note: Nomenclature of variants is gradually being adjusted to reflect inclusion of the first codon in identification of location [i.e., Ala4Val is now referred to as Ala5Val].)
+
+p.Ala4Val
+
+is the most common North American variant and is associated with death within 12 to 18 months after symptom onset. ALS associated with this variant may be LMN predominant.
+
+p.Asp90Ala.
+
+Heterozygous northern Swedish and Finnish individuals remain unaffected;
+
+homozygous
+
+northern Swedish and Finnish individuals develop
+
+autosomal recessive
+
+ALS. Individuals NOT of northern Swedish or Finnish origin who are
+
+heterozygous
+
+for this variant have a slowly progressive course and reduced
+
+penetrance
+
+, and may present with ataxia (compound heterozygotes have also been reported).
+
+p.Ile113Tthr
+
+is associated with reduced
+
+penetrance
+
+, later onset, and longer survival [
+
+Lopate et al 2010
+
+].
+
+FUS.
+
+The p.Ser513Pro and p.Arg514Ser variants are associated with later ages of onset (51-62 years) and p.Ser513Pro with longer disease duration (84-156 months) than other FUS variants [
+
+Akiyama et al 2016
+
+].
+
+TARDBP
+
+(
+
+TDP-43
+
+)
+
+.
+
+The variant p.Gly298Ser is associated with earlier onset and 24-month survival.
+
+Table 2b.
+
+Genetic Amyotrophic Lateral Sclerosis: Less Common Genes and Associated Clinical Features
+
+View in own window
+
+Gene
+
+1
+
+MOI
+
+Associated Phenotype(s)
+
+Other Clinical Features / Comments
+
+ALS
+
+ALS/
+
+FTD
+
+FTD
+
+Other
+
+ALS2
+
+(
+
+ALS2
+
+-ALS
+
+)
+
+2
+
+AR
+
++
+
+PLS
+
+ALS is UMN-predominant.
+
+Onset from infancy to mid-childhood
+
+Long course: bedridden by age 12-50
+
+Not observed in adult-onset ALS
+
+ANG
+
+(OMIM
+
+611895
+
+)
+
+? AD
+
+3
+
++
+
++
+
+Parkinson disease
+
+Phenotype is primarily ALS (may present as FTD or parkinsonism).
+
+To date, primarily limited to families of European ancestry
+
+4
+
+ANXA11
+
+(OMIM
+
+617839
+
+)
+
+AD
+
++
+
+CFAP410
+
+(
+
+C21orf2
+
+)
+
+5
+
+AD
+
+3
+
++
+
++
+
+CHCHD10
+
+(See
+
+CHCHD10
+
+Disorders
+
+.)
+
+AD
+
++
+
++
+
+Cerebellar ataxia or myopathy
+
+CHMP2B
+
+(OMIM
+
+600795
+
+)
+
+AD
+
++
+
++
+
+ALS is more often LMN-predominant.
+
+DAO
+
+(OMIM
+
+124050
+
+)
+
+AD
+
++
+
+DCTN1
+
+6
+
+(OMIM
+
+601143
+
+)
+
+AD
+
+3
+
++
+
++
+
+ERBB4
+
+(OMIM
+
+615515
+
+)
+
+AD
+
++
+
+FIG4
+
+7
+
+(OMIM
+
+612577
+
+)
+
+AD
+
++
+
+Normal NCVs; limited LMN involvement on EMG
+
+HNRNPA1
+
+8
+
+(OMIM
+
+615426
+
+)
+
+AD
+
+3
+
++
+
+MATR3
+
+(OMIM
+
+606070
+
+)
+
+AD
+
++
+
++
+
+PLS
+
+MOBP
+
+9
+
+See footnote 3.
+
++
+
+NEK1
+
+(OMIM
+
+617892
+
+)
+
+AD
+
+3
+
++
+
+ALS occurs w/or w/out cognitive impairment.
+
+OPTN
+
+10
+
+(OMIM
+
+613435
+
+)
+
+AR
+
+AD
+
++
+
++
+
+ALS is characterized by slow progression & extended duration.
+
+PFN1
+
+(OMIM
+
+614808
+
+)
+
+AD
+
++
+
+Features of Miller-Dieker syndrome noted in a few affected individuals
+
+SCFD1
+
+9
+
+See footnote 3.
+
++
+
+SETX
+
+(OMIM
+
+602433
+
+)
+
+11
+
+AD
+
++
+
+1st decade to adult onset; most commonly in adolescence (juvenile ALS)
+
+Also referred to as distal hereditary motor neuropathy
+
+No bulbar involvement
+
+SPG11
+
+(
+
+spatacsin
+
+)
+
+12
+
+(OMIM
+
+602099
+
+)
+
+AR
+
++
+
+Juvenile ALS w/onset in 1st or 2nd decade; very slowly progressive
+
+Multiple ethnicities; often
+
+consanguineous
+
+parents
+
+Cognitive impairment not reported
+
+Thin corpus callosum not reported
+
+SPTLC1
+
+13
+
+(OMIM
+
+620285
+
+)
+
+AD
+
++
+
+SQSTM1
+
+(OMIM
+
+616437
+
+)
+
+AD
+
++
+
++
+
++
+
+Paget disease
+
+SQSTM1
+
+pathogenic variant
+
+has been identified in individuals w/
+
+SOD1
+
+-ALS,
+
+FUS
+
+-ALS, Lewy body dementia, & Alzheimer dementia.
+
+SQSTM1
+
+pathogenic variant
+
+identified in ≤4% of
+
+simplex
+
+ALS
+
+TAF15
+
+14
+
+See footnote 3.
+
++
+
+TBK1
+
+(OMIM
+
+616439
+
+)
+
+AD
+
++
+
++
+
+ALS occurs w/or w/out mild cognitive impairment.
+
+TBK1
+
+pathogenic variants identified in a few individuals w/
+
+OPTN
+
+-ALS &
+
+FUS
+
+-ALS.
+
+TUBA4A
+
+(OMIM
+
+616208
+
+)
+
+AD
+
++
+
++
+
++
+
+UBQLN2
+
+(OMIM
+
+300857
+
+)
+
+XL
+
++
+
++
+
++
+
+PLS; spastic paraparesis
+
+Onset from childhood to late adulthood
+
+UNC13A
+
+See footnote 3.
+
++
+
+Reported as:
+
+Risk
+
+gene
+
+for
+
+simplex
+
+ALS
+
+14
+
+Disease-modifyihg
+
+gene
+
+for
+
+familial
+
+ALS
+
+15
+
+VAPB
+
+16
+
+,
+
+17
+
+(OMIM
+
+608627
+
+)
+
+AD
+
++
+
+ALS occurs w/or w/out postural tremor.
+
+To date, reported primarily in Brazilians
+
+17
+
+& Japanese
+
+VCP
+
+18
+
+(OMIM
+
+613954
+
+)
+
+AD
+
++
+
++
+
+Paget disease
+
+ALS occurs w/or w/o mild cognitive impairment.
+
+Clinical course may be rapid.
+
+May include parkinsonism
+
+AD =
+
+autosomal dominant
+
+; ALS = amyotrophic lateral sclerosis; AR =
+
+autosomal recessive
+
+; EMG = electromyography; FTD = frontotemporal dementia; LMN = lower motor neuron; MOI =
+
+mode of inheritance
+
+; NCV = nerve conduction velocity; PLS = primary lateral sclerosis; UMN = upper motor neuron; XLD =
+
+X-linked
+
+1.
+
+Genes are listed alphabetically.
+
+2.
+
+ALS2
+
+: long protein transcript results in primary lateral sclerosis, short transcript produces ALS.
+
+3.
+
+Susceptibility
+
+gene
+
+(i.e., a genetic variant that increases a person's predisposition for developing a given disorder)
+
+4.
+
+Ryan et al [2019b]
+
+5.
+
+Chia et al [2018]
+
+6.
+
+DCTN1
+
+allelic disorders: distal hereditary motor neuronopathy with vocal cord paresis and Perry syndrome (See
+
+DCTN1
+
+-Related Neurodegeneration
+
+.)
+
+7.
+
+FIG4
+
+allelic disorder:
+
+Charcot-Marie Tooth (CMT) hereditary neuropathy
+
+8.
+
+HNRNPA1
+
+allelic disorder:
+
+inclusion body myopathy with Paget disease of bone and/or frontotemporal dementia
+
+9.
+
+van Rheenen et al [2016]
+
+10.
+
+OPTN
+
+allelic disorder: primary open angle glaucoma
+
+11.
+
+SETX
+
+allelic disorder:
+
+ataxia with oculomotor apraxia type 2
+
+12.
+
+SPG11
+
+allelic disorders:
+
+spastic paraplegia 11
+
+(with mild intellectual disability and thin corpus callosum) and
+
+CMT
+
+13.
+
+Mohassel et al [2021]
+
+14.
+
+Brown & Al-Chalabi [2017]
+
+15.
+
+Tan et al [2020]
+
+16.
+
+VAPB
+
+allelic disorder: adult-onset spinal muscular atrophy, Finkel type
+
+17.
+
+VAPB
+
+founder variant
+
+p.Pro56Ser identified in individuals of Portuguese/Brazilian & African/Brazilian descent
+
+18.
+
+VCP
+
+allelic disorder:
+
+inclusion body myopathy, Paget disease, and frontotemporal dementia
+
+(IBMPFD)
+
+Simplex ALS
+
+About 85% of ALS occurs in individuals with no family history of ALS; in common parlance such individuals are often said to have "
+
+sporadic
+
+" ALS. ALS that occurs within a family with a known history of ALS but no known genetic cause yet identified may be called "
+
+familial
+
+ALS without a known cause."
+
+It is possible that genetic ALS or
+
+familial
+
+ALS of unknown cause may
+
+appear to be
+
+simplex
+
+ALS when there is markedly decreased
+
+penetrance
+
+of an ALS-causing genetic variant. One must also consider the possibility that other diagnoses within a family may reflect a genetic cause, particularly the presence of FTD or Paget disease of bone (see
+
+Table 1
+
+).
+
+The etiology of
+
+simplex
+
+ALS is not well understood. It has long been thought to be
+
+multifactorial
+
+, with both susceptibility genes and multiple environmental factors contributing.
+
+Genome-wide association studies (GWAS) have not yielded the anticipated results, although the 60% heritability reported in a twin study would suggest that complex genetics plays a large role [
+
+Al-Chalabi et al 2010
+
+].
+
+A study of heritability in the Irish population reported that genetic factors account for nearly 40% of the variation in risk for developing ALS in individuals who did not have disease-causing variants in known ALS genes [
+
+Ryan et al 2019a
+
+].
+
+Variants in several genes have been identified as modifiers of disease onset or course:
+
+APOE-2
+
+is associated with a later age of onset [
+
+Li et al 2004
+
+].
+
+VEGF
+
+is associated with more rapid disease progression [
+
+Lambrechts et al 2003
+
+].
+
+31 or more polyQ repeats in
+
+ATXN2
+
+is associated with spinal onset and shorter survival [
+
+Borghero et al 2015
+
+].
+
+Variants in several other genes have been shown to reduce risk for ALS, including variants in
+
+SMN2
+
+and variants in
+
+CHGB
+
+and
+
+PGC-1a
+
+[
+
+Ohta et al 2016
+
+].
+
+Statistical analysis of more than 6,000 European cases of ALS suggests that the disease may develop as the result of a series of six "steps" – some genetic and some environmental – that occur over time [
+
+Al-Chalabi et al 2014
+
+].
+
+3.  Evaluation Strategies to Identify the Genetic Cause of ALS in a Proband
+
+Establishing a specific genetic cause of ALS:
+
+Can aid in discussions of prognosis (which are beyond the scope of this
+
+GeneReview
+
+) and
+
+genetic counseling
+
+;
+
+Usually involves a medical history, physical examination, laboratory testing, family history, and
+
+genomic
+
+/genetic testing.
+
+Medical history.
+
+Very rapid progression of symptoms raises suspicion of
+
+SOD1-
+
+ALS caused by the p.Ala4Val variant. See
+
+Table 2a
+
+.
+
+Physical examination.
+
+An absent ankle reflex in the presence of subacute weakness of the leg may be an early sign in
+
+SOD1
+
+-ALS [T Siddique, personal observation].
+
+Family history.
+
+A three-generation family history should be obtained, with attention paid to relatives with neurologic signs and symptoms, particularly cognitive impairment, remembering that in the past it was less common for practitioners to distinguish FTD from other dementias. Note should be made of parkinsonism, psychiatric illness, and Paget disease as well. Documentation of relevant findings in family members may be accomplished either through direct examination of those individuals or by review of their medical records, including the results of
+
+molecular genetic testing
+
+, neuroimaging studies, and autopsy examinations.
+
+Molecular genetic testing
+
+approaches can include a combination of
+
+gene
+
+-targeted testing (
+
+multigene panel
+
+) and comprehensive
+
+genomic
+
+testing (
+
+exome sequencing
+
+,
+
+exome array
+
+, or
+
+genome sequencing
+
+). Gene-targeted testing requires the clinician to hypothesize as to which gene(s) are likely involved, whereas genomic testing does not.
+
+A
+
+multigene panel
+
+that includes the four genes that most commonly cause ALS and some or all of the genes listed in
+
+Tables 2a
+
+and
+
+2b
+
+is most likely to identify the genetic cause of ALS while limiting identification of variants of
+
+uncertain significance
+
+and pathogenic variants in genes that do not explain the underlying
+
+phenotype
+
+. Note: (1) The genes included in the panel and the diagnostic
+
+sensitivity
+
+of the testing used for each
+
+gene
+
+vary by laboratory and are likely to change over time. (2) Some multigene panels may include genes not associated with ALS. (3) In some laboratories, panel options may include a custom laboratory-designed panel and/or custom phenotype-focused
+
+exome
+
+analysis that includes genes specified by the clinician. (4) Methods used in a panel may include
+
+sequence analysis
+
+,
+
+deletion/duplication analysis
+
+, and/or other non-sequencing-based tests.
+
+For an introduction to multigene panels click
+
+here
+
+. More detailed information for clinicians ordering genetic tests can be found
+
+here
+
+.
+
+Comprehensive
+
+genomic
+
+testing
+
+(which does not require the clinician to determine which
+
+gene
+
+[s] are likely involved) may be considered.
+
+Exome sequencing
+
+is most commonly used;
+
+genome sequencing
+
+is also possible.
+
+If
+
+exome sequencing
+
+is not diagnostic,
+
+exome array
+
+(when clinically available) may be considered to detect (multi)
+
+exon
+
+deletions or duplications that cannot be detected by
+
+sequence analysis
+
+.
+
+For an introduction to comprehensive
+
+genomic
+
+testing click
+
+here
+
+. More detailed information for clinicians ordering genomic testing can be found
+
+here
+
+.
+
+4.  Management of ALS
+
+Treatment is palliative.
+
+Many individuals benefit from care by a multidisciplinary team that includes a neurologist, specially trained nurses, pulmonologist, speech therapist, physical therapist, occupational therapist, respiratory therapist, nutritionist, psychologist, social worker, and genetic counselor. Data suggest that individuals under the care of such a team may have a better prognosis [
+
+van den Berg et al 2004
+
+,
+
+Andersen et al 2005
+
+]. Factors that influence survival include age, forced vital capacity, fatigue, body strength, spasticity, depression, and household income [
+
+Paillisse et al 2005
+
+], most of which can be managed by the appropriate specialist in the multidisciplinary team.
+
+The following three drugs are currently approved by the FDA for treatment of ALS:
+
+Riluzole,
+
+now available both in tablet form as Rilutek
+
+®
+
+and as the oral suspension Teglutik
+
+®
+
+, appropriate for use in feeding tubes. Clinical trials with riluzole demonstrated marginal slowing of disease progression in some but not all patients [
+
+Riviere et al 1998
+
+]. Rilutek is thought to act by inhibiting the production of glutamate, a neurotransmitter that has been theorized to be the initiator of a series of molecular events that damage neurons. Riluzole is associated with elevation of serum alanine aminotransferase levels in 10%-15% of treated individuals; in rare instances it may cause bone marrow depression [
+
+Bensimon & Doble 2004
+
+].
+
+Edaravone
+
+(Radicava
+
+®
+
+), approved in 2017 for use in patients with probable or definite ALS who are early in the course of their illness. Edaravone is given by slow intravenous infusion on the first 10-14 days of a 28-day cycle. Because it contains sodium bisulfite, it should not be given to patients with sulfite sensitivity. Edaravone is a free radical scavenger, originally developed for use in treatment of stroke patients. In Phase III trials, the most positive effect reported in ALS Functional Rating Scale (revised) scores was observed in patients with preserved vital capacities who had been symptomatic a relatively short time and were concurrently taking riluzole. Therefore, combination therapy should be considered early in the illness [
+
+Sawada 2017
+
+].
+
+Tofersen
+
+(Qalsody
+
+®
+
+), approved in 2023 for treatment of
+
+SOD1
+
+-ALS under the FDA's
+
+Accelerated Approval Program
+
+. Tofersen, an antisense oligonucleotide, binds with
+
+mRNA
+
+to reduce the SOD (superoxide dismutase) load in persons with
+
+SOD1
+
+-ALS. Although a randomized, double-blinded, placebo-controlled study of 147 subjects with confirmed
+
+SOD1
+
+-ALS identified improved surrogate end points (i.e., decreased cerebral spinal fluid SOD1 protein and decreased plasma neurofilament light chains) in treated subjects, treatment did not improve clinical findings. Reported side effects included: (1) headache and back pain associated with spinal intrathecal administration; and (2) serious neurologic side effects in 7% of treated subjects, including increased intracranial pressure, myelitis, chemical or aseptic meningitis, and papilledema (swelling of the optic nerve). Of note, the subject with myelitis recovered after cessation of tofersen and treatment with glucocorticoids and plasma exchange [
+
+Miller et al 2022
+
+].
+
+See ClinicalTrials.gov study
+
+NCT04972487
+
+for information regarding early access to tofersen for individuals with
+
+SOD1
+
+-ALS.
+
+A Phase III study is under way to determine whether tofersen use may delay onset of manifestations in
+
+SOD1
+
+-ALS. See ClinicalTrials.gov study
+
+NCT04856982
+
+.
+
+Symptom Management
+
+Oral secretions in individuals with bulbar symptoms can be reduced with tricylic antidepressants and anticholinergic agents, thus reducing the need for suctioning.
+
+Pseudobulbar affect can be managed with antidepressants such as Nuedexta
+
+®
+
+(dextromethophan and quinidine).
+
+Swallowing difficulties can be alleviated by thickening liquids and pureeing solid food, as well as eventually using a gastrostomy tube to help maintain caloric intake and hydration. Nutritional management, a prognostic factor for survival, has become a focus in the clinical setting.
+
+Medications such as baclofen and benzodiazepines can help relieve spasticity and muscle cramps; however, weakness and lethargy are common side effects. Individualized moderate-intensity endurance-type exercises for the trunk and limbs may help to reduce spasticity [
+
+Ashworth et al 2004
+
+].
+
+Low-tech (e.g., alphabet board) and high-tech (i.e., computer-assisted) devices can aid speech and communication. The recent development of the eye movement-controlled on-screen keyboard may enable communication for individuals without any remaining limb function.
+
+Assistive devices, such as walkers or wheelchairs, can aid mobility; and others, such as bathroom installments, hospital bed, and Hoyer lift, can aid in activities of daily living at home.
+
+Ventilatory assistance may include use of bilevel positive airway pressure, which has played an increasing role in preserving and prolonging quality of life in persons with ALS. In 1999, the American Academy of Neurology published norms recommending the initiation of noninvasive ventilation (NIV) in individuals with a theoretic forced vital capacity (FVC) less than 50% of predicted [
+
+Miller et al 1999
+
+]. Studies show that mean survival significantly increases when NIV is initiated prior to the onset of bulbar symptoms [
+
+Farrero et al 2005
+
+]. Therefore, evaluation by a pulmonologist should be undertaken before FVC falls below 50%.
+
+Although tracheostomy and ventilatory support can extend life span, affected individuals often decline these interventions [
+
+Albert et al 1999
+
+].
+
+The tremendous psychological and social impact of ALS on both affected individuals and caregivers needs to be continually addressed [
+
+Goldstein et al 1998
+
+]. Hospice care, typically instituted once FVC is less than 30%, contributes to the individual's comfort in the terminal stages.
+
+Individuals with ALS commonly supplement their diets with vitamin E, vitamin C, B vitamins, selenium, zinc, coenzyme Q
+
+10
+
+, and herbal preparations such as ginseng, ginkgo biloba, and Maharishi Amrit Kalesh [
+
+Cameron & Rosenfeld 2002
+
+]. In a Cochrane Review,
+
+Orrell et al [2007]
+
+summarized and evaluated 21 clinical trials of antioxidant therapies in various combinations including: vitamin E, high-dose coenzyme Q
+
+10
+
+, vitamin C, selenium, beta-carotene, N-acetylcysteine, L-methionine, and selegiline. In the majority of these studies, the sample size was not adequate for statistical evaluation. Although the antioxidants were well tolerated in many of the trials, significant differences in longevity, muscle strength, or functional rating scales over time were not identified.
+
+5.  Genetic Counseling
+
+Genetic counseling is the process of providing individuals and families with
+
+information on the nature, mode(s) of inheritance, and implications of genetic disorders to help them
+
+make informed medical and personal decisions. The following section deals with genetic
+
+risk assessment and the use of family history and genetic testing to clarify genetic
+
+status for family members; it is not meant to address all personal, cultural, or
+
+ethical issues that may arise or to substitute for consultation with a genetics
+
+professional
+
+. —ED.
+
+Genetic counseling for individuals with amyotrophic lateral sclerosis (ALS) and their families is reviewed for the following clinical contexts:
+
+Genetic ALS.
+
+ALS resulting from a
+
+pathogenic variant
+
+in a known ALS
+
+gene
+
+regardless of family history (see
+
+Tables 2a
+
+and
+
+2b
+
+)
+
+ALS of unknown cause.
+
+The cause may be unknown because
+
+molecular genetic testing
+
+either has not been performed or did not identify a genetic cause (see
+
+Tables 2a
+
+and
+
+2b
+
+). ALS of unknown cause can either be "
+
+familial
+
+" (i.e., occur in families with two or more close relatives with ALS) or can occur in a
+
+simplex
+
+case (i.e., a single occurrence in family).
+
+Genetic ALS
+
+Mode of Inheritance
+
+Genetic ALS
+
+can be inherited in an
+
+autosomal dominant
+
+,
+
+autosomal recessive
+
+, or
+
+X-linked
+
+manner (see
+
+Tables 2a
+
+and
+
+2b
+
+). Determination of the
+
+mode of inheritance
+
+is based on family history and
+
+molecular genetic testing
+
+.
+
+Autosomal Dominant ALS – Risk to Family Members
+
+Parents of a
+
+proband
+
+Most individuals diagnosed with
+
+autosomal dominant
+
+ALS have an affected parent.
+
+A
+
+proband
+
+with adult-onset ALS may have the disorder as the result of a
+
+de novo
+
+pathogenic variant
+
+. The proportion of cases caused by
+
+de novo
+
+pathogenic variants is unknown; only a handful have been reported [
+
+Chiò et al 2011
+
+].
+
+Parents of a
+
+proband
+
+with an apparent
+
+de novo
+
+pathogenic variant
+
+can be offered
+
+molecular genetic testing
+
+; however, molecular genetic testing should be performed in the context of formal
+
+genetic counseling
+
+, as it would be considered predictive genetic testing.
+
+If the
+
+pathogenic variant
+
+found in the
+
+proband
+
+cannot be detected in the leukocyte DNA of either parent, possible explanations include a
+
+de novo
+
+pathogenic variant in the proband or
+
+germline mosaicism
+
+in a parent. Though theoretically possible, no clear instances of germline mosaicism have been reported.
+
+The family history of some individuals diagnosed with ALS may appear to be negative because of failure to recognize it or another disorder (e.g., FTD, Paget disease of bone) caused by the same disease variant in family members, reduced
+
+penetrance
+
+, early death of the parent before the onset of symptoms, or late onset of the disease in the affected parent. Therefore, an apparently negative family history cannot be confirmed unless
+
+molecular genetic testing
+
+has been performed on the parents of the
+
+proband
+
+.
+
+Sibs of a
+
+proband
+
+.
+
+The risk to sibs depends on the clinical/genetic status of the proband's parents:
+
+If a parent of the
+
+proband
+
+is affected and/or is known to have the
+
+pathogenic variant
+
+identified in the proband, the risk to the sibs is 50%.
+
+If the
+
+proband
+
+has a known ALS-related
+
+pathogenic variant
+
+that cannot be detected in the leukocyte DNA of either parent, the
+
+recurrence risk
+
+to sibs is estimated to be 1% because of the theoretic possibility of parental
+
+germline mosaicism
+
+[
+
+Rahbari et al 2016
+
+].
+
+If the parents have not been tested for the ALS-related
+
+pathogenic variant
+
+but are clinically unaffected, the risk to the sibs of a
+
+proband
+
+appears to be low. However, sibs of a proband with clinically unaffected parents are still presumed to be at increased risk for ALS because of the possibility of reduced
+
+penetrance
+
+in a parent or the theoretic possibility of parental
+
+germline mosaicism
+
+[
+
+Rahbari et al 2016
+
+].
+
+Offspring of a
+
+proband
+
+.
+
+Each child of an individual with
+
+autosomal dominant
+
+ALS has a 50% chance of inheriting the ALS-related
+
+pathogenic variant
+
+.
+
+Other family members.
+
+The risk to other family members depends on the status of the
+
+proband
+
+'s parents: if a parent is affected and/or has the ALS-related
+
+pathogenic variant
+
+, the parent's family members may be at risk.
+
+Autosomal Recessive ALS – Risk to Family Members
+
+Parents of a
+
+proband
+
+The parents of an individual diagnosed with
+
+autosomal recessive
+
+ALS are obligate heterozygotes (i.e., carriers of one ALS-related
+
+pathogenic variant
+
+).
+
+Heterozygotes are asymptomatic and are not at risk of developing the disorder.
+
+Sibs of a
+
+proband
+
+At conception, each sib has a 25% chance of inheriting two copies of the disease-causing genetic variant and later developing the disease, a 50% chance of inheriting one copy of the disease-causing variant (i.e., being a
+
+carrier
+
+), and a 25% chance of inheriting two copies of the
+
+gene
+
+without the disease-causing variant so that the sib is neither affected nor a carrier.
+
+Heterozygotes remain asymptomatic, but with each of their children they have a 50% chance of passing on the disease-causing variant.
+
+Offspring of a
+
+proband
+
+.
+
+The offspring of an individual with
+
+autosomal recessive
+
+ALS are obligate heterozygotes (carriers) for the
+
+pathogenic variant
+
+.
+
+Other family members.
+
+Each sib of the
+
+proband
+
+'s parents is at a 50% risk of being a
+
+carrier
+
+of an ALS-related
+
+pathogenic variant
+
+.
+
+Carrier detection.
+
+Carrier testing for at-risk relatives requires prior identification of the ALS pathogenic variants in the family.
+
+X-Linked ALS – Risk to Family Members
+
+To date,
+
+UBQLN2
+
+is the only
+
+X-linked
+
+gene
+
+known to be associated with ALS; both
+
+hemizygous
+
+males and
+
+heterozygous
+
+females (possibly at a later age depending on
+
+X-chromosome inactivation
+
+) will be affected.
+
+Parents of a
+
+proband
+
+A male
+
+proband
+
+may have inherited the
+
+UBQLN2
+
+pathogenic variant
+
+from his mother (who may or may not be affected), or the pathogenic variant may be
+
+de novo
+
+. (Note: The father of a male with
+
+X-linked
+
+ALS will not have the disorder nor will he be
+
+hemizygous
+
+for the
+
+UBQLN2
+
+pathogenic variant.)
+
+A female
+
+proband
+
+may have inherited the
+
+UBQLN2
+
+pathogenic variant
+
+from either her mother or her father (who may or may not be affected), or the pathogenic variant may be
+
+de novo
+
+.
+
+Sibs of a
+
+proband
+
+The risk to sibs of a male
+
+proband
+
+depends on the genetic status of the mother: if the mother of the proband has the
+
+UBQLN2
+
+pathogenic variant
+
+, the chance of transmitting it in each pregnancy is 50%.
+
+The risk to sibs of a female
+
+proband
+
+depends on the genetic status of the parents. If the mother of the proband has a
+
+UBQLN2
+
+pathogenic variant
+
+, the chance of transmitting it in each pregnancy is 50%. If the father of the proband has the
+
+UBQLN2
+
+pathogenic variant, he will transmit it to all of his daughters and none of his sons.
+
+Male and female offspring who inherit a
+
+UBQLN2
+
+pathogenic variant
+
+will be affected if they live long enough, although female offspring who inherit the pathogenic variant may have favorably skewed
+
+X-chromosome inactivation
+
+resulting in later onset of disease.
+
+Offspring of a
+
+proband
+
+.
+
+Affected males transmit the
+
+UBQLN2
+
+pathogenic variant
+
+to
+
+all
+
+of their daughters, who will be heterozygotes, and
+
+none
+
+of their sons; affected females have a 50% chance of transmitting the pathogenic variant to each child, regardless of the sex of the child.
+
+Other family members.
+
+The risk to other family members depends on the genetic status of the
+
+proband
+
+'s parents: if a parent has the
+
+UBQLN2
+
+pathogenic variant
+
+, the parent's family members may be at risk.
+
+ALS of Unknown Cause
+
+Familial ALS.
+
+As noted in
+
+Tables 2a
+
+and
+
+2b
+
+, virtually all adult-onset genetic ALS is inherited in an
+
+autosomal dominant
+
+manner, with
+
+X-linked
+
+UBQLN2-
+
+ALS being the only exception. If the family history is sufficient to allow identification of autosomal dominant transmission (evidence of parent-to-child transmission of disease, transmission of disease from father to son if there is an opportunity), the risk to other family members is the same as described in
+
+Autosomal Dominant ALS – Risk to Family Members
+
+.
+
+Even if the
+
+mode of inheritance
+
+cannot be firmly established, the risk of inheriting the disease-causing variant is likely to follow an
+
+autosomal dominant
+
+pattern, given what is known to date about genetic ALS. However, it is also quite likely that the
+
+penetrance
+
+of some variants may be reduced, making it more difficult to predict which persons will go on to develop disease.
+
+Given what is known about ALS-related genes, when FTD or Paget disease is present in the family (even if not manifest in the
+
+proband
+
+), it is reasonable to assume that those individuals are also
+
+heterozygous
+
+for the variant identified in the person with ALS and, thus, have the same genetic risk of passing the variant on to their children.
+
+Most ALS disease-causing variants identified to date have at least some
+
+intrafamilial variability
+
+in terms of age of onset, site of onset, and disease duration.
+
+Simplex ALS.
+
+Lifetime risk of developing ALS is estimated at 1:350 for men and 1:500 for women.
+
+As noted in
+
+Familial ALS
+
+, the presence of FTD and/or Paget disease in other near relatives should raise concern that this is
+
+familial
+
+disease.
+
+Related Genetic Counseling Issues
+
+Predictive testing (i.e., testing of asymptomatic at-risk individuals)
+
+Predictive testing for at-risk relatives is possible once the ALS-related
+
+pathogenic variant
+
+(s) have been identified in an affected family member.
+
+Potential consequences of such testing (including, but not limited to, socioeconomic changes, the need for long-term follow up and evaluation arrangements for individuals with a positive test result) as well as the capabilities and limitations of predictive testing should be discussed in the context of formal
+
+genetic counseling
+
+prior to testing.
+
+Predictive testing in minors (i.e., testing of asymptomatic at-risk individuals age <18 years)
+
+For asymptomatic minors at risk for adult-onset conditions for which early treatment would have no beneficial effect on disease morbidity and mortality, predictive genetic testing is considered inappropriate, primarily because it negates the autonomy of the child with no compelling benefit. Further, concern exists regarding the potential unhealthy adverse effects that such information may have on family dynamics, the risk of discrimination and stigmatization in the future, and the anxiety that such information may cause.
+
+For more information, see the National Society of Genetic Counselors
+
+position statement
+
+on genetic testing of minors for adult-onset conditions and the American Academy of Pediatrics and American College of Medical Genetics and Genomics
+
+policy statement
+
+: ethical and policy issues in genetic testing and screening of children.
+
+In a family with an established diagnosis of ALS, it is appropriate to consider testing of symptomatic individuals regardless of age.
+
+Resources
+
+GeneReviews staff has selected the following disease-specific and/or umbrella
+
+support organizations and/or registries for the benefit of individuals with this disorder
+
+and their families. GeneReviews is not responsible for the information provided by other
+
+organizations. For information on selection criteria, click
+
+here
+
+.
+
+ALS Association
+
+Phone:
+
+800-782-4747
+
+als.org
+
+ALS Society of Canada
+
+Canada
+
+Phone:
+
+800-267-4257; 416-497-2267
+
+Email:
+
+communityservices@als.ca
+
+als.ca
+
+Les Turner ALS Foundation
+
+Phone:
+
+847-679-3311
+
+Email:
+
+info@lesturnerals.org
+
+www.lesturnerals.org
+
+MedlinePlus
+
+Amyotrophic lateral sclerosis
+
+Muscular Dystrophy Association - Amyotrophic Lateral Sclerosis
+
+Phone:
+
+800-572-1717
+
+Email:
+
+ResourceCenter@mdausa.org
+
+www.mda.org/disease/amyotrophic-lateral-sclerosis
+
+NCBI Genes and Disease
+
+Amyotrophic lateral sclerosis
+
+Association for Frontotemporal Degeneration (AFTD)
+
+Phone:
+
+866-507-7222
+
+Email:
+
+info@theaftd.org
+
+theaftd.org
+
+Motor Neurone Disease Association
+
+United Kingdom
+
+Phone:
+
+01604 250505
+
+Fax:
+
+01604 624726/638289
+
+Email:
+
+enquiries@mndassociation.org
+
+www.mndassociation.org
+
+National Amyotrophic Lateral Sclerosis (ALS) Registry
+
+Agency for Toxic Substances and Disease Registry
+
+4770 Buford Highway Northeast
+
+Atlanta GA 30341
+
+Phone:
+
+800-232-4636
+
+Email:
+
+cdcinfo@cdc.gov
+
+National ALS Registry
+
+Chapter Notes
+
+Author History
+
+Lisa Dellefave, MS, CGC; University of Chicago (2000-2009)
+
+Sandra Donkervoort, MS, CGC; Northwestern University Feinberg School of Medicine (2009-2012)
+
+Mara Gaudette, MS; Northwestern University Medical School (2000-2006)
+
+Lisa Kinsley, MS, CGC; Northwestern University Feinberg School of Medicine (2012-2019)
+
+Nailah Siddique, RN, MSN (2019-present)
+
+Teepu Siddique, MD (2000-present)
+
+Revision History
+
+28 September 2023 (aa) Revision: FDA approval of antisense oligonucleotide therapy tofersen (Qalsody
+
+®
+
+) for
+
+SOD1
+
+-related ALS (see Management); removed "
+
+simplex
+
+" and "
+
+familial
+
+" from
+
+Table 2b
+
+30 September 2021 (aa) Revision: mutation of
+
+SPTLC1
+
+causative of ALS (
+
+Table 2b
+
+)
+
+3 October 2019 (bp) Comprehensive update posted live
+
+31 May 2012 (me) Comprehensive update posted live
+
+28 July 2009 (me) Comprehensive update posted live
+
+23 June 2006 (ca) Comprehensive update posted live
+
+26 February 2004 (me) Comprehensive update posted live
+
+23 March 2001 (tk) Overview posted live
+
+August 2000 (mg) Original submission
+
+References
+
+Published Guidelines / Consensus Statements
+
+Committee on Bioethics, Committee on Genetics, and American College of Medical Genetics and Genomics Social, Ethical, Legal Issues Committee. Ethical and policy issues in genetic testing and screening of children. Available
+
+online
+
+. 2013. Accessed 12-14-23.
+
+National Society of Genetic Counselors. Position statement on genetic testing of minors for adult-onset conditions. Available
+
+online
+
+. 2018. Accessed 12-14-23.
+
+Literature Cited
+
+Abrahams
+
+S, Goldstein
+
+LH, Suckling
+
+J, Ng
+
+V, Simmons
+
+A, Chitnis
+
+X, Atkins
+
+L, Williams
+
+SC, Leigh
+
+PN. Frontotemporal white matter changes in amyotrophic lateral sclerosis.
+
+J Neurol.
+
+2005;252:321-31.
+
+[
+
+PubMed
+
+: 15739047
+
+]
+
+Abrahams
+
+S, Newton
+
+J, Niven
+
+E, Foley
+
+J, Bak
+
+TH. Screening for cognition and behaviour changes in ALS.
+
+Amyotroph Lateral Scler Frontotemporal Degener.
+
+2014;15: 9-14.
+
+[
+
+PubMed
+
+: 23781974
+
+]
+
+Akiyama
+
+T, Warita
+
+H, Kato
+
+M, Nishiyama
+
+A, Izumi
+
+R, Ikeda
+
+C, Kamada
+
+M, Suzuki
+
+N, Aoki
+
+M. Genotype-phenotype relationships in familial amyotrophic lateral sclerosis with FUS/TLS mutations in Japan.
+
+Muscle Nerve.
+
+2016;54: 398-404.
+
+[
+
+PubMed
+
+: 26823199
+
+]
+
+Albert
+
+SM, Murphy
+
+PL, Del Bene
+
+ML, Rowland
+
+LP.A prospective study of preferences and actual treatment choices in ALS.
+
+Neurology.
+
+1999;53:278-83.
+
+[
+
+PubMed
+
+: 10430414
+
+]
+
+Al-Chalabi
+
+A, Calvo
+
+A, Chiò
+
+A, Colville
+
+S, Ellis
+
+CM, Hardiman
+
+O, Heverin
+
+M, Howard
+
+RS, Huisman
+
+MHB, Keren
+
+N, Leigh
+
+PN, Mazzini
+
+L, Mora
+
+G, Orrell
+
+RW, Rooney
+
+J, Scott
+
+KM, Scotton
+
+WJ, Seelen
+
+M, Shaw
+
+CE, Sidle
+
+KS, Swingler
+
+R, Tsuda
+
+M, Veldink
+
+JH, Visser
+
+AE, van den Berg
+
+LH, Pearce
+
+N. Analysis of amyotrophic lateral sclerosis as a multistep process: a population-based modelling study.
+
+Lancet Neurol.
+
+2014;13:1108-13.
+
+[
+
+PMC free article
+
+: PMC4197338
+
+] [
+
+PubMed
+
+: 25300936
+
+]
+
+Al-Chalabi
+
+A, Fang
+
+F, Hanby
+
+MF, Leigh
+
+PN, Shaw
+
+CE, Ye
+
+W, Rijsdijk
+
+F. An estimate of amyotrophic lateral sclerosis heritability using twin data.
+
+J Neurol Neurosurg Psychiatry.
+
+2010;81:1324-6.
+
+[
+
+PMC free article
+
+: PMC2988617
+
+] [
+
+PubMed
+
+: 20861059
+
+]
+
+Andersen
+
+PM, Borasio
+
+GD, Dengler
+
+R, Hardiman
+
+O, Kollewe
+
+K, Leigh
+
+PN, Pradat
+
+PF, Silani
+
+V, Tomik
+
+B. EFNS task force on management of amyotrophic lateral sclerosis: guidelines for diagnosing and clinical care of patients and relatives.
+
+Eur J Neurol.
+
+2005;12:921-38.
+
+[
+
+PubMed
+
+: 16324086
+
+]
+
+Ashworth
+
+NL, Satkunam
+
+LE, Deforge
+
+D. Treatment for spasticity in amyotrophic lateral sclerosis/motor neuron disease.
+
+Cochrane Database Syst Rev.
+
+2004;1:CD004156.
+
+[
+
+PubMed
+
+: 14974059
+
+]
+
+Beeldman
+
+E, Raaphorst
+
+J, Klein Twennaar
+
+M, de Visser
+
+M, Schmand
+
+BA, de Haan
+
+RJ. The cognitive profile of ALS: a systematic review and meta-analysis.
+
+J Neurol Neurosurg Psychiatry.
+
+2016;87:611-9.
+
+[
+
+PubMed
+
+: 26283685
+
+]
+
+Belbasis
+
+L, Bellouu
+
+V, Evangelou
+
+E. Environmental risk factors and amyotrophic lateral sclerosis: an umbrella review and critical assessment of current evidence from systematic review and meta-analyses of observational studies.
+
+Neuroepidemiology.
+
+2016;46:96-105.
+
+[
+
+PubMed
+
+: 26731747
+
+]
+
+Bensimon
+
+G, Doble
+
+A. The tolerability of riluzole in the treatment of patients with amyotrophic lateral sclerosis.
+
+Expert Opin Drug Saf.
+
+2004;3:525-34.
+
+[
+
+PubMed
+
+: 15500412
+
+]
+
+Bigio
+
+EH. Making the diagnosis of frontotemporal lobar degeneration.
+
+Arch Pathol Lab Med
+
+2013;137:314-25.
+
+[
+
+PMC free article
+
+: PMC3629720
+
+] [
+
+PubMed
+
+: 23451743
+
+]
+
+Borghero
+
+G, Pugliatti
+
+M, Marrosu
+
+MG, Floris
+
+G, Cannas
+
+A, Parish
+
+LD, Cua
+
+TB, Ticca
+
+A, Traccis
+
+S, Manera
+
+U, Canosa
+
+A, Moglia
+
+C, Calvo
+
+A, Barberis
+
+M, Brunetti
+
+M, Renton
+
+AE, Nails
+
+MA, Traynor
+
+BJ, Restagno
+
+G, Chiò
+
+A, et al.
+
+ATXN2 is a modifier of phenotype in ALS patients of Sardinian ancestry.
+
+Neurobiol Aging.
+
+2015;36:2906.e1-5.
+
+[
+
+PMC free article
+
+: PMC5193218
+
+] [
+
+PubMed
+
+: 26208502
+
+]
+
+Brooks
+
+BR, Miller
+
+RG, Swash
+
+M, Munsat
+
+TL. El Escorial revisited: revised criteria for the diagnosis of amyotrophic lateral sclerosis.
+
+Amyotroph Lateral Scler Other Motor Neuron Disord
+
+2000;1:293-9.
+
+[
+
+PubMed
+
+: 11464847
+
+]
+
+Brown
+
+RH
+
+Jr, Al-Chalabi
+
+A. Amyotrophic lateral sclerosis.
+
+N Engl J Med.
+
+2017;377: 162-72.
+
+[
+
+PubMed
+
+: 28700839
+
+]
+
+Cameron
+
+A, Rosenfeld
+
+J. Nutritional issues and supplements in amyotrophic lateral sclerosis and other neurodegenerative disorders.
+
+Curr Opin Clin Nutr Metab Care.
+
+2002;5:631-43.
+
+[
+
+PubMed
+
+: 12394638
+
+]
+
+Chia
+
+R, Chiò
+
+A, Trayner
+
+BJ. Novel genes associated with amyotrophic lateral sclerosis: diagnostic and clinical implications.
+
+Lancet Neurol.
+
+2018;17: 94-102.
+
+[
+
+PMC free article
+
+: PMC5901717
+
+] [
+
+PubMed
+
+: 29154141
+
+]
+
+Chiò
+
+A, Calvo
+
+A, Moglia
+
+C, Ossala
+
+I, Brunetti
+
+M, Sbaiz
+
+L, Lai
+
+SL, Abramzon
+
+Y, Traynor
+
+BJ, Restagno
+
+G. A de novo missense mutation in the FUS gene in a "true" sporadic ALS case.
+
+Neurobiol Aging.
+
+2011;32:553.e23-6.
+
+[
+
+PMC free article
+
+: PMC2972379
+
+] [
+
+PubMed
+
+: 20598774
+
+]
+
+Cox, PA, Richer R, Metcalf JS, Banack SA, Codd GA, Bradley WG. Cyanobacteria and BMAA exposure from desert dust: a possible link to sporadic ALS among Gulf War veterans. Amyotroph Lateral Scler 10 Suppl. 2009;2:109-17. [
+
+PubMed
+
+: 19929742
+
+]
+
+de Carvalho
+
+M, Dengler
+
+R, Eisen
+
+A, England
+
+JD, Kaji
+
+R, Kimura
+
+J, Mills
+
+K, Mitsumoto
+
+H, Nodera
+
+H, Shefner
+
+J, Swash
+
+M. Electrodiagnostic criteria for diagnosis of ALS.
+
+Clin Neurophysiol
+
+2008;119:497-503.
+
+[
+
+PubMed
+
+: 18164242
+
+]
+
+Farrero
+
+E, Prats
+
+E, Povedano
+
+M, Martinez-Matos
+
+JA, Manresa
+
+F, Escarrabill
+
+J. Survival in amyotrophic lateral sclerosis with home mechanical ventilation: the impact of systematic respiratory assessment and bulbar involvement.
+
+Chest.
+
+2005;127:2132-8.
+
+[
+
+PubMed
+
+: 15947331
+
+]
+
+Goldstein LH, Adamson M, Jeffrey L, Down K, Barby T, Wilson C, Leigh PN. The psychological impact of MND on patients and carers. J Neurol Sci 160 Suppl. 1998;1:S114-21. [
+
+PubMed
+
+: 9851660
+
+]
+
+Goutman
+
+SA. Diagnosis and clinical management of amyotrophic lateral sclerosis and other motor neuron disorders.
+
+Continuum.
+
+2017;23:1332-59.
+
+[
+
+PubMed
+
+: 28968365
+
+]
+
+Haley
+
+RW. Excess incidence of ALS in young Gulf War veterans.
+
+Neurology.
+
+2003;61:750-6.
+
+[
+
+PubMed
+
+: 14504316
+
+]
+
+Hardiman
+
+O, Al-Chalabi
+
+A, Chiò
+
+A, Logroscino
+
+G, Robberrecht
+
+W, Shaw
+
+PJ, Simmons
+
+Z, van den Berg
+
+LH. Amyotrophic lateral sclerosis.
+
+Nat Rev Dis Primers
+
+2017;3:17071.
+
+[
+
+PubMed
+
+: 28980624
+
+]
+
+Horner
+
+RD, Kamins
+
+KG, Feussner
+
+JR, Grambow
+
+SC, Hoff-Lindquist
+
+J, Harati
+
+Y, Mitsumoto
+
+H, Pascuzzi
+
+R, Spencer
+
+PS, Tim
+
+R, Howard
+
+D, Smith
+
+TC, Ryan
+
+MA, Coffman
+
+CJ, Kasarskis
+
+EJ. Occurrence of amyotrophic lateral sclerosis among Gulf War veterans.
+
+Neurology
+
+2003;61:742-9.
+
+[
+
+PubMed
+
+: 14504315
+
+]
+
+Iacoangeli
+
+A, Al Khleifat
+
+A, Jones
+
+AR, Sproviero
+
+W, Shatunov
+
+A, Opie-Martin
+
+S, Morrison
+
+KE, Shaw
+
+PJ, Shaw
+
+CE, Fogh
+
+I, Dobson
+
+RJ, Newhouse
+
+SJ, Al-Chalabi
+
+A, et al.
+
+C9orf72 intermediate expansions of 24-30 repeats are associated with ALS.
+
+Acta Neuropathol Commun
+
+2019;7: 115.
+
+[
+
+PMC free article
+
+: PMC6637621
+
+] [
+
+PubMed
+
+: 31315673
+
+]
+
+Katz
+
+JS, Katzberg
+
+HD, Woolley
+
+SC, Marklund
+
+SL, Andersen
+
+PM. Combined fulminant frontotemporal dementia and amyotrophic lateral sclerosis associated with an I113T SOD1 mutation.
+
+Amyotroph Lateral Scler.
+
+2012;13: 567-9.
+
+[
+
+PubMed
+
+: 22670877
+
+]
+
+Lambrechts
+
+D, Storkebaum
+
+E, Morimoto
+
+M, Del-Favero
+
+J, Desmet
+
+F, Marklund
+
+SL, Wyns
+
+S, Thijs
+
+V, Andersson
+
+J, van Marion
+
+I, Al-Chalabi
+
+A, Bornes
+
+S, Musson
+
+R, Hansen
+
+V, Beckman
+
+L, Adolfsson
+
+R, Pall
+
+HS, Prats
+
+H, Vermeire
+
+S, Rutgeerts
+
+P, Katayama
+
+S, Awata
+
+T, Leigh
+
+N, Lang-Lazdunski
+
+L, Dewerchin
+
+M, Shaw
+
+C, Moons
+
+L, Vlietinck
+
+R, Morrison
+
+KE, Robberecht
+
+W, Van Broeckhoven
+
+C, Collen
+
+D, Andersen
+
+PM, Carmeliet
+
+P. VEGF is a modifier of amyotrophic lateral sclerosis in mice and humans and protects motoneurons against ischemic death.
+
+Nat Genet
+
+2003;34:383-94.
+
+[
+
+PubMed
+
+: 12847526
+
+]
+
+Li
+
+YJ, Pericak-Vance
+
+MA, Haines
+
+JL, Siddique
+
+N, McKenna-Yasek
+
+D, Hung
+
+WY, Sapp
+
+P, Allen
+
+CI, Chen
+
+W, Hosler
+
+B, Saunders
+
+AM, Dellefave
+
+LM, Brown
+
+RH, Siddique
+
+T. Apolipoprotein E is associated with age at onset of amyotrophic lateral sclerosis.
+
+Neurogenetics.
+
+2004;5:209-13.
+
+[
+
+PubMed
+
+: 15657798
+
+]
+
+Lopate
+
+G, Baloh
+
+RH, Al-Lozi
+
+MT, Miller
+
+TM, Fernandes Filho
+
+JA, Ni
+
+O, Leston
+
+A, Florence
+
+J, Schierbecker
+
+J, Allred
+
+P. Familial ALS with extreme phenotypic variability due to the I113T SOD1 mutation.
+
+Amyotroph Lateral Scler.
+
+2010;11:232-6.
+
+[
+
+PubMed
+
+: 20184521
+
+]
+
+Magnus
+
+T, Beck
+
+M, Giess
+
+R, Puls
+
+I, Naumann
+
+M, Toyka
+
+KV. Disease progression in amyotrophic lateral sclerosis: predictors of survival.
+
+Muscle Nerve.
+
+2002;25:709-14.
+
+[
+
+PubMed
+
+: 11994965
+
+]
+
+Miller
+
+RG, Rosenberg
+
+JA, Gelinas
+
+DF, Mitsumoto
+
+H, Newman
+
+D, Sufit
+
+R, Borasio
+
+GD, Bradley
+
+WG, Bromberg
+
+MB, Brooks
+
+BR, Kasarskis
+
+EJ, Munsat
+
+TL, Oppenheimer
+
+EA. Practice parameter: the care of the patient with amyotrophic lateral sclerosis (an evidence-based review): report of the Quality Standards Subcommittee of the American Academy of Neurology: ALS Practice Parameters Task Force.
+
+Neurology.
+
+1999;52:1311-23.
+
+[
+
+PubMed
+
+: 10227612
+
+]
+
+Miller
+
+TM, Cudkowicz
+
+ME, Genge
+
+A, Shaw
+
+PJ, Sobue
+
+G, Bucelli
+
+RC, Chiò
+
+A, Van Damme
+
+P, Ludolph
+
+AC, Glass
+
+JD, Andrews
+
+JA, Babu
+
+S, Benatar
+
+M, McDermott
+
+CJ, Cochrane
+
+T, Chary
+
+S, Chew
+
+S, Zhu
+
+H, Wu
+
+F, Nestorov
+
+I, Graham
+
+D, Sun
+
+P, McNeill
+
+M, Fanning
+
+L, Ferguson
+
+TA, Fradette
+
+S, et al.
+
+Trial of antisense oligonucleotide tofersen for SOD1 ALS.
+
+N Engl J Med.
+
+2022;387:1099-110.
+
+[
+
+PubMed
+
+: 36129998
+
+]
+
+Mohassel
+
+P, Donkervoort
+
+S, Lone
+
+MA, Nalls
+
+M, Gable
+
+K, Gupta
+
+SD, Foley
+
+AR, Hu
+
+Y, Saute
+
+JAM, Moreira
+
+AL, Kok
+
+F, Introna
+
+A, Logroscino
+
+G, Grunseich
+
+C, Nickolls
+
+AR, Pourshafie
+
+N, Neuhaus
+
+SB, Saade
+
+D, Gangfuß
+
+A, Kölbel
+
+H, Piccus
+
+Z, Le Pichon
+
+CE, Fiorillo
+
+C, Ly
+
+CV, Töpf
+
+A, Brady
+
+L, Specht
+
+S, Zidell
+
+A, Pedro
+
+H, Mittelmann
+
+E, Thomas
+
+FP, Chao
+
+KR, Konersman
+
+CG, Cho
+
+MT, Brandt
+
+T, Straub
+
+V, Connolly
+
+AM, Schara
+
+U, Roos
+
+A, Tarnopolsky
+
+M, Höke
+
+A, Brown
+
+RH, Lee
+
+CH, Hornemann
+
+T, Dunn
+
+TM, Bönnemann
+
+CG. Childhood amyotrophic lateral sclerosis caused by excess sphingolipid synthesis.
+
+Nat Med.
+
+2021;27:1197-204.
+
+[
+
+PMC free article
+
+: PMC9309980
+
+] [
+
+PubMed
+
+: 34059824
+
+]
+
+Montuschi
+
+A, Iazzolino
+
+B, Calvo
+
+A, Moglia
+
+C, Lopiano
+
+L, Restagno
+
+G, Brunetti
+
+M, Ossola
+
+I, Lo Presti
+
+A, Cammarosano
+
+S, Canosa
+
+A, Chiò
+
+A. Cognitive correlates in amyotrophic lateral sclerosis: a population-based study in Italy.
+
+J Neurol Neurosurg Psychiatry.
+
+2015;86:168-73.
+
+[
+
+PubMed
+
+: 24769471
+
+]
+
+Niven
+
+E, Newton
+
+J, Foley
+
+J, Colville
+
+S, Swingler
+
+R, Chandran
+
+S, Bak
+
+TH, Abrahams
+
+S. Validation of the Edinburgh Cognitive and Behavioural Amyotrophic Lateral Sclerosis Screen (ECAS): a cognitive tool for motor disorders.
+
+Amyotroph Lateral Scler Frontotemporal Degener.
+
+2015;16: 172-9.
+
+[
+
+PubMed
+
+: 25967542
+
+]
+
+Ohta
+
+Y, Soucy
+
+G, Phaneuf
+
+D, Audet
+
+JN, Gros-Louis
+
+F, Rouleau
+
+GA, Blasco
+
+H, Corcia
+
+P, Andersen
+
+PM, Nordin
+
+F, Yamashita
+
+T, Abe
+
+K, Julien
+
+JP. Sex-dependent effects of chromogranin B P413L allelic variant as disease modifier in amyotrophic lateral sclerosis.
+
+Hum Mol Genet.
+
+2016;25:4771-86.
+
+[
+
+PMC free article
+
+: PMC5418737
+
+] [
+
+PubMed
+
+: 28175304
+
+]
+
+Orrell
+
+RW, Lane
+
+RJM, Ross
+
+M. Antioxidant treatment for amyotrophic lateral sclerosis/motor neuron disease.
+
+Cochrane Database Syst Rev.
+
+2007;24:CD002829.
+
+[
+
+PMC free article
+
+: PMC8985756
+
+] [
+
+PubMed
+
+: 17253482
+
+]
+
+Paillisse
+
+C, Lacomblez
+
+L, Dib
+
+M, Bensimon
+
+G, Garcia-Acosta
+
+S, Meininger
+
+V. Prognostic factors for survival in amyotrophic lateral sclerosis patients treated with riluzole.
+
+Amyotroph Lateral Scler Other Motor Neuron Disord.
+
+2005;6:37-44
+
+[
+
+PubMed
+
+: 16036424
+
+]
+
+Raaphorst
+
+J, Beeldman
+
+E, De Visser
+
+M, De Haan
+
+RJ, Schmand
+
+B. A systematic review of behavioral changes in motor neuron disease.
+
+Amyotroph Lateral Scler.
+
+2012;13:493-501.
+
+[
+
+PubMed
+
+: 22424127
+
+]
+
+Rahbari
+
+R, Wuster
+
+A, Lindsay
+
+SJ, Hardwick
+
+RJ, Alexandrov
+
+LB, Turki
+
+SA, Dominiczak
+
+A, Morris
+
+A, Porteous
+
+D, Smith
+
+B, Stratton
+
+MR, Hurles
+
+ME, et al.
+
+Timing, rates and spectra of human germline mutation.
+
+Nat Genet
+
+2016;48:126-33.
+
+[
+
+PMC free article
+
+: PMC4731925
+
+] [
+
+PubMed
+
+: 26656846
+
+]
+
+Riviere
+
+M, Meininger
+
+V, Zeisser
+
+P, Munsat
+
+T. An analysis of extended survival in patients with amyotrophic lateral sclerosis treated with riluzole.
+
+Arch Neurol.
+
+1998;55:526-8.
+
+[
+
+PubMed
+
+: 9561981
+
+]
+
+Ryan
+
+M, Heverin
+
+M, McLaughlin
+
+RL, Hardiman
+
+O. Lifetime risk and heritability of amyotrophic lateral sclerosis.
+
+JAMA Neurol.
+
+2019a;76:1367-74.
+
+[
+
+PMC free article
+
+: PMC6646974
+
+] [
+
+PubMed
+
+: 31329211
+
+]
+
+Ryan
+
+M, Zalvidar Vaillant
+
+T, McLaughlin
+
+RL, Doherty
+
+MA, Rooney
+
+J, Heverin
+
+M, Gutierrez
+
+J, Lara-Fernández
+
+GE, Pita Rodriguez
+
+M, Hackembruch
+
+J, Perna
+
+A, Vazquez
+
+MC, Musio
+
+M, Ketzoian
+
+CN, Logroscino
+
+G, Hardiman
+
+O. Comparison of the clinical and genetic features of amyotrophic lateral sclerosis across Cuban, Uruguayan and Irish clinic-based populations.
+
+J Neurol Neurosurg Psychiatry.
+
+2019b;90:659-65.
+
+[
+
+PubMed
+
+: 30846540
+
+]
+
+Sawada
+
+H.
+
+Clinical efficacy of edaravone for the treatment of amyotrophic lateral sclerosis.
+
+Expert Opin Pharmacother.
+
+2017;18:735-8.
+
+[
+
+PubMed
+
+: 28406335
+
+]
+
+Saxon
+
+JA, Thompson
+
+JC, Jones
+
+M, Harris
+
+JM, Richardson
+
+AM, Langheinrich
+
+T, Neary
+
+D, Mann
+
+DM, Snowden
+
+JS. Examining the language and behavioural profile in FTD and ALS-FTD.
+
+J Neurol Neurosurg Psychiatry
+
+2017;88:675-80.
+
+[
+
+PMC free article
+
+: PMC5537548
+
+] [
+
+PubMed
+
+: 28596248
+
+]
+
+Schreiber
+
+H, Gaigalat
+
+T, Wiedemuth-Catrinescu
+
+U, Graf
+
+M, Uttner
+
+I, Muche
+
+R, Ludolph
+
+AC. Cognitive function in bulbar- and spinal-onset amyotrophic lateral sclerosis. A longitudinal study in 52 patients.
+
+J Neurol.
+
+2005;252:772-81
+
+[
+
+PubMed
+
+: 15742104
+
+]
+
+Strong
+
+MJ, Gordon
+
+PH. Primary lateral sclerosis, hereditary spastic paraplegia and amyotrophic lateral sclerosis: discrete entities or spectrum?
+
+Amyotroph Lateral Scler Other Motor Neuron Disord.
+
+2005;6:8-16.
+
+[
+
+PubMed
+
+: 16036421
+
+]
+
+Tan
+
+HHG, Westening
+
+HJ, van der Burgh
+
+HK, van Es
+
+MA, Bakker
+
+LA, van Veenhuijzen
+
+K, van Eijk
+
+KR, van Eijk
+
+RPA, Veldink
+
+JH, van den Berg
+
+LH. The distinct traits of the UNC13A polymorphism in amyotrophic lateral sclerosis.
+
+Ann Neurol.
+
+2020;88:796-806.
+
+[
+
+PMC free article
+
+: PMC7540607
+
+] [
+
+PubMed
+
+: 32627229
+
+]
+
+van den Berg
+
+JP, de Groot
+
+IJ, Joha
+
+BC, van Haelst
+
+JM, van Gorcom
+
+P, Kalmijn
+
+S. Development and implementation of the Dutch protocol for rehabilitative management in amyotrophic lateral sclerosis.
+
+Amyotroph Lateral Scler Other Motor Neuron Disord.
+
+2004;5:226-9.
+
+[
+
+PubMed
+
+: 15799551
+
+]
+
+van Rheenen
+
+W, Shatunov
+
+A, Dekker
+
+AM, McLaughlin
+
+RL, Diekstra
+
+FP, Pulit
+
+SL, van der Spek
+
+RN, Vösa
+
+U, de Jong
+
+S, Robinson
+
+MR, et al.
+
+Genome-wide association analyses identify new risk variants and the genetic architecture of amyotrophic lateral sclerosis.
+
+Nat Genet.
+
+2016;48:1043-8.
+
+[
+
+PMC free article
+
+: PMC5556360
+
+] [
+
+PubMed
+
+: 27455348
+
+]
+
+Woolley
+
+SC, York
+
+MK, Moore
+
+DH, Strutt
+
+AM, Murphy
+
+J, Schulz
+
+PE, Katz
+
+JS. Detecting frontotemporal dysfunction in ALS: utility of the ALS Cognitive Behavioral Screen (ALS-CBS).
+
+Amyotroph Lateral Scler.
+
+2010;11:303-11.
+
+[
+
+PubMed
+
+: 20433413
+
+]
+
+Suggested Reading
+
+Abe
+
+K, Aoki
+
+M, Tsuji
+
+S, Itoyama
+
+Y, Sobue
+
+G, Togo
+
+M, Hamada
+
+C, Tanaka
+
+M, Akimoto
+
+M, Nakamura
+
+K, Takahashi
+
+F, Kondo
+
+K, Yoshino
+
+H, et al.
+
+Safety and efficacy of edaravone in well defined patients with amyotrophic lateral sclerosis: a randomised, double-blind, placebo-controlled trial.
+
+Lancet Neurol.
+
+2017;16:505-12.
+
+[
+
+PubMed
+
+: 28522181
+
+]
+
+Andersen
+
+PM. Is all ALS genetic?
+
+Neurology.
+
+2017;89:220-1.
+
+[
+
+PubMed
+
+: 28642337
+
+]
+
+Ghasemi
+
+M, Brown
+
+RH
+
+Jr. Genetics of amyotrophic lateral sclerosis.
+
+Cold Spring Harb Perspect Med.
+
+2018;8:a024125.
+
+[
+
+PMC free article
+
+: PMC5932579
+
+] [
+
+PubMed
+
+: 28270533
+
+]
+
+Ly
+
+CV, Miller
+
+TM. Emerging antisense oligonucleotide and viral therapies for amyotrophic lateral sclerosis.
+
+Curr Opin Neurol.
+
+2018;31:648-54.
+
+[
+
+PMC free article
+
+: PMC7291817
+
+] [
+
+PubMed
+
+: 30028737
+
+]
+
+Oskarsson
+
+B, Gendron
+
+TF, Staff
+
+N. Amyotrophic lateral sclerosis: an update for 2018.
+
+Mayo Clin Proc.
+
+2018;93:1617-28.
+
+[
+
+PubMed
+
+: 30401437
+
+]
+
+Renaud
+
+L, Picher-Martel
+
+V, Codron
+
+P, Julien
+
+JP. Key role of UBQLN2 in pathogenesis of amyotrophic lateral sclerosis and frontotemporal dementia.
+
+Acta Neuropathol Commun.
+
+2019;7:103.
+
+[
+
+PMC free article
+
+: PMC6889556
+
+] [
+
+PubMed
+
+: 31319884
+
+]
+
+Copyright
+
+© 1993-2026, University of Washington, Seattle. GeneReviews is
+
+a registered trademark of the University of Washington, Seattle. All rights
+
+reserved.
+
+GeneReviews® chapters are owned by the University of Washington. Permission is
+
+hereby granted to reproduce, distribute, and translate copies of content materials for
+
+noncommercial research purposes only, provided that (i) credit for source (
+
+http://www.genereviews.org/
+
+) and copyright (© 1993-2026 University of
+
+Washington) are included with each copy; (ii) a link to the original material is provided
+
+whenever the material is published elsewhere on the Web; and (iii) reproducers,
+
+distributors, and/or translators comply with the
+
+GeneReviews® Copyright Notice and Usage
+
+Disclaimer
+
+. No further modifications are allowed. For clarity, excerpts
+
+of GeneReviews chapters for use in lab reports and clinic notes are a permitted
+
+use.
+
+For more information, see the
+
+GeneReviews® Copyright Notice and Usage
+
+Disclaimer
+
+.
+
+For questions regarding permissions or whether a specified use is allowed,
+
+contact:
+
+ude.wu@tssamda
+
+.
+
+Bookshelf ID: NBK1450
+
+PMID:
+
+20301623
+
+GeneReviews by Title
+
+< Prev
+
+Next >
+
+Share
+
+Views
+
+PubReader
+
+Print View
+
+Cite this Page
+
+Siddique N, Siddique T. Amyotrophic Lateral Sclerosis Overview. 2001 Mar 23 [Updated 2023 Sep 28]. In: Adam MP, Bick S, Mirzaa GM, et al., editors. GeneReviews® [Internet]. Seattle (WA): University of Washington, Seattle; 1993-2026.
+
+PDF version of this page
+
+(546K)
+
+Disable Glossary Links
+
+In this GeneReview
+
+Summary
+
+Clinical Characteristics of ALS
+
+Genetic Causes of ALS
+
+Evaluation Strategies to Identify the Genetic Cause of ALS in a Proband
+
+Management of ALS
+
+Genetic Counseling
+
+Resources
+
+Chapter Notes
+
+References
+
+Bulk Download
+
+Bulk download GeneReviews data from FTP
+
+GeneReviews Links
+
+GeneReviews
+
+Advanced Search
+
+GeneReviews
+
+Glossary
+
+Resource Materials
+
+New in
+
+GeneReviews
+
+Author List
+
+For Current/Prospective Authors
+
+GeneReviews
+
+Personnel
+
+Download/Link to
+
+GeneReviews
+
+Contact Us
+
+Tests in GTR by Gene
+
+MATR3
+
+FUS
+
+NEFH
+
+ANG
+
+TARDBP
+
+PRPH
+
+SOD1
+
+ANXA11
+
+SETX
+
+NEK1
+
+FIG4
+
+SPG11
+
+OPTN
+
+SQSTM1
+
+TBK1
+
+UBQLN2
+
+HNRNPA1
+
+VCP
+
+SIGMAR1
+
+CHCHD10
+
+ALS2
+
+CHMP2B
+
+PFN1
+
+ERBB4
+
+DCTN1
+
+C9orf72
+
+VAPB
+
+TUBA4A
+
+Related information
+
+MedGen
+
+Related information in MedGen
+
+PMC
+
+PubMed Central citations
+
+PubMed
+
+Links to PubMed
+
+Similar articles in PubMed
+
+Mutational analysis of TBK1 in Taiwanese patients with amyotrophic lateral sclerosis.
+
+[Neurobiol Aging. 2016]
+
+Mutational analysis of TBK1 in Taiwanese patients with amyotrophic lateral sclerosis.
+
+Tsai PC, Liu YC, Lin KP, Liu YT, Liao YC, Hsiao CT, Soong BW, Yip PK, Lee YC.
+
+Neurobiol Aging. 2016 Apr; 40:191.e11-191.e16. Epub 2016 Jan 5.
+
+Identify mutation in amyotrophic lateral sclerosis cases using HaloPlex target enrichment system.
+
+[Neurobiol Aging. 2014]
+
+Identify mutation in amyotrophic lateral sclerosis cases using HaloPlex target enrichment system.
+
+Liu ZJ, Li HF, Tan GH, Tao QQ, Ni W, Cheng XW, Xiong ZQ, Wu ZY.
+
+Neurobiol Aging. 2014 Dec; 35(12):2881.e11-2881.e15. Epub 2014 Jul 11.
+
+Review
+
+Neuroimaging in genetic frontotemporal dementia and amyotrophic lateral sclerosis.
+
+[Neurobiol Dis. 2020]
+
+Review
+
+Neuroimaging in genetic frontotemporal dementia and amyotrophic lateral sclerosis.
+
+Häkkinen S, Chu SA, Lee SE.
+
+Neurobiol Dis. 2020 Nov; 145:105063. Epub 2020 Sep 2.
+
+Review
+
+Autophagy as a common pathway in amyotrophic lateral sclerosis.
+
+[Neurosci Lett. 2019]
+
+Review
+
+Autophagy as a common pathway in amyotrophic lateral sclerosis.
+
+Nguyen DKH, Thombre R, Wang J.
+
+Neurosci Lett. 2019 Apr 1; 697:34-48. Epub 2018 Apr 4.
+
+Review
+
+Studies of Genetic and Proteomic Risk Factors of Amyotrophic Lateral Sclerosis Inspire Biomarker Development and Gene Therapy.
+
+[Cells. 2023]
+
+Review
+
+Studies of Genetic and Proteomic Risk Factors of Amyotrophic Lateral Sclerosis Inspire Biomarker Development and Gene Therapy.
+
+Bagyinszky E, Hulme J, An SSA.
+
+Cells. 2023 Jul 27; 12(15). Epub 2023 Jul 27.
+
+See reviews...
+
+See all...
+
+Recent Activity
+
+Clear
+
+Turn Off
+
+Turn On
+
+Amyotrophic Lateral Sclerosis Overview - GeneReviews®
+
+Amyotrophic Lateral Sclerosis Overview - GeneReviews®
+
+Your browsing activity is empty.
+
+Activity recording is turned off.
+
+Turn recording back on
+
+See more...
+
+Follow NCBI
+
+Twitter
+
+Facebook
+
+LinkedIn
+
+GitHub
+
+NCBI Insights Blog
+
+Connect with NLM
+
+Twitter
+
+Facebook
+
+Youtube
+
+National Library of Medicine
+
+8600 Rockville Pike
+
+Bethesda, MD 20894
+
+Web Policies
+
+FOIA
+
+HHS Vulnerability Disclosure
+
+Help
+
+Accessibility
+
+Careers

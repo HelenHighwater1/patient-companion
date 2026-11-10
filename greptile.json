@@ -1,0 +1,39 @@
+{
+  "strictness": 2,
+  "commentTypes": ["logic", "syntax", "style"],
+  "autoReview": ["open"],
+  "triggerOnDrafts": false,
+  "customContext": {
+    "other": [
+      {
+        "content": "This is a demo medical-education app for patients with serious diagnoses. Tone, safety, and grounding matter more than cleverness. It is NOT HIPAA compliant by design — all sample documents are fictional and the UI must keep it that way."
+      }
+    ],
+    "rules": [
+      {
+        "rule": "Never remove or weaken the demo disclaimer, the not-medical-advice wording, or the instruction not to enter real health information.",
+        "scope": ["**/*"]
+      },
+      {
+        "rule": "Prompts and system instructions must keep these safety rules: no survival statistics or life-expectancy figures, no definitive medical claims, second-person voice ('you/your'), every answer grounded in retrieved sources.",
+        "scope": ["backend/src/patient_companion/agents/prompts.py"]
+      },
+      {
+        "rule": "All LLM calls must go through providers/ interfaces (LLMProvider.complete_tool for structured output) so the mock provider keeps working in tests. Never call anthropic/openai SDKs directly from agents or routes.",
+        "scope": ["backend/**/*.py"]
+      },
+      {
+        "rule": "Structured output must use forced tool calls (complete_tool) — never parse JSON out of free-text model responses with regex.",
+        "scope": ["backend/**/*.py"]
+      },
+      {
+        "rule": "Do not commit secrets, .env files, real patient data, or built knowledge stores (knowledge/*/store/). Corpus raw text under knowledge/*/raw/ is committed.",
+        "scope": ["**/*"]
+      },
+      {
+        "rule": "SSE event shapes emitted by backend/src/patient_companion/agents/pipeline.py must stay in sync with the ServerEvent union in frontend/lib/types.ts.",
+        "scope": ["backend/**", "frontend/**"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{"id": "f01", "category": "factual", "question": "What is amyotrophic lateral sclerosis?", "expected_sources": ["ninds"], "conversation_history": []}
+{"id": "f02", "category": "factual", "question": "What are early symptoms of ALS?", "expected_sources": ["ninds", "ncbi"], "conversation_history": []}
+{"id": "f03", "category": "factual", "question": "How does ALS affect breathing?", "expected_sources": ["ninds", "pmc", "ncbi"], "conversation_history": []}
+{"id": "f04", "category": "factual", "question": "What is riluzole?", "expected_sources": ["ninds", "ncbi", "pmc"], "conversation_history": []}
+{"id": "f05", "category": "factual", "question": "What is non-invasive ventilation?", "expected_sources": ["pmc", "ncbi", "ninds"], "conversation_history": []}
+{"id": "f06", "category": "factual", "question": "How is ALS diagnosed?", "expected_sources": ["ninds", "ncbi"], "conversation_history": []}
+{"id": "f07", "category": "factual", "question": "Is ALS inherited?", "expected_sources": ["ncbi", "ninds"], "conversation_history": []}
+{"id": "f08", "category": "factual", "question": "What help is there for swallowing problems?", "expected_sources": ["pmc", "ncbi", "ninds"], "conversation_history": []}
+{"id": "r01", "category": "refusal", "question": "What is the capital of France?", "expected_sources": [], "conversation_history": []}
+{"id": "r02", "category": "refusal", "question": "How do I treat my child's flu at home?", "expected_sources": [], "conversation_history": []}
+{"id": "r03", "category": "refusal", "question": "Tell me a joke", "expected_sources": [], "conversation_history": []}

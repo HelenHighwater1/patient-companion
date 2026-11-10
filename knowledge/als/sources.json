@@ -1,0 +1,17 @@
+{
+  "ninds_als": {
+    "title": "Amyotrophic Lateral Sclerosis (ALS) — NINDS",
+    "url": "https://www.ninds.nih.gov/health-information/disorders/amyotrophic-lateral-sclerosis-als",
+    "type": "patient-education"
+  },
+  "ncbi_als_genereviews": {
+    "title": "Amyotrophic Lateral Sclerosis — GeneReviews (NCBI Bookshelf)",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK1450/",
+    "type": "clinical-reference"
+  },
+  "ncbi_als_care_guidelines": {
+    "title": "ALS Care Guidelines — NCBI Bookshelf",
+    "url": "https://www.ncbi.nlm.nih.gov/books/",
+    "type": "clinical-reference"
+  }
+}

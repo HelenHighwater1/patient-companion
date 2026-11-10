@@ -1,0 +1,23 @@
+# Local all-in-one run: docker compose up --build
+# (Two terminals without docker: `make api` + `make web` also works.)
+services:
+  api:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+
+  web:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.web
+      args:
+        # Browser calls the API directly; NEXT_PUBLIC_* is baked at build time.
+        NEXT_PUBLIC_API_URL: http://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
