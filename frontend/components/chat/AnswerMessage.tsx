@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Citation, Source } from "@/lib/types";
 
 interface Props {
@@ -14,7 +14,15 @@ interface Props {
 }
 
 /** Render the response with [n] markers turned into citation badges. */
-function WithCitations({ text, citations }: { text: string; citations: Citation[] }) {
+function WithCitations({
+  text,
+  citations,
+  onCitationClick,
+}: {
+  text: string;
+  citations: Citation[];
+  onCitationClick: (marker: number) => void;
+}) {
   const parts = text.split(/(\[\d+\])/g);
   const byMarker = new Map(citations.map((c) => [c.marker, c]));
   return (
@@ -25,13 +33,15 @@ function WithCitations({ text, citations }: { text: string; citations: Citation[
         const marker = Number(m[1]);
         const cit = byMarker.get(marker);
         return (
-          <sup
+          <button
             key={i}
+            type="button"
+            onClick={() => onCitationClick(marker)}
             title={cit ? `${cit.title ?? cit.source}\n${cit.claim}` : "source"}
-            className="mx-0.5 inline-flex h-4 min-w-4 cursor-help items-center justify-center rounded-full bg-brand-100 px-1 text-[10px] font-bold text-brand-800"
+            className="mx-0.5 inline-flex h-4 min-w-4 cursor-pointer items-center justify-center rounded-full bg-brand-100 px-1 align-super text-[10px] font-bold text-brand-800 transition-colors hover:bg-brand-200"
           >
             {marker}
-          </sup>
+          </button>
         );
       })}
     </p>
@@ -48,9 +58,29 @@ export function AnswerMessage({
   onAskQuestion,
 }: Props) {
   const [showSources, setShowSources] = useState(false);
+  const [activeSource, setActiveSource] = useState<{ marker: number; tick: number } | null>(
+    null,
+  );
+  const sourceRefs = useRef(new Map<number, HTMLDivElement>());
+  const tick = useRef(0);
+
+  const handleCitationClick = (marker: number) => {
+    setShowSources(true);
+    setActiveSource({ marker, tick: ++tick.current });
+  };
+
+  useEffect(() => {
+    if (!activeSource || !showSources) return;
+    sourceRefs.current
+      .get(activeSource.marker)
+      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+    const t = window.setTimeout(() => setActiveSource(null), 1600);
+    return () => window.clearTimeout(t);
+  }, [activeSource, showSources]);
+
   return (
     <div className="space-y-3 rounded-2xl rounded-bl-sm bg-white p-4 shadow-sm ring-1 ring-warm-200">
-      <WithCitations text={text} citations={citations} />
+      <WithCitations text={text} citations={citations} onCitationClick={handleCitationClick} />
 
       {flaggedGaps.length > 0 && (
         <div className="rounded-xl bg-amber-50 p-3 ring-1 ring-amber-200">
@@ -96,28 +126,40 @@ export function AnswerMessage({
 
       {showSources && (
         <div className="space-y-2 rounded-xl bg-warm-50 p-3 text-xs">
-          {(citations.length > 0 ? citations : sources).map((s, i) => (
-            <div key={i} className="leading-snug">
-              <span className="font-semibold text-brand-800">
-                {"marker" in s ? `[${s.marker}] ` : "• "}
-              </span>
-              {s.url ? (
-                <a
-                  href={s.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-medium text-brand-700 hover:underline"
-                >
-                  {s.title ?? s.source}
-                </a>
-              ) : (
-                <span className="font-medium text-warm-800">{s.title ?? s.source}</span>
-              )}
-              {"claim" in s && s.claim && (
-                <span className="block pl-5 text-warm-700/80">{s.claim}</span>
-              )}
-            </div>
-          ))}
+          {(citations.length > 0 ? citations : sources).map((s, i) => {
+            const key = "marker" in s ? s.marker : i + 1;
+            return (
+              <div
+                key={i}
+                ref={(el) => {
+                  if (el) sourceRefs.current.set(key, el);
+                  else sourceRefs.current.delete(key);
+                }}
+                className={`rounded px-1 leading-snug transition-colors duration-500 ${
+                  activeSource?.marker === key ? "bg-brand-100 ring-1 ring-brand-200" : ""
+                }`}
+              >
+                <span className="font-semibold text-brand-800">
+                  {"marker" in s ? `[${s.marker}] ` : "• "}
+                </span>
+                {s.url ? (
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-brand-700 hover:underline"
+                  >
+                    {s.title ?? s.source}
+                  </a>
+                ) : (
+                  <span className="font-medium text-warm-800">{s.title ?? s.source}</span>
+                )}
+                {"claim" in s && s.claim && (
+                  <span className="block pl-5 text-warm-700/80">{s.claim}</span>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
 
