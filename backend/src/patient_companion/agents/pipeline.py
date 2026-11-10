@@ -13,13 +13,19 @@ from typing import Any
 from patient_companion.agents.answer import answer_question
 from patient_companion.agents.distress import is_distressed
 from patient_companion.agents.guard import audit
-from patient_companion.agents.intake import card_events, summarize_document
+from patient_companion.agents.intake import iter_document_sections
 from patient_companion.agents.prep import generate_prep_sheet
 from patient_companion.agents.tone import apply_tone
 from patient_companion.config import Settings, get_settings
 from patient_companion.providers.base import EmbeddingProvider, LLMProvider
 from patient_companion.rag.retrieve import Retriever, refusal_message
-from patient_companion.schemas import DEMO_DISCLAIMER, Chunk, PrepSheet, ReadingLevel
+from patient_companion.schemas import (
+    CARD_LABELS,
+    DEMO_DISCLAIMER,
+    Chunk,
+    PrepSheet,
+    ReadingLevel,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -30,25 +36,41 @@ def stream_document_summary(
     llm: LLMProvider,
     settings: Settings | None = None,
 ) -> Iterator[dict[str, Any]]:
-    """Document → staged card events → done (with document_context for chat)."""
+    """Document → staged card events → done (with document_context for chat).
+
+    Each card is emitted as soon as its own LLM call completes, so the
+    patient can start reading while later sections are still generating.
+    """
     s = settings or get_settings()
     yield {"type": "status", "stage": "reading"}
-    sections = summarize_document(document_text, llm=llm, model=s.llm_model_strong)
-    yield from card_events(sections)
+    label_for = dict(CARD_LABELS)
+    parts: dict[str, Any] = {}
+    index = 0
+    for key, value in iter_document_sections(
+        document_text, llm=llm, model=s.llm_model_strong
+    ):
+        parts[key] = value
+        if key == "patient_concerns":
+            if value:
+                yield {"type": "concerns", "items": value}
+        else:
+            yield {
+                "type": "card",
+                "index": index,
+                "key": key,
+                "label": label_for[key],
+                "body": value,
+            }
+            index += 1
     context = "\n".join(
         part
-        for part in [
-            sections.orientation,
-            sections.main_finding,
-            sections.evidence,
-            sections.next_steps,
-        ]
-        if part
+        for key in ("orientation", "main_finding", "evidence", "next_steps")
+        if isinstance(part := parts.get(key), str) and part
     )
     yield {
         "type": "done",
         "document_context": context,
-        "patient_concerns": sections.patient_concerns,
+        "patient_concerns": parts.get("patient_concerns") or [],
     }
 
 
