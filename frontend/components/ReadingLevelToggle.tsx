@@ -19,7 +19,7 @@ export function ReadingLevelToggle({
     <div
       role="radiogroup"
       aria-label="Reading level"
-      className="inline-flex rounded-lg border border-warm-200 bg-warm-100 p-0.5"
+      className="inline-flex rounded-full bg-warm-100 p-1"
     >
       {OPTIONS.map((opt) => (
         <button
@@ -28,9 +28,9 @@ export function ReadingLevelToggle({
           aria-checked={value === opt.value}
           title={opt.hint}
           onClick={() => onChange(opt.value)}
-          className={`rounded-md px-2.5 py-1 text-xs font-medium transition-colors ${
+          className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
             value === opt.value
-              ? "bg-white text-brand-800 shadow-sm"
+              ? "bg-paper text-brand-800 shadow-float"
               : "text-warm-700/80 hover:text-warm-900"
           }`}
         >

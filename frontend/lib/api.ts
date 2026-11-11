@@ -2,6 +2,7 @@
 
 import type {
   ConversationTurn,
+  CorpusSummary,
   PrepSheet,
   ReadingLevel,
   SampleDocument,
@@ -17,6 +18,12 @@ export async function listDocuments(): Promise<SampleDocument[]> {
     signal: AbortSignal.timeout(LIST_DOCUMENTS_TIMEOUT_MS),
   });
   if (!res.ok) throw new Error(`Documents request failed (${res.status})`);
+  return res.json();
+}
+
+export async function fetchCorpus(): Promise<CorpusSummary | null> {
+  const res = await fetch(`${API_URL}/api/corpus`).catch(() => null);
+  if (!res?.ok) return null;
   return res.json();
 }
 

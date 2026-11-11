@@ -28,15 +28,15 @@ export function PrepSheetModal({ sheet, documentName, onClose }: Props) {
       onClick={onClose}
     >
       <div
-        className="flex max-h-[88vh] w-full max-w-2xl flex-col rounded-2xl bg-white shadow-2xl"
+        className="flex max-h-[88vh] w-full max-w-2xl flex-col rounded-4xl bg-paper shadow-float-lg"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between border-b border-warm-200 px-6 py-4 print:hidden">
-          <h2 className="font-semibold text-warm-900">Appointment prep sheet</h2>
+        <div className="flex items-center justify-between border-b border-warm-100 px-6 py-4 print:hidden">
+          <h2 className="font-display text-xl font-bold text-warm-900">Appointment prep sheet</h2>
           <div className="flex gap-2">
             <button
               onClick={() => window.print()}
-              className="rounded-lg bg-brand-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-brand-700"
+              className="rounded-full bg-brand-600 px-4 py-1.5 text-xs font-medium text-white hover:bg-brand-700"
             >
               Print / save as PDF
             </button>
@@ -52,7 +52,7 @@ export function PrepSheetModal({ sheet, documentName, onClose }: Props) {
 
         <div id="prep-sheet-print" className="flex-1 overflow-y-auto px-6 py-5">
           <header className="mb-6">
-            <h1 className="text-lg font-semibold text-warm-900">Preparing for my appointment</h1>
+            <h1 className="font-display text-2xl font-bold text-warm-900">Preparing for my appointment</h1>
             <p className="text-xs text-warm-700/70">
               {documentName ? `About: ${documentName} · ` : ""}Made with the Patient Companion demo —
               not medical advice.

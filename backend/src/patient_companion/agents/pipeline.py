@@ -7,6 +7,7 @@ them to SSE. Nothing here knows about HTTP.
 from __future__ import annotations
 
 import logging
+import re
 from collections.abc import Iterator
 from typing import Any
 
@@ -29,6 +30,44 @@ from patient_companion.schemas import (
 
 logger = logging.getLogger(__name__)
 
+EXCERPT_CHARS = 900
+
+
+# Chunks are embedded with a leading "[Section > Subsection]" breadcrumb.
+_BREADCRUMB = re.compile(r"^\[[^\]]*\]\s*")
+
+
+def _passage(text: str) -> str:
+    return _BREADCRUMB.sub("", " ".join(text.split()))
+
+
+def _excerpt(text: str, limit: int = EXCERPT_CHARS) -> str:
+    text = _passage(text)
+    if len(text) <= limit:
+        return text
+    cut = text[:limit].rsplit(" ", 1)[0]
+    return cut.rstrip(",;:") + "…"
+
+
+def source_view(c: Chunk) -> dict[str, Any]:
+    """A retrieved chunk as the UI's evidence panel shows it."""
+    return {
+        "source": c.source,
+        "chunk_index": c.chunk_index,
+        "title": c.title,
+        "url": c.url,
+        "section": c.section,
+        "section_path": c.section_path,
+        "year": c.year,
+        "source_type": c.source_type,
+        "excerpt": _excerpt(c.document),
+        "text": _passage(c.document),
+        "relevance": c.relevance,
+        "dense_cosine": c.dense_cosine,
+        "fusion_score": c.fusion_score,
+        "rerank_score": c.rerank_score,
+    }
+
 
 def stream_document_summary(
     document_text: str,
@@ -47,9 +86,7 @@ def stream_document_summary(
     parts: dict[str, Any] = {}
     generated: set[str] = set()
     index = 0
-    for key, value, from_model in iter_document_sections(
-        document_text, llm=llm, model=s.llm_model_strong
-    ):
+    for key, value, from_model in iter_document_sections(document_text, llm=llm, model=s.llm_model_strong):
         parts[key] = value
         if from_model:
             generated.add(key)
@@ -98,6 +135,11 @@ def stream_answer(
 
     yield {"type": "status", "stage": "searching"}
     result = retriever.retrieve(q, conversation_history)
+    yield {
+        "type": "retrieval",
+        **result.trace(),
+        "sources": [source_view(c) for c in result.chunks],
+    }
     if result.refused:
         yield {
             "type": "refusal",
@@ -137,31 +179,41 @@ def stream_answer(
     )
 
     chunk_meta = {(c.source, c.chunk_index): c for c in result.chunks}
+    mechanical = {(m["source"], m["chunk_index"], m["claim"]): m for m in checked["mechanical"]}
+    judge = {str(sc.get("claim", "")).strip(): sc.get("score") for sc in checked["confidence"]}
+    markers_by_chunk: dict[tuple[str, int], list[int]] = {}
+    for c in ans["citations"]:
+        markers_by_chunk.setdefault((c.source, c.chunk_index), []).append(c.marker)
 
     def _citation_view(c) -> dict:
         meta = chunk_meta.get((c.source, c.chunk_index)) or Chunk(document="", source=c.source)
+        mech = mechanical.get((c.source, c.chunk_index, c.claim.strip()))
+        judge_missing = bool(judge) and c.claim.strip() not in judge
         return {
             "marker": c.marker,
             "claim": c.claim,
             "source": c.source,
+            "chunk_index": c.chunk_index,
             "title": meta.title,
             "url": meta.url,
+            "grounding": {
+                "checked": mech is not None and not judge_missing,
+                "cosine": round(mech["cosine"], 4) if mech else None,
+                "flagged": bool(mech["flagged"]) if mech else False,
+                "judge_score": judge.get(c.claim.strip()),
+            },
         }
+
+    def _answer_source_view(c: Chunk) -> dict:
+        markers = markers_by_chunk.get((c.source, c.chunk_index), [])
+        return {**source_view(c), "cited": bool(markers), "markers": markers}
 
     yield {
         "type": "answer",
         "patient_response": toned["patient_response"],
         "doctor_questions": toned["doctor_questions"],
         "citations": [_citation_view(c) for c in ans["citations"]],
-        "sources": [
-            {
-                "source": c.source,
-                "chunk_index": c.chunk_index,
-                "title": c.title,
-                "url": c.url,
-            }
-            for c in ans["chunks_used"]
-        ],
+        "sources": [_answer_source_view(c) for c in result.chunks],
         "flagged_gaps": checked["flagged_gaps"],
         "confidence": checked["confidence"],
         "disclaimer": DEMO_DISCLAIMER,

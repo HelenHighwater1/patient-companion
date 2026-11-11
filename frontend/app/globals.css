@@ -1,30 +1,84 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-50: #eef2ff;
-  --color-brand-100: #e0e7ff;
-  --color-brand-200: #c7d2fe;
-  --color-brand-300: #a5b4fc;
-  --color-brand-400: #818cf8;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #5457e5;
-  --color-brand-700: #4447ca;
-  --color-brand-800: #3a3ca3;
-  --color-brand-900: #333582;
-  --color-warm-50: #fafaf9;
-  --color-warm-100: #f5f5f4;
-  --color-warm-200: #e7e5e4;
-  --color-warm-300: #d6d3d1;
-  --color-warm-700: #44403c;
-  --color-warm-900: #1c1917;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Olive · Sand · Rose · Taupe · Ivory */
+  --color-brand-50: #f4f2ea;
+  --color-brand-100: #e8e5d6;
+  --color-brand-200: #d3cfb6;
+  --color-brand-300: #b8b292;
+  --color-brand-400: #9d9775;
+  --color-brand-500: #868064;
+  --color-brand-600: #6f6a51;
+  --color-brand-700: #5b5742;
+  --color-brand-800: #4a4736;
+  --color-brand-900: #3b392c;
+  --color-warm-50: #fbf4ee;
+  --color-warm-100: #f4e8dd;
+  --color-warm-200: #e9d7c7;
+  --color-warm-300: #dabca2;
+  --color-warm-700: #6e4f3e;
+  --color-warm-800: #5a3f31;
+  --color-warm-900: #402c22;
+  --color-paper: #fffaf5;
+  --color-parchment: #ecd9c8;
+  --color-ochre-50: #faf1e8;
+  --color-ochre-100: #f1dfcc;
+  --color-ochre-200: #e5c9ad;
+  --color-ochre-400: #c49a78;
+  --color-ochre-500: #a8795a;
+  --color-ochre-700: #805944;
+  --color-ochre-800: #6a4a38;
+  --color-ochre-900: #553a2c;
+  --color-terracotta-50: #f9eeec;
+  --color-terracotta-100: #f1dcd8;
+  --color-terracotta-200: #e4c1bb;
+  --color-terracotta-500: #b47e76;
+  --color-terracotta-700: #8c5850;
+  --color-terracotta-800: #74463f;
+  --color-plum-50: #f4ece8;
+  --color-plum-100: #e8d8d0;
+  --color-plum-500: #805944;
+  --color-plum-700: #654535;
+  --color-plum-800: #523829;
+  --color-rose-50: #f8efed;
+  --color-rose-100: #efdcd8;
+  --color-rose-500: #b47e76;
+  --color-rose-700: #8a5a53;
+  --color-slate-100: #e6e5dc;
+  --color-slate-500: #7d7a66;
+  --color-slate-700: #5b5946;
+  --radius-4xl: 2rem;
+  --shadow-float:
+    0 1px 2px rgb(110 76 56 / 0.04), 0 14px 36px -10px rgb(110 76 56 / 0.18);
+  --shadow-float-lg:
+    0 2px 4px rgb(110 76 56 / 0.05), 0 22px 48px -12px rgb(110 76 56 / 0.24);
+}
+
+@theme inline {
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-cormorant), ui-serif, Georgia, serif;
 }
 
 body {
-  background: var(--color-warm-50);
+  background: var(--color-parchment);
   color: var(--color-warm-900);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  letter-spacing: 0.01em;
+}
+
+/* Gentle lift for floating cards */
+.float-hover {
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.float-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-float-lg);
 }
 
 /* Staged card reveal */

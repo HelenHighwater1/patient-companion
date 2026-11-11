@@ -34,7 +34,7 @@ from patient_companion.schemas import (
     PrepSheetRequest,
     SampleDocument,
 )
-from patient_companion.server.deps import get_retriever, list_diseases
+from patient_companion.server.deps import corpus_summary, get_retriever, list_diseases
 from patient_companion.server.sse import sse_response
 
 logger = logging.getLogger("patient_companion")
@@ -88,6 +88,10 @@ def create_app() -> FastAPI:
     @app.get("/api/diseases")
     def diseases():
         return list_diseases(settings)
+
+    @app.get("/api/corpus")
+    def corpus():
+        return corpus_summary(settings=settings)
 
     # -- sample documents -------------------------------------------------------
 
@@ -177,9 +181,7 @@ def create_app() -> FastAPI:
         text = extract_document_bytes(file.filename or "", contents)
         if not text.strip():
             raise HTTPException(400, "Could not extract text from that file")
-        return sse_response(
-            stream_document_summary(text, llm=get_llm(settings), settings=settings)
-        )
+        return sse_response(stream_document_summary(text, llm=get_llm(settings), settings=settings))
 
     @app.post("/api/prep-sheet")
     @limiter.limit(f"{settings.upload_limit_per_hour}/hour")
