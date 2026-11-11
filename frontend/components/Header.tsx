@@ -1,10 +1,10 @@
 "use client";
 
 export function Header({
-  onOpenAbout,
+  onOpenTour,
   onOpenEvidence,
 }: {
-  onOpenAbout: () => void;
+  onOpenTour: () => void;
   onOpenEvidence: () => void;
 }) {
   return (
@@ -37,10 +37,10 @@ export function Header({
             Evidence
           </button>
           <button
-            onClick={onOpenAbout}
+            onClick={onOpenTour}
             className="rounded-full px-3 py-2 text-sm font-bold text-warm-700 transition-colors hover:bg-warm-100"
           >
-            About
+            Tour
           </button>
         </div>
       </div>

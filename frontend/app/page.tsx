@@ -1,12 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { AboutModal } from "@/components/AboutModal";
-import { DisclaimerGate } from "@/components/DisclaimerGate";
 import { DocumentPanel } from "@/components/DocumentPanel";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { PreviewModal } from "@/components/PreviewModal";
+import { SiteTour } from "@/components/SiteTour";
 import { Chat, type ShowEvidenceOptions } from "@/components/chat/Chat";
 import { EvidencePanel, type EvidenceFocus } from "@/components/evidence/EvidencePanel";
 import { fetchCorpus, listDocuments } from "@/lib/api";
@@ -14,13 +13,14 @@ import type { CorpusSummary, Evidence, SampleDocument } from "@/lib/types";
 import { useDialogFocus } from "@/lib/useDialogFocus";
 import { useMediaQuery } from "@/lib/useMediaQuery";
 
+const TOUR_SEEN_KEY = "pc-tour-seen";
+
 export default function Home() {
-  const [acknowledged, setAcknowledged] = useState(false);
+  const [tourOpen, setTourOpen] = useState(false);
   const [documents, setDocuments] = useState<SampleDocument[]>([]);
   const [docsStatus, setDocsStatus] = useState<"loading" | "ready" | "error">("loading");
   const [documentToLoad, setDocumentToLoad] = useState<SampleDocument | null>(null);
   const [previewDoc, setPreviewDoc] = useState<SampleDocument | null>(null);
-  const [aboutOpen, setAboutOpen] = useState(false);
   const [corpus, setCorpus] = useState<CorpusSummary | null>(null);
   const [evidence, setEvidence] = useState<Evidence | null>(null);
   const [focus, setFocus] = useState<EvidenceFocus | null>(null);
@@ -29,6 +29,15 @@ export default function Home() {
   const wide = useMediaQuery("(min-width: 1280px)");
   const closeDrawer = useCallback(() => setDrawerOpen(false), []);
   const drawerRef = useDialogFocus<HTMLDivElement>(drawerOpen && !wide, closeDrawer);
+
+  // Show the tour on first visit only; returning browsers skip straight to the app.
+  useEffect(() => {
+    try {
+      if (!localStorage.getItem(TOUR_SEEN_KEY)) setTourOpen(true);
+    } catch {
+      setTourOpen(true);
+    }
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -64,6 +73,14 @@ export default function Home() {
     setPreviewDoc(null);
     setDocumentToLoad(doc);
   }, []);
+  const closeTour = useCallback(() => {
+    setTourOpen(false);
+    try {
+      localStorage.setItem(TOUR_SEEN_KEY, "1");
+    } catch {
+      // storage unavailable — tour will show again next visit
+    }
+  }, []);
 
   const handleEvidence = useCallback(
     (e: Evidence, opts?: ShowEvidenceOptions) => {
@@ -96,12 +113,14 @@ export default function Home() {
 
   return (
     <>
-      {!acknowledged && <DisclaimerGate onAcknowledge={() => setAcknowledged(true)} />}
+      {tourOpen && <SiteTour onClose={closeTour} />}
       <div className="flex h-screen flex-col">
-        <Header onOpenAbout={() => setAboutOpen(true)} onOpenEvidence={() => setDrawerOpen(true)} />
-        <Hero />
+        <Header onOpenTour={() => setTourOpen(true)} onOpenEvidence={() => setDrawerOpen(true)} />
+        <div data-tour="hero">
+          <Hero />
+        </div>
         <div className="mx-auto flex w-full max-w-[1440px] flex-1 gap-5 overflow-hidden px-4 pb-5 pt-4">
-          <div className="hidden w-72 shrink-0 md:block xl:w-64">
+          <div data-tour="documents" className="hidden w-72 shrink-0 md:block xl:w-64">
             <DocumentPanel
               documents={documents}
               status={docsStatus}
@@ -110,7 +129,10 @@ export default function Home() {
               onPreview={setPreviewDoc}
             />
           </div>
-          <main className="min-w-0 flex-1 overflow-hidden rounded-3xl bg-paper shadow-float">
+          <main
+            data-tour="chat"
+            className="min-w-0 flex-1 overflow-hidden rounded-3xl bg-paper shadow-float"
+          >
             <Chat
               documentToLoad={documentToLoad}
               onDocumentLoaded={handleLoaded}
@@ -120,7 +142,9 @@ export default function Home() {
               onEvidence={handleEvidence}
             />
           </main>
-          <div className="hidden w-[380px] shrink-0 xl:block">{panel()}</div>
+          <div data-tour="evidence" className="hidden w-[380px] shrink-0 xl:block">
+            {panel()}
+          </div>
         </div>
       </div>
       {drawerOpen && !wide && (
@@ -143,7 +167,6 @@ export default function Home() {
       {previewDoc && (
         <PreviewModal doc={previewDoc} onClose={() => setPreviewDoc(null)} onLoad={handleLoadFromPreview} />
       )}
-      {aboutOpen && <AboutModal onClose={() => setAboutOpen(false)} />}
     </>
   );
 }
