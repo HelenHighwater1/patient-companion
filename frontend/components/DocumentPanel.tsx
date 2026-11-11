@@ -4,6 +4,7 @@ import type { SampleDocument } from "@/lib/types";
 
 interface Props {
   documents: SampleDocument[];
+  status: "loading" | "ready" | "error";
   activeFilename: string | null;
   onLoad: (doc: SampleDocument) => void;
   onPreview: (doc: SampleDocument) => void;
@@ -14,7 +15,7 @@ const BADGE: Record<string, string> = {
   EMAIL: "bg-sky-50 text-sky-700",
 };
 
-export function DocumentPanel({ documents, activeFilename, onLoad, onPreview }: Props) {
+export function DocumentPanel({ documents, status, activeFilename, onLoad, onPreview }: Props) {
   return (
     <aside className="flex h-full flex-col">
       <h2 className="mb-1 px-1 text-xs font-semibold uppercase tracking-wide text-warm-700/70">
@@ -58,9 +59,30 @@ export function DocumentPanel({ documents, activeFilename, onLoad, onPreview }: 
           </div>
         ))}
         {documents.length === 0 && (
-          <p className="rounded-xl border border-dashed border-warm-300 p-4 text-xs text-warm-700/70">
-            No sample documents found. Is the API running?
-          </p>
+          <div className="rounded-xl border border-dashed border-warm-300 p-4 text-xs text-warm-700/70">
+            {status === "loading" && (
+              <div className="flex items-start gap-2.5">
+                <span
+                  aria-hidden
+                  className="mt-0.5 h-3.5 w-3.5 shrink-0 animate-spin rounded-full border-2 border-warm-300 border-t-brand-600"
+                />
+                <div>
+                  <p className="font-medium text-warm-800">Waking up the demo API…</p>
+                  <p className="mt-1 leading-relaxed">
+                    The backend runs on a free tier and can take up to a minute to boot after
+                    inactivity. Documents will appear automatically.
+                  </p>
+                </div>
+              </div>
+            )}
+            {status === "error" && (
+              <p className="leading-relaxed">
+                The demo API is still starting up after inactivity. Refresh the page in a few
+                seconds and the sample documents will appear.
+              </p>
+            )}
+            {status === "ready" && <p>No sample documents found.</p>}
+          </div>
         )}
       </div>
     </aside>
