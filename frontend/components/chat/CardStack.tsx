@@ -41,7 +41,7 @@ export function CardStack({ cards, concerns, pending }: Props) {
           className="card-in overflow-hidden rounded-3xl rounded-bl-md bg-warm-50"
         >
           <div className="px-4 pt-3">
-            <span className="font-display text-sm font-semibold text-brand-800">
+            <span className="font-display text-base font-bold text-brand-800">
               {i + 1} · {card.label}
             </span>
           </div>
@@ -65,7 +65,7 @@ export function CardStack({ cards, concerns, pending }: Props) {
 
       {concerns.length > 0 && shown > cards.length && (
         <div className="card-in rounded-3xl rounded-bl-md bg-ochre-50 px-4 py-3">
-          <p className="mb-2 font-display text-sm font-semibold text-ochre-800">
+          <p className="mb-2 font-display text-base font-bold text-ochre-800">
             Things this document might have you thinking about
           </p>
           <ul className="list-disc space-y-1 pl-5 text-sm text-warm-800">

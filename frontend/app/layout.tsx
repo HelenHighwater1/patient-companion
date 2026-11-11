@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Fraunces, Nunito } from "next/font/google";
+import { Cormorant_Garamond, Nunito } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-fraunces",
-  axes: ["SOFT", "WONK", "opsz"],
+  weight: ["500", "600", "700"],
+  variable: "--font-cormorant",
 });
 
 const nunito = Nunito({
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${nunito.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${nunito.variable}`}>
       <body>{children}</body>
     </html>
   );

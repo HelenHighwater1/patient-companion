@@ -1,62 +1,62 @@
 @import "tailwindcss";
 
 @theme {
-  /* Palette drawn from Werner's Nomenclature of Colours */
-  --color-brand-50: #f3f4e9;
-  --color-brand-100: #e6e9d2;
-  --color-brand-200: #d0d6ad;
-  --color-brand-300: #b4be85;
-  --color-brand-400: #97a462;
-  --color-brand-500: #7d8b4b;
-  --color-brand-600: #66743b;
-  --color-brand-700: #525e31;
-  --color-brand-800: #434c2b;
-  --color-brand-900: #363d24;
-  --color-warm-50: #f9f4e8;
-  --color-warm-100: #f2e9d6;
-  --color-warm-200: #e6dbc2;
-  --color-warm-300: #d4c4a4;
-  --color-warm-700: #5c513b;
-  --color-warm-800: #463e2d;
-  --color-warm-900: #2f2a1e;
-  --color-paper: #fffdf8;
-  --color-parchment: #efe6d2;
-  --color-ochre-50: #fbf4df;
-  --color-ochre-100: #f5e6b8;
-  --color-ochre-200: #ebd38a;
-  --color-ochre-400: #d6b552;
-  --color-ochre-500: #c9a43a;
-  --color-ochre-700: #8a6d1f;
-  --color-ochre-800: #6e561a;
-  --color-ochre-900: #57441a;
-  --color-terracotta-50: #fbeee7;
-  --color-terracotta-100: #f5dccf;
-  --color-terracotta-200: #ebc2ae;
-  --color-terracotta-500: #c2714e;
-  --color-terracotta-700: #8e4a2f;
-  --color-terracotta-800: #733b26;
-  --color-plum-50: #f5edf1;
-  --color-plum-100: #eadae2;
-  --color-plum-500: #7a4a63;
-  --color-plum-700: #5a3348;
-  --color-plum-800: #4a2a3b;
-  --color-rose-50: #f8eeee;
-  --color-rose-100: #f0dcdd;
-  --color-rose-500: #b5797f;
-  --color-rose-700: #8a5359;
-  --color-slate-100: #e3e8e8;
-  --color-slate-500: #6f8285;
-  --color-slate-700: #4e5e61;
+  /* Olive · Sand · Rose · Taupe · Ivory */
+  --color-brand-50: #f4f2ea;
+  --color-brand-100: #e8e5d6;
+  --color-brand-200: #d3cfb6;
+  --color-brand-300: #b8b292;
+  --color-brand-400: #9d9775;
+  --color-brand-500: #868064;
+  --color-brand-600: #6f6a51;
+  --color-brand-700: #5b5742;
+  --color-brand-800: #4a4736;
+  --color-brand-900: #3b392c;
+  --color-warm-50: #fbf4ee;
+  --color-warm-100: #f4e8dd;
+  --color-warm-200: #e9d7c7;
+  --color-warm-300: #dabca2;
+  --color-warm-700: #6e4f3e;
+  --color-warm-800: #5a3f31;
+  --color-warm-900: #402c22;
+  --color-paper: #fffaf5;
+  --color-parchment: #ecd9c8;
+  --color-ochre-50: #faf1e8;
+  --color-ochre-100: #f1dfcc;
+  --color-ochre-200: #e5c9ad;
+  --color-ochre-400: #c49a78;
+  --color-ochre-500: #a8795a;
+  --color-ochre-700: #805944;
+  --color-ochre-800: #6a4a38;
+  --color-ochre-900: #553a2c;
+  --color-terracotta-50: #f9eeec;
+  --color-terracotta-100: #f1dcd8;
+  --color-terracotta-200: #e4c1bb;
+  --color-terracotta-500: #b47e76;
+  --color-terracotta-700: #8c5850;
+  --color-terracotta-800: #74463f;
+  --color-plum-50: #f4ece8;
+  --color-plum-100: #e8d8d0;
+  --color-plum-500: #805944;
+  --color-plum-700: #654535;
+  --color-plum-800: #523829;
+  --color-rose-50: #f8efed;
+  --color-rose-100: #efdcd8;
+  --color-rose-500: #b47e76;
+  --color-rose-700: #8a5a53;
+  --color-slate-100: #e6e5dc;
+  --color-slate-500: #7d7a66;
+  --color-slate-700: #5b5946;
   --radius-4xl: 2rem;
   --shadow-float:
-    0 1px 2px rgb(74 60 30 / 0.04), 0 14px 36px -10px rgb(74 60 30 / 0.18);
+    0 1px 2px rgb(110 76 56 / 0.04), 0 14px 36px -10px rgb(110 76 56 / 0.18);
   --shadow-float-lg:
-    0 2px 4px rgb(74 60 30 / 0.05), 0 22px 48px -12px rgb(74 60 30 / 0.24);
+    0 2px 4px rgb(110 76 56 / 0.05), 0 22px 48px -12px rgb(110 76 56 / 0.24);
 }
 
 @theme inline {
   --font-sans: var(--font-nunito), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-display: var(--font-cormorant), ui-serif, Georgia, serif;
 }
 
 body {
@@ -67,9 +67,7 @@ body {
 }
 
 .font-display {
-  font-variation-settings:
-    "SOFT" 100,
-    "WONK" 1;
+  letter-spacing: 0.01em;
 }
 
 /* Gentle lift for floating cards */

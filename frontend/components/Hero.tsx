@@ -2,7 +2,7 @@ export function Hero() {
   return (
     <section className="px-4">
       <div className="mx-auto max-w-[1440px] px-2 pb-1 pt-6">
-        <h1 className="font-display text-2xl font-semibold tracking-tight text-warm-900 sm:text-3xl">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-warm-900 sm:text-4xl">
           Prepare for your next appointment.
         </h1>
         <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-warm-700 sm:text-base">

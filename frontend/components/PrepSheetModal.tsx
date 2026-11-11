@@ -32,7 +32,7 @@ export function PrepSheetModal({ sheet, documentName, onClose }: Props) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-warm-100 px-6 py-4 print:hidden">
-          <h2 className="font-display text-lg font-semibold text-warm-900">Appointment prep sheet</h2>
+          <h2 className="font-display text-xl font-bold text-warm-900">Appointment prep sheet</h2>
           <div className="flex gap-2">
             <button
               onClick={() => window.print()}
@@ -52,7 +52,7 @@ export function PrepSheetModal({ sheet, documentName, onClose }: Props) {
 
         <div id="prep-sheet-print" className="flex-1 overflow-y-auto px-6 py-5">
           <header className="mb-6">
-            <h1 className="font-display text-xl font-semibold text-warm-900">Preparing for my appointment</h1>
+            <h1 className="font-display text-2xl font-bold text-warm-900">Preparing for my appointment</h1>
             <p className="text-xs text-warm-700/70">
               {documentName ? `About: ${documentName} · ` : ""}Made with the Patient Companion demo —
               not medical advice.
