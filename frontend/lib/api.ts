@@ -2,6 +2,7 @@
 
 import type {
   ConversationTurn,
+  CorpusSummary,
   PrepSheet,
   ReadingLevel,
   SampleDocument,
@@ -13,6 +14,12 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
 export async function listDocuments(): Promise<SampleDocument[]> {
   const res = await fetch(`${API_URL}/api/documents`);
   if (!res.ok) return [];
+  return res.json();
+}
+
+export async function fetchCorpus(): Promise<CorpusSummary | null> {
+  const res = await fetch(`${API_URL}/api/corpus`).catch(() => null);
+  if (!res?.ok) return null;
   return res.json();
 }
 

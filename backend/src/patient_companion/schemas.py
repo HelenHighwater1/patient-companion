@@ -29,6 +29,9 @@ class Chunk(BaseModel):
     source_id: str | None = None
     url: str | None = None
     year: int | None = None
+    source_type: str | None = None
+    dense_cosine: float | None = None
+    fusion_score: float | None = None
     rerank_score: float | None = None
 
 

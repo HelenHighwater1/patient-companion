@@ -71,6 +71,20 @@ def test_answer_pipeline_events(retriever):
     assert answer["sources"]
     assert events[-1]["type"] == "done"
 
+    retrieval = next(e for e in events if e["type"] == "retrieval")
+    assert events.index(retrieval) < events.index(answer)
+    assert retrieval["query_variants"]
+    assert retrieval["gate"]["passed"] is True
+    assert retrieval["counts"]["returned"] == len(retrieval["sources"])
+    assert all(s["excerpt"] for s in retrieval["sources"])
+
+    cited = [s for s in answer["sources"] if s["cited"]]
+    assert cited and all(s["markers"] for s in cited)
+    cited_keys = {(s["source"], s["chunk_index"]) for s in cited}
+    for c in answer["citations"]:
+        assert (c["source"], c["chunk_index"]) in cited_keys
+        assert c["grounding"]["checked"] is True
+
 
 def test_answer_pipeline_refusal(retriever):
     events = _drain(
@@ -87,6 +101,8 @@ def test_answer_pipeline_refusal(retriever):
     assert events[0]["type"] == "status"
     refusal = next(e for e in events if e["type"] == "refusal")
     assert "sources" in refusal["message"] or "safely" in refusal["message"]
+    retrieval = next(e for e in events if e["type"] == "retrieval")
+    assert retrieval["refused"] is True
     assert events[-1]["type"] == "done"
 
 
