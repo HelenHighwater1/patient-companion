@@ -104,7 +104,7 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
         id: msgId,
         role: "assistant",
         kind: "error",
-        text: `Something went wrong reading that document. ${err instanceof Error ? err.message : ""}`,
+        text: `Something went wrong reading that document. ${err instanceof Error ? err.message : ""} The demo API may still be waking up after inactivity — try again in a few seconds.`,
       }));
     });
   };
@@ -180,7 +180,7 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
         id: msgId,
         role: "assistant",
         kind: "error",
-        text: `Something went wrong. ${err instanceof Error ? err.message : "Please try again."}`,
+        text: `Something went wrong. ${err instanceof Error ? err.message : "Please try again."} The demo API may still be waking up after inactivity — try again in a few seconds.`,
       });
       setStage(null);
       setBusy(false);

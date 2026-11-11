@@ -14,12 +14,32 @@ import type { SampleDocument } from "@/lib/types";
 export default function Home() {
   const [acknowledged, setAcknowledged] = useState(false);
   const [documents, setDocuments] = useState<SampleDocument[]>([]);
+  const [docsStatus, setDocsStatus] = useState<"loading" | "ready" | "error">("loading");
   const [documentToLoad, setDocumentToLoad] = useState<SampleDocument | null>(null);
   const [previewDoc, setPreviewDoc] = useState<SampleDocument | null>(null);
   const [aboutOpen, setAboutOpen] = useState(false);
 
   useEffect(() => {
-    listDocuments().then(setDocuments);
+    let cancelled = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const deadline = Date.now() + 90_000;
+    const attempt = async () => {
+      try {
+        const docs = await listDocuments();
+        if (cancelled) return;
+        setDocuments(docs);
+        setDocsStatus("ready");
+      } catch {
+        if (cancelled) return;
+        if (Date.now() < deadline) timer = setTimeout(attempt, 4000);
+        else setDocsStatus("error");
+      }
+    };
+    void attempt();
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
   }, []);
 
   const handleLoad = useCallback((doc: SampleDocument) => setDocumentToLoad(doc), []);
@@ -39,6 +59,7 @@ export default function Home() {
           <div className="hidden w-72 shrink-0 md:block">
             <DocumentPanel
               documents={documents}
+              status={docsStatus}
               activeFilename={documentToLoad?.filename ?? null}
               onLoad={handleLoad}
               onPreview={setPreviewDoc}
