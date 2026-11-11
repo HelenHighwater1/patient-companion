@@ -38,6 +38,12 @@ def test_documents_list(client):
     assert any(d["filename"] == "sample_note.txt" for d in docs)
 
 
+def test_document_served_inline(client):
+    r = client.get("/api/documents/sample_note.txt")
+    assert r.status_code == 200
+    assert r.headers["content-disposition"].startswith("inline")
+
+
 def test_document_text_and_traversal(client):
     r = client.get("/api/documents/sample_note.txt/text")
     assert r.status_code == 200
