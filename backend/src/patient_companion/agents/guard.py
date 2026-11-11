@@ -4,8 +4,8 @@ Two layers:
 1. Mechanical — cosine similarity between each claim and its cited chunk.
 2. Judge — a fast model rates flagged claims 1-3 for actual entailment.
 
-Claims rated 3 (unsupported) surface as flagged_gaps, which the tone agent
-turns into "worth asking your doctor" topics instead of silent deletions.
+Claims rated 3 (unsupported) surface as flagged_gaps — topics worth raising
+with the care team — instead of silent deletions.
 """
 
 from __future__ import annotations
@@ -94,6 +94,26 @@ def judge_claims(
     return scores if isinstance(scores, list) and scores else fallback
 
 
+def mechanical_gaps(mechanical: list[dict]) -> list[str]:
+    """Gap strings for claims the cheap cosine check flagged."""
+    return [
+        f"Low overlap with cited source for: {m['claim'][:120]}…"
+        for m in mechanical
+        if m["flagged"]
+    ]
+
+
+def flagged_gaps(mechanical: list[dict], scores: list[dict]) -> list[str]:
+    """Mechanical flags plus any claims the judge rated unsupported."""
+    flagged = mechanical_gaps(mechanical)
+    for s in scores:
+        if s.get("score") == 3:
+            claim = str(s.get("claim", ""))
+            if claim and not any(claim[:40] in g for g in flagged):
+                flagged.append(f"Could not verify in sources: {claim[:200]}")
+    return flagged
+
+
 def audit(
     rag_response: str,
     citations: list[Citation],
@@ -107,20 +127,9 @@ def audit(
     mechanical = mechanical_scores(citations, chunks, embedder=embedder) if citations else []
     scores = judge_claims(mechanical, chunks, llm=llm, model=model)
 
-    flagged: list[str] = [
-        f"Low overlap with cited source for: {m['claim'][:120]}…"
-        for m in mechanical
-        if m["flagged"]
-    ]
-    for s in scores:
-        if s.get("score") == 3:
-            claim = str(s.get("claim", ""))
-            if claim and not any(claim[:40] in g for g in flagged):
-                flagged.append(f"Could not verify in sources: {claim[:200]}")
-
     return {
         "verified_response": rag_response,
         "confidence": scores or [{"claim": rag_response[:120], "score": 1}],
-        "flagged_gaps": flagged,
+        "flagged_gaps": flagged_gaps(mechanical, scores),
         "mechanical": mechanical,
     }

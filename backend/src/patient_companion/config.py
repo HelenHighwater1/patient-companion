@@ -37,7 +37,7 @@ class Settings(BaseSettings):
     embed_provider: Literal["openai", "mock"] = "openai"
 
     # --- Models ------------------------------------------------------------
-    llm_model_strong: str = "claude-sonnet-4-6"  # intake, answer, tone, prep
+    llm_model_strong: str = "claude-sonnet-4-6"  # intake, answer, prep
     llm_model_fast: str = "claude-haiku-4-5-20251001"  # rewrite, grounding judge
     embedding_model: str = "text-embedding-3-small"
     reranker_backend: Literal["none", "fastembed"] = "none"

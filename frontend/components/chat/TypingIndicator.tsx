@@ -7,7 +7,6 @@ const STAGE_LABELS: Record<Stage, string> = {
   searching: "Searching the knowledge base…",
   answering: "Drafting an answer from the sources…",
   checking: "Checking every claim against the sources…",
-  rewriting: "Rewriting it for you…",
 };
 
 export function TypingIndicator({ stage }: { stage: Stage | null }) {

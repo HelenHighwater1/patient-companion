@@ -65,7 +65,7 @@ def test_answer_pipeline_events(retriever):
         )
     )
     stages = [e.get("stage") for e in events if e["type"] == "status"]
-    assert stages == ["searching", "answering", "checking", "rewriting"]
+    assert stages == ["searching", "answering", "checking"]
     answer = next(e for e in events if e["type"] == "answer")
     assert answer["patient_response"]
     assert answer["sources"]

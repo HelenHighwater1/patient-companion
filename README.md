@@ -31,9 +31,10 @@ Every question flows through a multi-agent chain:
 question
   → scope check + query rewrite        (Haiku, forced tool call)
   → hybrid retrieval                   (dense + BM25 → RRF fusion → gate)
-  → grounded answer with citations     (Sonnet, forced tool call)
-  → claim-by-claim grounding audit     (embedding cosine + Haiku judge)
-  → warm rewrite at your reading level (Sonnet, forced tool call)
+  → warm grounded answer + citations   (Sonnet, forced tool call,
+                                        at your reading level)
+  → claim-by-claim grounding audit of  (embedding cosine + Haiku judge)
+    the answer exactly as shown
   → patient response + sources + flags
 ```
 
@@ -57,7 +58,7 @@ patient-companion/
 ├── backend/
 │   ├── src/patient_companion/
 │   │   ├── server/            FastAPI app, SSE, singletons
-│   │   ├── agents/            intake, answer, guard, tone, prep, pipeline, prompts
+│   │   ├── agents/            intake, answer, guard, prep, pipeline, prompts
 │   │   ├── rag/               chunking, store, ingest, rewrite, rerank, retrieve
 │   │   ├── providers/         LLM/embedder protocols + anthropic/openai/mock
 │   │   ├── eval/              eval harness (recall@k, MRR, refusal accuracy)

@@ -1,7 +1,6 @@
 from patient_companion.agents.distress import is_distressed
 from patient_companion.agents.intake import card_events, summarize_document
 from patient_companion.agents.prep import generate_prep_sheet
-from patient_companion.agents.tone import apply_tone
 from patient_companion.config import get_settings
 from patient_companion.providers import get_llm
 
@@ -39,28 +38,6 @@ def test_card_events_ordered_and_labelled():
 def test_intake_empty_document():
     sections = summarize_document("", llm=_llm(), model=_model())
     assert "empty" in sections.main_finding.lower() or "trouble" in sections.orientation.lower()
-
-
-def test_tone_returns_response_and_questions():
-    out = apply_tone(
-        "ALS affects breathing over time. [1]",
-        [],
-        llm=_llm(),
-        model=_model(),
-        reading_level="gentle",
-    )
-    assert out["patient_response"]
-    assert isinstance(out["doctor_questions"], list)
-
-
-def test_tone_falls_back_on_empty_payload():
-    out = apply_tone(
-        "Verified text.",
-        ["gap"],
-        llm=_llm(),
-        model=_model(),
-    )
-    assert out["patient_response"]
 
 
 def test_prep_sheet_schema():

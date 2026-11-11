@@ -22,13 +22,15 @@ logger = logging.getLogger(__name__)
 
 _MAX_DOC_CHARS = 60_000
 
-# Two calls, fired in parallel on upload: the first pair of cards lands
-# after the smaller call while the bigger call generates the rest
-# concurrently. Each group is emitted as separate card events — the
-# frontend paces the reveal either way.
+# Calls fired in parallel on upload: the first pair of cards lands after the
+# smaller call while the others generate concurrently. Splitting the tail
+# into two calls shortens the wall-clock long pole — the single 1400-token
+# call used to finish well after everything else. Each group is emitted as
+# separate card events — the frontend paces the reveal either way.
 _SECTION_GROUPS: list[tuple[tuple[str, ...], int]] = [
     (("orientation", "main_finding"), 700),
-    (("evidence", "next_steps", "questions", "patient_concerns"), 1400),
+    (("evidence", "next_steps"), 800),
+    (("questions", "patient_concerns"), 800),
 ]
 
 # Per-section fallbacks so one failed call can't take down the whole recap.

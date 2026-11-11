@@ -114,7 +114,7 @@ export type ServerEvent =
     }
   | { type: "done"; document_context?: string; patient_concerns?: string[] };
 
-export type Stage = "reading" | "searching" | "answering" | "checking" | "rewriting";
+export type Stage = "reading" | "searching" | "answering" | "checking";
 
 export type Message =
   | { id: string; role: "user"; text: string }
