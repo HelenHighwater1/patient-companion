@@ -14,7 +14,7 @@ export function Header({ onOpenAbout }: { onOpenAbout: () => void }) {
             </svg>
           </div>
           <div>
-            <p className="font-display text-lg font-semibold leading-tight text-warm-900">
+            <p className="font-display text-xl font-bold uppercase leading-tight tracking-[0.16em] text-warm-900">
               Patient Companion
             </p>
             <p className="text-xs text-warm-700/70">medical documents, translated kindly</p>

@@ -12,7 +12,7 @@ export function AboutModal({ onClose }: { onClose: () => void }) {
         className="max-h-[80vh] w-full max-w-xl overflow-y-auto rounded-4xl bg-paper p-8 shadow-float-lg"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="mb-3 font-display text-2xl font-semibold text-warm-900">About this demo</h2>
+        <h2 className="mb-3 font-display text-3xl font-bold text-warm-900">About this demo</h2>
         <div className="space-y-3 text-sm leading-relaxed text-warm-700">
           <p>
             Patient Companion translates dense medical documents into staged,

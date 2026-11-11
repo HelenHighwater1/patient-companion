@@ -12,7 +12,7 @@ export function DisclaimerGate({ onAcknowledge }: { onAcknowledge: () => void })
         <div className="mb-4 inline-flex rounded-full bg-ochre-100 px-3 py-1 text-xs font-bold text-ochre-800">
           Demo project — please read
         </div>
-        <h2 id="disclaimer-title" className="mb-3 font-display text-2xl font-semibold text-warm-900">
+        <h2 id="disclaimer-title" className="mb-3 font-display text-3xl font-bold text-warm-900">
           This is a demonstration, not a medical tool.
         </h2>
         <ul className="mb-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-warm-700">

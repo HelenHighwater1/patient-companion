@@ -97,7 +97,7 @@ export function AnswerMessage({
 
       {questions.length > 0 && (
         <div>
-          <p className="mb-1.5 font-display text-sm font-semibold text-warm-800">
+          <p className="mb-1.5 font-display text-base font-bold text-warm-800">
             For your next appointment
           </p>
           <div className="flex flex-col gap-1.5">

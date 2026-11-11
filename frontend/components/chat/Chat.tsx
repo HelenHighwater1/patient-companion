@@ -228,7 +228,7 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
       <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto px-5 py-5">
         {messages.length === 0 && !busy && (
           <div className="mx-auto mt-10 max-w-md rounded-3xl bg-warm-50 p-6 text-center">
-            <p className="mb-2 font-display text-xl font-semibold text-warm-900">Where would you like to start?</p>
+            <p className="mb-2 font-display text-2xl font-bold text-warm-900">Where would you like to start?</p>
             <p className="text-sm leading-relaxed text-warm-700">
               Load a fictional sample document from the left, drag a file into the box below,
               or ask a question about ALS care.

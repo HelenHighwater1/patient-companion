@@ -35,7 +35,7 @@ export function PreviewModal({ doc, onClose, onLoad }: Props) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-warm-100 px-6 py-4">
-          <h2 className="font-display text-base font-semibold text-warm-900">{doc.title}</h2>
+          <h2 className="font-display text-lg font-bold text-warm-900">{doc.title}</h2>
           <button
             onClick={onClose}
             aria-label="Close preview"
