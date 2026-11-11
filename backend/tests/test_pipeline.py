@@ -28,6 +28,29 @@ def test_document_summary_streams_five_cards():
     assert done["patient_concerns"]
 
 
+def test_document_summary_failed_calls_stay_out_of_context():
+    class _FailLLM:
+        def complete_tool(self, **kw):
+            raise RuntimeError("boom")
+
+        def complete(self, **kw):
+            return ""
+
+    events = _drain(
+        stream_document_summary(
+            "Clinic note: EMG consistent with ALS.",
+            llm=_FailLLM(),
+            settings=get_settings(),
+        )
+    )
+    assert sum(1 for e in events if e["type"] == "card") == 5
+    done = events[-1]
+    assert done["document_context"] == ""
+    assert done["patient_concerns"] == []
+    first_card = next(e for e in events if e["type"] == "card")
+    assert "couldn't" in first_card["body"]
+
+
 def test_answer_pipeline_events(retriever):
     events = _drain(
         stream_answer(

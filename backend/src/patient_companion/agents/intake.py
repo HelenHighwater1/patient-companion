@@ -32,12 +32,18 @@ _SECTION_GROUPS: list[tuple[tuple[str, ...], int]] = [
 ]
 
 # Per-section fallbacks so one failed call can't take down the whole recap.
+# Each reads as an explicit failure — never as a statement about the
+# document — and failed sections are kept out of document_context so
+# follow-up answers and the prep sheet stay grounded in real content.
 _FALLBACKS: dict[str, str | list[str]] = {
-    "orientation": "This looks like a medical document about you.",
-    "main_finding": "We had trouble summarizing the main finding — "
+    "orientation": "This looks like a medical document, "
+    "but we couldn't read it clearly.",
+    "main_finding": "We couldn't summarize the main finding — "
     "your care team can walk you through it.",
-    "evidence": "The document records test results and clinical observations.",
-    "next_steps": "Follow up with your care team and bring your questions.",
+    "evidence": "We couldn't summarize what the tests showed — "
+    "ask your care team to explain the results.",
+    "next_steps": "We couldn't read the next steps clearly — "
+    "please confirm them with your care team.",
     "questions": [
         "What does this document mean for my day-to-day life?",
         "What should I watch for between now and my next visit?",
@@ -47,8 +53,12 @@ _FALLBACKS: dict[str, str | list[str]] = {
 }
 
 
-def _coerce(key: str, value: Any) -> str | list[str]:
-    """Validate one section's value, falling back to a gentle default."""
+def _coerce(key: str, value: Any) -> tuple[str | list[str], bool]:
+    """Validate one section's value.
+
+    Returns ``(display_value, from_model)`` — the flag lets callers keep
+    fallback wording out of anything treated as document content.
+    """
     fallback = _FALLBACKS[key]
     if isinstance(fallback, list):
         items = (
@@ -56,8 +66,12 @@ def _coerce(key: str, value: Any) -> str | list[str]:
             if isinstance(value, list)
             else []
         )
-        return (items or fallback)[:4]
-    return value.strip() if isinstance(value, str) and value.strip() else fallback
+        if items:
+            return items[:4] if key == "questions" else items, True
+        return fallback, False
+    if isinstance(value, str) and value.strip():
+        return value.strip(), True
+    return fallback, False
 
 
 def _section_payload(
@@ -93,23 +107,23 @@ def _section_payload(
 
 def iter_document_sections(
     document_text: str, *, llm: LLMProvider, model: str
-) -> Iterator[tuple[str, str | list[str]]]:
-    """Yield ``(section_key, value)`` as each section's LLM call completes.
+) -> Iterator[tuple[str, str | list[str], bool]]:
+    """Yield ``(section_key, value, from_model)`` as each call completes.
 
     The group calls run in parallel but are yielded in card order: the
-    orientation card finishes after its short call while the bigger call
-    behind it is still generating the remaining sections.
+    first pair lands after its short call while the bigger call behind it
+    is still generating the remaining sections.
     """
     text = (document_text or "").strip()
     if not text:
-        yield "orientation", "I couldn't read that document."
+        yield "orientation", "I couldn't read that document.", True
         yield "main_finding", (
             "The document appears to be empty or unreadable. "
             "Please try a different file."
-        )
-        yield "evidence", ""
-        yield "next_steps", ""
-        yield "questions", []
+        ), True
+        yield "evidence", "", False
+        yield "next_steps", "", False
+        yield "questions", [], False
         return
     if len(text) > _MAX_DOC_CHARS:
         text = text[:_MAX_DOC_CHARS]
@@ -129,14 +143,18 @@ def iter_document_sections(
         for keys, future in futures:
             payload = future.result()
             for key in keys:
-                yield key, _coerce(key, payload.get(key))
+                value, from_model = _coerce(key, payload.get(key))
+                yield key, value, from_model
 
 
 def summarize_document(
     document_text: str, *, llm: LLMProvider, model: str
 ) -> DocumentSections:
     """Non-streaming variant: drain every section call into one object."""
-    values = dict(iter_document_sections(document_text, llm=llm, model=model))
+    values = {
+        k: v
+        for k, v, _ in iter_document_sections(document_text, llm=llm, model=model)
+    }
     return DocumentSections.model_validate(values)
 
 

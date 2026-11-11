@@ -45,11 +45,14 @@ def stream_document_summary(
     yield {"type": "status", "stage": "reading"}
     label_for = dict(CARD_LABELS)
     parts: dict[str, Any] = {}
+    generated: set[str] = set()
     index = 0
-    for key, value in iter_document_sections(
+    for key, value, from_model in iter_document_sections(
         document_text, llm=llm, model=s.llm_model_strong
     ):
         parts[key] = value
+        if from_model:
+            generated.add(key)
         if key == "patient_concerns":
             if value:
                 yield {"type": "concerns", "items": value}
@@ -65,7 +68,7 @@ def stream_document_summary(
     context = "\n".join(
         part
         for key in ("orientation", "main_finding", "evidence", "next_steps")
-        if isinstance(part := parts.get(key), str) and part
+        if key in generated and isinstance(part := parts.get(key), str) and part
     )
     yield {
         "type": "done",
