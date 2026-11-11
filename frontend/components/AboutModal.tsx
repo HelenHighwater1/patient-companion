@@ -9,10 +9,10 @@ export function AboutModal({ onClose }: { onClose: () => void }) {
       onClick={onClose}
     >
       <div
-        className="max-h-[80vh] w-full max-w-xl overflow-y-auto rounded-2xl bg-white p-8 shadow-2xl"
+        className="max-h-[80vh] w-full max-w-xl overflow-y-auto rounded-4xl bg-paper p-8 shadow-float-lg"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="mb-3 text-xl font-semibold text-warm-900">About this demo</h2>
+        <h2 className="mb-3 font-display text-2xl font-semibold text-warm-900">About this demo</h2>
         <div className="space-y-3 text-sm leading-relaxed text-warm-700">
           <p>
             Patient Companion translates dense medical documents into staged,
@@ -26,7 +26,7 @@ export function AboutModal({ onClose }: { onClose: () => void }) {
             citations, audited claim-by-claim against the cited sources, then rewritten
             for warmth and clarity at your chosen reading level.
           </p>
-          <p className="rounded-xl bg-brand-50 p-4 text-brand-900">
+          <p className="rounded-2xl bg-ochre-50 p-4 text-ochre-900">
             <strong>Honest limits:</strong> this is a technical demo — not HIPAA
             compliant, not clinically validated, and not a substitute for medical advice.
             Never enter real patient information.
@@ -34,7 +34,7 @@ export function AboutModal({ onClose }: { onClose: () => void }) {
         </div>
         <button
           onClick={onClose}
-          className="mt-6 w-full rounded-xl bg-brand-600 px-4 py-3 font-medium text-white transition-colors hover:bg-brand-700"
+          className="mt-6 w-full rounded-full bg-brand-600 px-4 py-3 font-medium text-white transition-colors hover:bg-brand-700"
         >
           Close
         </button>

@@ -212,23 +212,23 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
   return (
     <div className="flex h-full flex-col">
       {/* toolbar */}
-      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-warm-200 px-4 py-2">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-warm-100 px-5 py-3">
         <ReadingLevelToggle value={readingLevel} onChange={setReadingLevel} />
         <button
           onClick={openPrepSheet}
           disabled={prepLoading || (history.length === 0 && !documentContext)}
           title="Build a printable sheet for your appointment"
-          className="rounded-lg border border-brand-200 bg-brand-50 px-3 py-1.5 text-xs font-medium text-brand-800 transition-colors hover:bg-brand-100 disabled:cursor-not-allowed disabled:opacity-40"
+          className="rounded-full bg-ochre-100 px-4 py-1.5 text-xs font-bold text-ochre-900 transition-colors hover:bg-ochre-200 disabled:cursor-not-allowed disabled:opacity-40"
         >
           {prepLoading ? "Building…" : "Prepare for appointment"}
         </button>
       </div>
 
       {/* messages */}
-      <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto px-4 py-5">
+      <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto px-5 py-5">
         {messages.length === 0 && !busy && (
-          <div className="mx-auto mt-10 max-w-md rounded-2xl bg-white p-6 text-center shadow-sm ring-1 ring-warm-200">
-            <p className="mb-2 text-base font-medium text-warm-900">Where would you like to start?</p>
+          <div className="mx-auto mt-10 max-w-md rounded-3xl bg-warm-50 p-6 text-center">
+            <p className="mb-2 font-display text-xl font-semibold text-warm-900">Where would you like to start?</p>
             <p className="text-sm leading-relaxed text-warm-700">
               Load a fictional sample document from the left, drag a file into the box below,
               or ask a question about ALS care.
@@ -240,7 +240,7 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
           if (m.role === "user") {
             return (
               <div key={m.id} className="flex justify-end">
-                <div className="max-w-[85%] rounded-2xl rounded-br-sm bg-brand-600 px-4 py-2.5 text-sm text-white shadow-sm">
+                <div className="max-w-[85%] rounded-3xl rounded-br-md bg-brand-600 px-4 py-2.5 text-sm text-white shadow-float">
                   {m.text}
                 </div>
               </div>
@@ -264,7 +264,7 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
                   />
                 )}
                 {(m.kind === "refusal" || m.kind === "error") && (
-                  <div className="rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-sm leading-relaxed text-warm-800 shadow-sm ring-1 ring-warm-200">
+                  <div className="rounded-3xl rounded-bl-md bg-warm-50 px-4 py-3 text-sm leading-relaxed text-warm-800">
                     {m.text}
                   </div>
                 )}
@@ -276,7 +276,7 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
         {busy && <TypingIndicator stage={stage} />}
       </div>
 
-      <div className="border-t border-warm-200 p-3">
+      <div className="p-3">
         <ChatInput disabled={busy} onSend={sendQuestion} onUpload={uploadFile} />
       </div>
 

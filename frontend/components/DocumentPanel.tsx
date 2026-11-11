@@ -10,47 +10,43 @@ interface Props {
 }
 
 const BADGE: Record<string, string> = {
-  PDF: "bg-rose-50 text-rose-700",
-  EMAIL: "bg-sky-50 text-sky-700",
+  PDF: "bg-rose-100 text-rose-700",
+  EMAIL: "bg-slate-100 text-slate-700",
 };
 
 export function DocumentPanel({ documents, activeFilename, onLoad, onPreview }: Props) {
   return (
-    <aside className="flex h-full flex-col">
-      <h2 className="mb-1 px-1 text-xs font-semibold uppercase tracking-wide text-warm-700/70">
-        Sample documents
-      </h2>
-      <p className="mb-3 px-1 text-xs text-warm-700/60">Fictional — safe to explore.</p>
-      <div className="space-y-2 overflow-y-auto pr-1">
+    <aside className="flex h-full flex-col rounded-3xl bg-paper p-4 shadow-float">
+      <h2 className="px-1 font-display text-lg font-semibold text-warm-900">Sample documents</h2>
+      <p className="mb-3 px-1 text-xs text-warm-700/70">Fictional — safe to explore.</p>
+      <div className="-mx-1 space-y-3 overflow-y-auto px-1 pb-1">
         {documents.map((doc) => (
           <div
             key={doc.filename}
-            className={`rounded-xl border p-3 transition-colors ${
+            className={`rounded-2xl p-3 transition-colors ${
               doc.filename === activeFilename
-                ? "border-brand-300 bg-brand-50"
-                : "border-warm-200 bg-white hover:border-brand-200"
+                ? "bg-brand-50 ring-2 ring-brand-300"
+                : "bg-warm-50 hover:bg-warm-100"
             }`}
           >
-            <div className="mb-2 flex items-center justify-between gap-2">
-              <span
-                className={`rounded px-1.5 py-0.5 text-[10px] font-bold ${
-                  BADGE[doc.file_type] ?? "bg-warm-100 text-warm-700"
-                }`}
-              >
-                {doc.file_type}
-              </span>
-            </div>
-            <p className="mb-3 text-sm font-medium leading-snug text-warm-900">{doc.title}</p>
+            <span
+              className={`mb-2 inline-block rounded-full px-2 py-0.5 text-[10px] font-extrabold tracking-wide ${
+                BADGE[doc.file_type] ?? "bg-warm-200 text-warm-700"
+              }`}
+            >
+              {doc.file_type}
+            </span>
+            <p className="mb-3 text-sm font-semibold leading-snug text-warm-900">{doc.title}</p>
             <div className="flex gap-2">
               <button
                 onClick={() => onLoad(doc)}
-                className="flex-1 rounded-lg bg-brand-600 px-2 py-1.5 text-xs font-medium text-white transition-colors hover:bg-brand-700"
+                className="flex-1 rounded-full bg-brand-600 px-2 py-1.5 text-xs font-bold text-white transition-colors hover:bg-brand-700"
               >
                 Load into chat
               </button>
               <button
                 onClick={() => onPreview(doc)}
-                className="rounded-lg border border-warm-200 px-2 py-1.5 text-xs font-medium text-warm-700 transition-colors hover:bg-warm-100"
+                className="rounded-full bg-paper px-3 py-1.5 text-xs font-bold text-warm-700 shadow-float transition-colors hover:bg-warm-100"
               >
                 Preview
               </button>
@@ -58,7 +54,7 @@ export function DocumentPanel({ documents, activeFilename, onLoad, onPreview }: 
           </div>
         ))}
         {documents.length === 0 && (
-          <p className="rounded-xl border border-dashed border-warm-300 p-4 text-xs text-warm-700/70">
+          <p className="rounded-2xl border border-dashed border-warm-300 p-4 text-xs text-warm-700/70">
             No sample documents found. Is the API running?
           </p>
         )}

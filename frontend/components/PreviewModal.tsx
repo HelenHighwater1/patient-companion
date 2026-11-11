@@ -31,11 +31,11 @@ export function PreviewModal({ doc, onClose, onLoad }: Props) {
       onClick={onClose}
     >
       <div
-        className="flex max-h-[85vh] w-full max-w-2xl flex-col rounded-2xl bg-white shadow-2xl"
+        className="flex max-h-[85vh] w-full max-w-2xl flex-col rounded-4xl bg-paper shadow-float-lg"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between border-b border-warm-200 px-6 py-4">
-          <h2 className="text-sm font-semibold text-warm-900">{doc.title}</h2>
+        <div className="flex items-center justify-between border-b border-warm-100 px-6 py-4">
+          <h2 className="font-display text-base font-semibold text-warm-900">{doc.title}</h2>
           <button
             onClick={onClose}
             aria-label="Close preview"
@@ -49,7 +49,7 @@ export function PreviewModal({ doc, onClose, onLoad }: Props) {
             <iframe
               src={documentUrl(doc.filename)}
               title={doc.title}
-              className="h-[60vh] w-full rounded-lg border border-warm-200"
+              className="h-[60vh] w-full rounded-2xl border border-warm-200"
             />
           ) : error ? (
             <p className="text-sm text-warm-700">Couldn&apos;t load a preview.</p>
@@ -59,10 +59,10 @@ export function PreviewModal({ doc, onClose, onLoad }: Props) {
             </pre>
           )}
         </div>
-        <div className="border-t border-warm-200 px-6 py-4">
+        <div className="border-t border-warm-100 px-6 py-4">
           <button
             onClick={() => onLoad(doc)}
-            className="w-full rounded-xl bg-brand-600 px-4 py-2.5 font-medium text-white transition-colors hover:bg-brand-700"
+            className="w-full rounded-full bg-brand-600 px-4 py-2.5 font-medium text-white transition-colors hover:bg-brand-700"
           >
             Load this document into the chat
           </button>

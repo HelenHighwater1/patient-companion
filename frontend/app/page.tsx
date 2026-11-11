@@ -35,7 +35,7 @@ export default function Home() {
       <div className="flex h-screen flex-col">
         <Header onOpenAbout={() => setAboutOpen(true)} />
         <Hero />
-        <div className="mx-auto flex w-full max-w-6xl flex-1 gap-5 overflow-hidden px-4 py-4">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-1 gap-5 overflow-hidden px-4 pb-5 pt-4">
           <div className="hidden w-72 shrink-0 md:block">
             <DocumentPanel
               documents={documents}
@@ -44,7 +44,7 @@ export default function Home() {
               onPreview={setPreviewDoc}
             />
           </div>
-          <main className="flex-1 overflow-hidden rounded-2xl border border-warm-200 bg-warm-100/60 shadow-sm">
+          <main className="min-w-0 flex-1 overflow-hidden rounded-3xl bg-paper shadow-float">
             <Chat documentToLoad={documentToLoad} onDocumentLoaded={handleLoaded} />
           </main>
         </div>
