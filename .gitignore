@@ -20,10 +20,11 @@ dist/
 node_modules/
 .next/
 out/
+*.tsbuildinfo
 
 # Built knowledge stores (regenerate via `python -m patient_companion.rag.ingest`)
 knowledge/*/store/
-eval/results/
+**/eval/results/
 
 # OS / editor
 .DS_Store
