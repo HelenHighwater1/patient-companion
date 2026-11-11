@@ -44,7 +44,14 @@ export type Stage = "reading" | "searching" | "answering" | "checking" | "rewrit
 
 export type Message =
   | { id: string; role: "user"; text: string }
-  | { id: string; role: "assistant"; kind: "cards"; cards: CardBody[]; concerns: string[] }
+  | {
+      id: string;
+      role: "assistant";
+      kind: "cards";
+      cards: CardBody[];
+      concerns: string[];
+      complete: boolean;
+    }
   | {
       id: string;
       role: "assistant";

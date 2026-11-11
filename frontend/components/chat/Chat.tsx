@@ -74,6 +74,9 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
     if (e.type === "done") {
       setStage(null);
       setBusy(false);
+      patchMessage(msgId, (m) =>
+        m.role === "assistant" && m.kind === "cards" ? { ...m, complete: true } : m,
+      );
       if (e.document_context) setDocumentContext(e.document_context);
       if (e.patient_concerns) setPatientConcerns(e.patient_concerns);
     }
@@ -86,7 +89,14 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
     setBusy(true);
     appendMessage({ id: uid(), role: "user", text: userLabel });
     const msgId = uid();
-    appendMessage({ id: msgId, role: "assistant", kind: "cards", cards: [], concerns: [] });
+    appendMessage({
+      id: msgId,
+      role: "assistant",
+      kind: "cards",
+      cards: [],
+      concerns: [],
+      complete: false,
+    });
     run((e) => handleDocEvent(msgId, e)).catch((err) => {
       setStage(null);
       setBusy(false);
@@ -239,7 +249,9 @@ export function Chat({ documentToLoad, onDocumentLoaded }: Props) {
           return (
             <div key={m.id} className="flex justify-start">
               <div className="max-w-[92%]">
-                {m.kind === "cards" && <CardStack cards={m.cards} concerns={m.concerns} />}
+                {m.kind === "cards" && (
+                  <CardStack cards={m.cards} concerns={m.concerns} pending={!m.complete} />
+                )}
                 {m.kind === "answer" && (
                   <AnswerMessage
                     text={m.text}
