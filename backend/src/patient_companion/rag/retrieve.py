@@ -32,7 +32,27 @@ class RetrievalResult:
     refusal_reason: str | None = None
     query_variants: list[str] = field(default_factory=list)
     top_dense_cosine: float | None = None
+    dense_hit_count: int = 0
+    bm25_hit_count: int = 0
+    fused_count: int = 0
+    gate: dict[str, Any] | None = None
     latencies_ms: dict[str, float] = field(default_factory=dict)
+
+    def trace(self) -> dict[str, Any]:
+        """Retrieval diagnostics for the UI: what was searched and how it was gated."""
+        return {
+            "query_variants": self.query_variants,
+            "refused": self.refused,
+            "refusal_reason": self.refusal_reason,
+            "counts": {
+                "dense": self.dense_hit_count,
+                "bm25": self.bm25_hit_count,
+                "fused": self.fused_count,
+                "returned": len(self.chunks),
+            },
+            "gate": self.gate,
+            "latencies_ms": self.latencies_ms,
+        }
 
 
 def _rrf_fuse(rank_lists: list[list[int]], k: int) -> list[tuple[int, float]]:
@@ -59,9 +79,7 @@ class Retriever:
         self.embedder = embedder
         self.llm = llm
         self.disease_label = disease_label
-        self.reranker = reranker or get_reranker(
-            self.settings.reranker_backend, self.settings.reranker_model
-        )
+        self.reranker = reranker or get_reranker(self.settings.reranker_backend, self.settings.reranker_model)
 
     def retrieve(
         self,
@@ -125,8 +143,12 @@ class Retriever:
         for var in result.query_variants:
             bm25_rank_lists.append(self.store.bm25_search(var, min(s.bm25_candidates, self.store.size)))
         result.latencies_ms["bm25_ms"] = _ms(t)
+        result.dense_hit_count = len({i for ranks in dense_rank_lists for i in ranks})
+        result.bm25_hit_count = len({i for ranks in bm25_rank_lists for i in ranks})
 
         fused = _rrf_fuse(dense_rank_lists + bm25_rank_lists, s.rrf_k)
+        fusion_scores = dict(fused)
+        result.fused_count = len(fused)
         candidate_indices = [idx for idx, _ in fused[: s.fusion_pool_size]]
         if not candidate_indices:
             result.refused = True
@@ -144,13 +166,26 @@ class Retriever:
             sorted_desc = sorted(rerank_scores, reverse=True)
             top1 = sorted_desc[0]
             tail = sorted_desc[min(10, len(sorted_desc)) - 1]
-            if (top1 - tail) < s.gate_min_rerank_margin and top1 < 0.0:
+            passed = not ((top1 - tail) < s.gate_min_rerank_margin and top1 < 0.0)
+            result.gate = {
+                "method": "rerank_margin",
+                "value": round(float(top1 - tail), 4),
+                "threshold": s.gate_min_rerank_margin,
+                "passed": passed,
+            }
+            if not passed:
                 result.refused = True
                 result.refusal_reason = "low_source_confidence"
         else:
             order = list(range(len(candidate_indices)))
             best_cos = max(dense_cosines.get(i, 0.0) for i in candidate_indices)
             result.top_dense_cosine = best_cos
+            result.gate = {
+                "method": "dense_cosine",
+                "value": round(float(best_cos), 4),
+                "threshold": s.gate_min_dense_cosine,
+                "passed": best_cos >= s.gate_min_dense_cosine,
+            }
             if best_cos < s.gate_min_dense_cosine:
                 result.refused = True
                 result.refusal_reason = "low_source_confidence"
@@ -161,7 +196,8 @@ class Retriever:
 
         n = max(1, len(order))
         for rank, li in enumerate(order[:k]):
-            row = self.store.rows[candidate_indices[li]]
+            row_idx = candidate_indices[li]
+            row = self.store.rows[row_idx]
             chunk = Chunk(
                 document=row["document"],
                 source=row.get("source", "?"),
@@ -173,6 +209,9 @@ class Retriever:
                 source_id=row.get("source_id"),
                 url=row.get("url"),
                 year=row.get("year"),
+                source_type=row.get("source_type"),
+                dense_cosine=(round(dense_cosines[row_idx], 4) if row_idx in dense_cosines else None),
+                fusion_score=round(fusion_scores.get(row_idx, 0.0), 5),
                 rerank_score=(float(rerank_scores[li]) if rerank_scores is not None else None),
             )
             result.chunks.append(chunk)

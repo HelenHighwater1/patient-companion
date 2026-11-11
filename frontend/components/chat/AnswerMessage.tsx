@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { sourceKey } from "@/lib/evidence";
 import type { Citation, Source } from "@/lib/types";
 
 interface Props {
@@ -11,6 +12,11 @@ interface Props {
   flaggedGaps: string[];
   disclaimer: string;
   onAskQuestion: (q: string) => void;
+  wide: boolean;
+  /** This answer is the one shown in the evidence panel. */
+  active: boolean;
+  hoveredSourceKey: string | null;
+  onShowEvidence: (marker?: number) => void;
 }
 
 /** Render the response with [n] markers turned into citation badges. */
@@ -18,10 +24,12 @@ function WithCitations({
   text,
   citations,
   onCitationClick,
+  hoveredSourceKey,
 }: {
   text: string;
   citations: Citation[];
   onCitationClick: (marker: number) => void;
+  hoveredSourceKey: string | null;
 }) {
   const parts = text.split(/(\[\d+\])/g);
   const byMarker = new Map(citations.map((c) => [c.marker, c]));
@@ -32,13 +40,18 @@ function WithCitations({
         if (!m) return <span key={i}>{part}</span>;
         const marker = Number(m[1]);
         const cit = byMarker.get(marker);
+        const lit = !!cit && hoveredSourceKey === sourceKey(cit);
         return (
           <button
             key={i}
             type="button"
             onClick={() => onCitationClick(marker)}
             title={cit ? `${cit.title ?? cit.source}\n${cit.claim}` : "source"}
-            className="mx-0.5 inline-flex h-4 min-w-4 cursor-pointer items-center justify-center rounded-full bg-ochre-100 px-1 align-super text-[10px] font-bold text-ochre-900 transition-colors hover:bg-ochre-200"
+            className={`mx-0.5 inline-flex h-4 min-w-4 cursor-pointer items-center justify-center rounded-full px-1 align-super text-[10px] font-bold transition-all ${
+              lit
+                ? "scale-125 bg-ochre-500 text-white"
+                : "bg-ochre-100 text-ochre-900 hover:bg-ochre-200"
+            }`}
           >
             {marker}
           </button>
@@ -56,15 +69,24 @@ export function AnswerMessage({
   flaggedGaps,
   disclaimer,
   onAskQuestion,
+  wide,
+  active,
+  hoveredSourceKey,
+  onShowEvidence,
 }: Props) {
   const [showSources, setShowSources] = useState(false);
   const [activeSource, setActiveSource] = useState<{ marker: number; tick: number } | null>(
     null,
   );
+  const cited = sources.filter((s) => s.cited !== false);
   const sourceRefs = useRef(new Map<number, HTMLDivElement>());
   const tick = useRef(0);
 
   const handleCitationClick = (marker: number) => {
+    if (wide) {
+      onShowEvidence(marker);
+      return;
+    }
     setShowSources(true);
     setActiveSource({ marker, tick: ++tick.current });
   };
@@ -79,8 +101,17 @@ export function AnswerMessage({
   }, [activeSource, showSources]);
 
   return (
-    <div className="space-y-3 rounded-3xl rounded-bl-md bg-warm-50 p-4">
-      <WithCitations text={text} citations={citations} onCitationClick={handleCitationClick} />
+    <div
+      className={`space-y-3 rounded-3xl rounded-bl-md bg-warm-50 p-4 transition-shadow ${
+        active && wide ? "ring-2 ring-ochre-200" : ""
+      }`}
+    >
+      <WithCitations
+        text={text}
+        citations={citations}
+        onCitationClick={handleCitationClick}
+        hoveredSourceKey={hoveredSourceKey}
+      />
 
       {flaggedGaps.length > 0 && (
         <div className="rounded-2xl bg-terracotta-50 p-3">
@@ -116,6 +147,14 @@ export function AnswerMessage({
       )}
 
       <div className="flex items-center justify-between border-t border-warm-200/70 pt-2">
+        {wide ? (
+          <button
+            onClick={() => onShowEvidence()}
+            className="text-xs font-bold text-brand-700 hover:underline"
+          >
+            {active ? "Shown in the evidence panel →" : "View evidence →"}
+          </button>
+        ) : (
         <button
           onClick={() => {
             setActiveSource(null);
@@ -123,13 +162,22 @@ export function AnswerMessage({
           }}
           className="text-xs font-bold text-brand-700 hover:underline"
         >
-          {showSources ? "Hide sources" : `Sources (${citations.length || sources.length})`}
+          {showSources ? "Hide sources" : `Sources (${citations.length || cited.length})`}
         </button>
+        )}
+        {!wide && (
+          <button
+            onClick={() => onShowEvidence()}
+            className="text-xs font-bold text-warm-700 hover:underline"
+          >
+            Full evidence
+          </button>
+        )}
       </div>
 
-      {showSources && (
+      {showSources && !wide && (
         <div className="space-y-2 rounded-2xl bg-paper p-3 text-xs">
-          {(citations.length > 0 ? citations : sources).map((s, i) => {
+          {(citations.length > 0 ? citations : cited).map((s, i) => {
             const key = "marker" in s ? s.marker : i + 1;
             return (
               <div

@@ -33,6 +33,15 @@ def test_diseases(client):
     assert any(d["id"] == "als" and d["chunks"] > 0 for d in r.json())
 
 
+def test_corpus_summary(client):
+    r = client.get("/api/corpus")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["chunk_count"] > 0
+    assert sum(src["chunks"] for src in body["sources"]) == body["chunk_count"]
+    assert any(src["source"] == "ninds_als" for src in body["sources"])
+
+
 def test_documents_list(client):
     docs = client.get("/api/documents").json()
     assert any(d["filename"] == "sample_note.txt" for d in docs)
