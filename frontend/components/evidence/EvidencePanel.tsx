@@ -75,7 +75,7 @@ export function EvidencePanel({
     <aside className="flex h-full flex-col rounded-3xl bg-paper shadow-float">
       <div className="flex items-start justify-between gap-2 border-b border-warm-100 px-4 py-3">
         <div className="min-w-0">
-          <h2 className="font-display text-lg font-semibold text-warm-900">
+          <h2 className="font-display text-xl font-bold text-warm-900">
             {evidence ? "Evidence" : "Knowledge base"}
           </h2>
           <p className="truncate text-xs text-warm-700/70" title={evidence?.question}>

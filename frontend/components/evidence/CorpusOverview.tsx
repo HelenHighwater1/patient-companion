@@ -77,13 +77,13 @@ export function CorpusOverview({ corpus }: { corpus: CorpusSummary | null }) {
       </p>
       <div className="grid grid-cols-2 gap-2">
         <div className="rounded-2xl bg-brand-50 p-3">
-          <p className="font-display text-2xl font-semibold text-brand-800">
+          <p className="font-display text-3xl font-bold text-brand-800">
             {corpus.chunk_count.toLocaleString()}
           </p>
           <p className="text-[11px] font-bold text-brand-800/70">searchable passages</p>
         </div>
         <div className="rounded-2xl bg-ochre-50 p-3">
-          <p className="font-display text-2xl font-semibold text-ochre-800">
+          <p className="font-display text-3xl font-bold text-ochre-800">
             {corpus.sources.length}
           </p>
           <p className="text-[11px] font-bold text-ochre-800/70">vetted sources</p>

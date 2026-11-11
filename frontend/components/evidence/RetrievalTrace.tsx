@@ -48,7 +48,7 @@ export function RetrievalTrace({
   return (
     <details open className="group rounded-2xl bg-warm-50 p-3">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-2">
-        <span className="font-display text-sm font-semibold text-warm-900">How this was found</span>
+        <span className="font-display text-base font-bold text-warm-900">How this was found</span>
         <span className="text-[11px] text-warm-700/60">
           {total !== undefined ? `${Math.round(total)} ms · ` : ""}
           <span className="group-open:hidden">show</span>
