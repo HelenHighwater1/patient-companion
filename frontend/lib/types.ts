@@ -9,7 +9,7 @@ export interface CardBody {
 }
 
 export interface Grounding {
-  /** False when the cited passage wasn't among the retrieved chunks, so nothing was compared. */
+  /** False when a check couldn't run: the cited passage wasn't retrieved, or the judge skipped the claim. */
   checked: boolean;
   /** Embedding cosine between the claim and its cited passage. */
   cosine: number | null;
@@ -38,6 +38,8 @@ export interface Source {
   year?: number | null;
   source_type?: string | null;
   excerpt?: string;
+  /** Full passage text (breadcrumb removed). */
+  text?: string;
   relevance?: number;
   dense_cosine?: number | null;
   fusion_score?: number | null;

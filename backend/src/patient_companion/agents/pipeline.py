@@ -37,8 +37,12 @@ EXCERPT_CHARS = 900
 _BREADCRUMB = re.compile(r"^\[[^\]]*\]\s*")
 
 
+def _passage(text: str) -> str:
+    return _BREADCRUMB.sub("", " ".join(text.split()))
+
+
 def _excerpt(text: str, limit: int = EXCERPT_CHARS) -> str:
-    text = _BREADCRUMB.sub("", " ".join(text.split()))
+    text = _passage(text)
     if len(text) <= limit:
         return text
     cut = text[:limit].rsplit(" ", 1)[0]
@@ -57,6 +61,7 @@ def source_view(c: Chunk) -> dict[str, Any]:
         "year": c.year,
         "source_type": c.source_type,
         "excerpt": _excerpt(c.document),
+        "text": _passage(c.document),
         "relevance": c.relevance,
         "dense_cosine": c.dense_cosine,
         "fusion_score": c.fusion_score,
@@ -183,6 +188,7 @@ def stream_answer(
     def _citation_view(c) -> dict:
         meta = chunk_meta.get((c.source, c.chunk_index)) or Chunk(document="", source=c.source)
         mech = mechanical.get((c.source, c.chunk_index, c.claim.strip()))
+        judge_missing = bool(judge) and c.claim.strip() not in judge
         return {
             "marker": c.marker,
             "claim": c.claim,
@@ -191,7 +197,7 @@ def stream_answer(
             "title": meta.title,
             "url": meta.url,
             "grounding": {
-                "checked": mech is not None,
+                "checked": mech is not None and not judge_missing,
                 "cosine": round(mech["cosine"], 4) if mech else None,
                 "flagged": bool(mech["flagged"]) if mech else False,
                 "judge_score": judge.get(c.claim.strip()),

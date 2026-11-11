@@ -252,7 +252,7 @@ export function Chat({
           };
           appendMessage(answer);
           const ev = evidenceFrom(answer);
-          if (ev) onEvidence(ev);
+          if (ev) onEvidence(ev, { onlyIfActive: true });
           setHistory((h) => [...h, { question, patient_response: e.patient_response }].slice(-10));
         }
         if (e.type === "done") {

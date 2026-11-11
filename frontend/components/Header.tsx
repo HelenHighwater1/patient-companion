@@ -9,7 +9,7 @@ export function Header({
 }) {
   return (
     <header className="relative z-30 px-4 pt-4">
-      <div className="mx-auto flex max-w-[1440px] items-center justify-between rounded-3xl bg-paper px-5 py-3 shadow-float">
+      <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-2 rounded-3xl bg-paper px-5 py-3 shadow-float">
         <div className="flex items-center gap-3">
           <div
             aria-hidden
@@ -20,25 +20,25 @@ export function Header({
             </svg>
           </div>
           <div>
-            <p className="font-display text-xl font-bold uppercase leading-tight tracking-[0.16em] text-warm-900">
+            <p className="font-display text-base font-bold uppercase leading-tight tracking-[0.12em] text-warm-900 sm:text-xl sm:tracking-[0.16em]">
               Patient Companion
             </p>
-            <p className="text-xs text-warm-700/70">medical documents, translated kindly</p>
+            <p className="hidden text-xs text-warm-700/70 sm:block">medical documents, translated kindly</p>
           </div>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1 sm:gap-3">
           <span className="hidden rounded-full bg-plum-50 px-3 py-1 text-xs font-bold text-plum-700 sm:inline">
             ALS knowledge base · demo
           </span>
           <button
             onClick={onOpenEvidence}
-            className="rounded-full bg-ochre-100 px-4 py-2 text-sm font-bold text-ochre-900 transition-colors hover:bg-ochre-200 xl:hidden"
+            className="rounded-full bg-ochre-100 px-3 py-2 text-sm font-bold text-ochre-900 transition-colors hover:bg-ochre-200 xl:hidden"
           >
             Evidence
           </button>
           <button
             onClick={onOpenAbout}
-            className="rounded-full px-4 py-2 text-sm font-bold text-warm-700 transition-colors hover:bg-warm-100"
+            className="rounded-full px-3 py-2 text-sm font-bold text-warm-700 transition-colors hover:bg-warm-100"
           >
             About
           </button>

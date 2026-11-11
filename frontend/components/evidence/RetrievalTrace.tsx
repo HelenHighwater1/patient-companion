@@ -126,7 +126,7 @@ export function RetrievalTrace({
               : judged.length
                 ? `${supported} of ${judged.length} cited claims matched their source passage.` +
                   (unchecked
-                    ? ` ${unchecked} cited a passage that wasn't retrieved, so ${unchecked === 1 ? "it" : "they"} couldn't be checked.`
+                    ? ` ${unchecked} couldn't be fully checked.`
                     : "")
                 : "No individual claims to check."}
           </Step>

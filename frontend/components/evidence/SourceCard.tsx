@@ -7,7 +7,7 @@ import type { Citation, Source } from "@/lib/types";
 function verdict(c: Citation) {
   const g = c.grounding;
   if (!g) return null;
-  if (!g.checked) return { label: "Not checked", cls: "bg-terracotta-100 text-terracotta-800" };
+  if (!g.checked) return { label: "Check incomplete", cls: "bg-terracotta-100 text-terracotta-800" };
   if (g.judge_score === 3) return { label: "Not verified", cls: "bg-terracotta-100 text-terracotta-800" };
   if (g.flagged) return { label: "Low overlap", cls: "bg-terracotta-100 text-terracotta-800" };
   if (g.judge_score === 2) return { label: "Partly supported", cls: "bg-ochre-100 text-ochre-800" };
@@ -92,7 +92,7 @@ export const SourceCard = forwardRef<HTMLDivElement, Props>(function SourceCard(
               expanded ? "" : "line-clamp-4"
             }`}
           >
-            {source.excerpt}
+            {expanded ? (source.text ?? source.excerpt) : source.excerpt}
           </blockquote>
         </button>
       )}
