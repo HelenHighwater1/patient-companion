@@ -102,16 +102,22 @@ class Retriever:
             # The raw question is always part of the final variant list, so its
             # embedding can be fetched while the planner call is in flight —
             # one network round-trip instead of two sequential ones.
-            with ThreadPoolExecutor(max_workers=2) as pool:
-                embed_fut = pool.submit(self.embedder.embed, [question.strip()])
-                plan = plan_retrieval(
-                    question,
-                    conversation_history,
-                    llm=self.llm,
-                    model=s.llm_model_fast,
-                    disease_label=self.disease_label,
-                )
+            pool = ThreadPoolExecutor(max_workers=2)
+            embed_fut = pool.submit(self.embedder.embed, [question.strip()])
+            plan = plan_retrieval(
+                question,
+                conversation_history,
+                llm=self.llm,
+                model=s.llm_model_fast,
+                disease_label=self.disease_label,
+            )
+            # The vector is only needed if the planner accepted the question —
+            # a refused question must not be delayed (or failed) by the speculative
+            # embed call it never asked for.
+            in_scope = plan.get("in_scope", True) and plan.get("queries")
+            if in_scope:
                 first_vec = embed_fut.result()[0]
+            pool.shutdown(wait=bool(in_scope))
         result.latencies_ms["rewrite_ms"] = _ms(t0)
         result.query_variants = plan["queries"]
 

@@ -33,15 +33,24 @@ class CachingEmbedder:
         if not texts:
             return []
         key_of = {t: hashlib.sha256(t.encode("utf-8")).hexdigest() for t in texts}
+        out: dict[str, list[float]] = {}
         with self._lock:
-            missing = {t for t in texts if key_of[t] not in self._cache}
+            missing = set()
+            for t in texts:
+                k = key_of[t]
+                if k in self._cache:
+                    self._cache.move_to_end(k)
+                    out[k] = self._cache[k]
+                else:
+                    missing.add(t)
         if missing:
             ordered = sorted(missing)
             fresh = self._inner.embed(ordered)
             with self._lock:
                 for t, vec in zip(ordered, fresh, strict=True):
-                    self._cache[key_of[t]] = vec
+                    k = key_of[t]
+                    self._cache[k] = vec
+                    out[k] = vec
                 while len(self._cache) > self._max_entries:
                     self._cache.popitem(last=False)
-        with self._lock:
-            return [self._cache[key_of[t]] for t in texts]
+        return [out[key_of[t]] for t in texts]

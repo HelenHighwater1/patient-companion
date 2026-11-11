@@ -7,8 +7,6 @@ separate rewrite step could silently distort.
 
 from __future__ import annotations
 
-import re
-
 from patient_companion.agents.prompts import (
     ANSWER_SYSTEM,
     ANSWER_TOOL_SCHEMA,
@@ -19,7 +17,6 @@ from patient_companion.providers.base import LLMProvider
 from patient_companion.schemas import Chunk, Citation, ReadingLevel
 
 _MAX_DOC_CONTEXT_CHARS = 8_000
-_MARKER_RE = re.compile(r"\[(\d+)\]")
 
 
 def _chunks_to_text(chunks: list[Chunk]) -> str:
@@ -78,11 +75,6 @@ def answer_question(
             "It's worth asking your care team — they can point you to the right information."
         )
         citations = []
-    elif citations:
-        # A citation whose marker never appears in the text can't be traced by
-        # the reader — drop it rather than show a claim as sourced when it isn't.
-        shown = {int(m) for m in _MARKER_RE.findall(response)}
-        citations = [c for c in citations if c.marker in shown]
 
     used = {(c.source, c.chunk_index) for c in citations}
     chunks_used = [c for c in chunks if (c.source, c.chunk_index) in used] or chunks
