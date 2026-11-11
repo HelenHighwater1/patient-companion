@@ -8,7 +8,7 @@ export function DisclaimerGate({ onAcknowledge }: { onAcknowledge: () => void })
       aria-modal="true"
       aria-labelledby="disclaimer-title"
     >
-      <div className="w-full max-w-lg rounded-4xl bg-paper p-8 shadow-float-lg">
+      <div className="max-h-[calc(100dvh-2rem)] w-full max-w-lg overflow-y-auto rounded-4xl bg-paper p-8 shadow-float-lg">
         <div className="mb-4 inline-flex rounded-full bg-ochre-100 px-3 py-1 text-xs font-bold text-ochre-800">
           Demo project — please read
         </div>
