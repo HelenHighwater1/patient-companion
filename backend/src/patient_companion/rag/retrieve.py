@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import logging
 import time
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -94,9 +95,15 @@ class Retriever:
         result = RetrievalResult()
         t0 = time.perf_counter()
 
+        first_vec: list[float] | None = None
         if skip_rewrite:
             plan: dict[str, Any] = {"queries": [question.strip()], "in_scope": True}
         else:
+            # The raw question is always part of the final variant list, so its
+            # embedding can be fetched while the planner call is in flight —
+            # one network round-trip instead of two sequential ones.
+            pool = ThreadPoolExecutor(max_workers=2)
+            embed_fut = pool.submit(self.embedder.embed, [question.strip()])
             plan = plan_retrieval(
                 question,
                 conversation_history,
@@ -104,6 +111,13 @@ class Retriever:
                 model=s.llm_model_fast,
                 disease_label=self.disease_label,
             )
+            # The vector is only needed if the planner accepted the question —
+            # a refused question must not be delayed (or failed) by the speculative
+            # embed call it never asked for.
+            in_scope = plan.get("in_scope", True) and plan.get("queries")
+            if in_scope:
+                first_vec = embed_fut.result()[0]
+            pool.shutdown(wait=bool(in_scope))
         result.latencies_ms["rewrite_ms"] = _ms(t0)
         result.query_variants = plan["queries"]
 
@@ -124,7 +138,11 @@ class Retriever:
             )
 
         t = time.perf_counter()
-        q_embeddings = self.embedder.embed(result.query_variants)
+        if first_vec is not None:
+            rest = [v for v in result.query_variants if v != question.strip()]
+            q_embeddings = [first_vec] + (self.embedder.embed(rest) if rest else [])
+        else:
+            q_embeddings = self.embedder.embed(result.query_variants)
         result.latencies_ms["embed_ms"] = _ms(t)
 
         dense_rank_lists: list[list[int]] = []

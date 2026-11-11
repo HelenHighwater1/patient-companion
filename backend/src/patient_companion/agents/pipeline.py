@@ -13,10 +13,13 @@ from typing import Any
 
 from patient_companion.agents.answer import answer_question
 from patient_companion.agents.distress import is_distressed
-from patient_companion.agents.guard import audit
+from patient_companion.agents.guard import (
+    flagged_gaps,
+    judge_claims,
+    mechanical_scores,
+)
 from patient_companion.agents.intake import iter_document_sections
 from patient_companion.agents.prep import generate_prep_sheet
-from patient_companion.agents.tone import apply_tone
 from patient_companion.config import Settings, get_settings
 from patient_companion.providers.base import EmbeddingProvider, LLMProvider
 from patient_companion.rag.retrieve import Retriever, refusal_message
@@ -125,7 +128,7 @@ def stream_answer(
     embedder: EmbeddingProvider,
     settings: Settings | None = None,
 ) -> Iterator[dict[str, Any]]:
-    """Question → retrieve → answer → guard → tone, with progress events."""
+    """Question → retrieve → answer → audit, with progress events."""
     s = settings or get_settings()
     q = (question or "").strip()
     if not q:
@@ -156,31 +159,22 @@ def stream_answer(
         llm=llm,
         model=s.llm_model_strong,
         document_context=document_context,
-    )
-
-    yield {"type": "status", "stage": "checking"}
-    checked = audit(
-        ans["response"],
-        ans["citations"],
-        result.chunks,
-        embedder=embedder,
-        llm=llm,
-        model=s.llm_model_fast,
-    )
-
-    yield {"type": "status", "stage": "rewriting"}
-    toned = apply_tone(
-        checked["verified_response"],
-        checked["flagged_gaps"],
-        llm=llm,
-        model=s.llm_model_strong,
         reading_level=reading_level,
         distress=is_distressed(q),
     )
 
+    yield {"type": "status", "stage": "checking"}
+    mech_results = (
+        mechanical_scores(ans["citations"], result.chunks, embedder=embedder)
+        if ans["citations"]
+        else []
+    )
+    scores = judge_claims(mech_results, result.chunks, llm=llm, model=s.llm_model_fast)
+    confidence = scores or [{"claim": ans["patient_response"][:120], "score": 1}]
+
     chunk_meta = {(c.source, c.chunk_index): c for c in result.chunks}
-    mechanical = {(m["source"], m["chunk_index"], m["claim"]): m for m in checked["mechanical"]}
-    judge = {str(sc.get("claim", "")).strip(): sc.get("score") for sc in checked["confidence"]}
+    mechanical = {(m["source"], m["chunk_index"], m["claim"]): m for m in mech_results}
+    judge = {str(sc.get("claim", "")).strip(): sc.get("score") for sc in confidence}
     markers_by_chunk: dict[tuple[str, int], list[int]] = {}
     for c in ans["citations"]:
         markers_by_chunk.setdefault((c.source, c.chunk_index), []).append(c.marker)
@@ -210,12 +204,12 @@ def stream_answer(
 
     yield {
         "type": "answer",
-        "patient_response": toned["patient_response"],
-        "doctor_questions": toned["doctor_questions"],
+        "patient_response": ans["patient_response"],
+        "doctor_questions": ans["doctor_questions"],
         "citations": [_citation_view(c) for c in ans["citations"]],
         "sources": [_answer_source_view(c) for c in result.chunks],
-        "flagged_gaps": checked["flagged_gaps"],
-        "confidence": checked["confidence"],
+        "flagged_gaps": flagged_gaps(mech_results, scores),
+        "confidence": confidence,
         "disclaimer": DEMO_DISCLAIMER,
     }
     yield {"type": "done"}

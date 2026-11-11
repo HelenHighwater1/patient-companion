@@ -1,1 +1,1 @@
-"""Agent pipeline: intake → answer → guard → tone, plus prep-sheet generation."""
+"""Agent pipeline: intake → answer → guard, plus prep-sheet generation."""

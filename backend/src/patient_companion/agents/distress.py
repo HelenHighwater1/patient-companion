@@ -1,7 +1,7 @@
 """Lightweight emotional-distress detection.
 
 Keyword-based first pass — intentionally sensitive (a false positive only
-means a warmer response). Feeds the tone agent's distress preamble.
+means a warmer response). Feeds the answer agent's distress preamble.
 """
 
 from __future__ import annotations

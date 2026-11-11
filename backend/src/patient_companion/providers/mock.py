@@ -1,7 +1,7 @@
 """Deterministic mock providers for tests, CI, and demo-without-keys.
 
 MockLLM returns schema-valid payloads for every tool the agents use, so the
-entire pipeline (intake, retrieve, answer, ground, tone, prep) is exercised
+entire pipeline (intake, retrieve, answer, ground, prep) is exercised
 end-to-end offline. MockEmbedder produces stable hash-based vectors so
 lexically similar text retrieves correctly.
 """
@@ -110,8 +110,12 @@ class MockLLM:
         ]
         markers = " ".join(f"[{c['marker']}]" for c in citations)
         return {
-            "response_text": f"Based on the provided sources, here is a grounded answer. {markers}",
+            "patient_response": f"Based on the provided sources, here is a grounded answer. {markers}",
             "citations": citations,
+            "doctor_questions": [
+                "Could you explain what this means for my treatment plan?",
+                "What should I watch for between now and our next visit?",
+            ],
         }
 
     def _tool_emit_grounding_scores(self, user: str) -> dict[str, Any]:
@@ -124,17 +128,6 @@ class MockLLM:
             except json.JSONDecodeError:
                 pass
         return {"scores": scores}
-
-    def _tool_emit_tone(self, user: str) -> dict[str, Any]:
-        m = re.search(r"Text to rewrite:\s*(.+?)(?:\n\nCall emit_tone|$)", user, re.DOTALL)
-        text = (m.group(1) if m else "").strip() or "Here is what the sources say."
-        return {
-            "patient_response": f"{text} Please remember your care team is there to support you.",
-            "doctor_questions": [
-                "Could you explain what this means for my treatment plan?",
-                "What should I watch for between now and our next visit?",
-            ],
-        }
 
     def _tool_emit_prep_sheet(self, user: str) -> dict[str, Any]:
         return {

@@ -48,25 +48,34 @@ INTAKE_TOOL_SCHEMA: dict[str, Any] = {
 }
 
 # ---------------------------------------------------------------------------
-# Answer agent — grounded synthesis with citations
+# Answer agent — warm, grounded synthesis with citations
+#
+# The patient-facing text is written here in a single pass: the grounding
+# audit downstream then verifies the exact wording the patient reads, not an
+# intermediate draft a separate rewrite could silently distort.
 # ---------------------------------------------------------------------------
 
-ANSWER_SYSTEM = """You are a clinical research synthesizer for a patient-education tool. Answer strictly from the provided source chunks.
+ANSWER_SYSTEM = """You are a compassionate patient advocate answering questions strictly from the provided source chunks, for someone who has received difficult medical news.
+
+Write the way a trusted friend who happens to be a doctor would — warm, plain, conversational English. Short sentences. Genuine, not saccharine.
 
 Rules:
-- Use plain language a non-medical person can follow.
-- Include inline citation markers [1], [2] matching the citations array.
-- Every citation's claim must state exactly what the cited chunk supports.
-- If the chunks do not contain enough to answer, say that plainly in response_text instead of guessing.
+- Answer strictly from the provided source chunks — never from general knowledge.
+- Second person throughout — "you" and "your". Say "your doctor", not "the doctor".
+- No markdown — no headers, bold, dividers, bullets, or backticks. Plain conversational prose, maximum 4 short paragraphs.
+- Include inline citation markers [1], [2] matching the citations array — never drop them.
+- Every citation's claim must state exactly what the cited chunk supports in your answer.
+- If the chunks do not contain enough to answer, say that plainly in patient_response instead of guessing.
 - Never state survival statistics or life-expectancy figures, even if a source contains them. Say the topic exists and the patient's doctor can discuss what it means for them.
-- Do not diagnose, recommend starting/stopping treatments, or make definitive claims about the individual — this is general education grounded in sources."""
+- Do not diagnose, recommend starting/stopping treatments, or make definitive claims about the individual — this is general education grounded in sources.
+- In doctor_questions, produce 1-4 short questions the patient could bring to their next appointment."""
 
 ANSWER_TOOL_SCHEMA: dict[str, Any] = {
     "type": "object",
     "properties": {
-        "response_text": {
+        "patient_response": {
             "type": "string",
-            "description": "Answer using only the sources, with inline markers [1], [2] matching citation order.",
+            "description": "Warm plain-language answer using only the sources, with inline markers [1], [2] matching citation order.",
         },
         "citations": {
             "type": "array",
@@ -81,8 +90,13 @@ ANSWER_TOOL_SCHEMA: dict[str, Any] = {
                 "required": ["marker", "claim", "source", "chunk_index"],
             },
         },
+        "doctor_questions": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "1-4 short questions the patient could bring to their next appointment.",
+        },
     },
-    "required": ["response_text", "citations"],
+    "required": ["patient_response", "citations", "doctor_questions"],
 }
 
 # ---------------------------------------------------------------------------
@@ -114,32 +128,13 @@ GROUNDING_TOOL_SCHEMA: dict[str, Any] = {
 }
 
 # ---------------------------------------------------------------------------
-# Tone — warm rewrite for the patient
+# Answer tone modifiers — appended to ANSWER_SYSTEM per request
 # ---------------------------------------------------------------------------
-
-TONE_SYSTEM_BASE = """You are a compassionate patient advocate helping someone who has received difficult medical news. Rewrite the response in warm, plain English a non-medical person can understand.
-
-Rules:
-- You may only change language and tone — never alter facts, and never remove or move the inline citation markers like [1], [2].
-- Short sentences. Genuine, not saccharine. Like a trusted friend who happens to be a doctor.
-- No markdown — no headers, bold, dividers, bullets, or backticks. Plain conversational prose, maximum 4 short paragraphs.
-- Where the text touches on topics flagged as unverified, lean on honest phrasing like "this is worth asking your doctor about".
-- Never state survival statistics or life-expectancy figures.
-- In doctor_questions, produce 1-4 short questions the patient could bring to their next appointment — prioritizing the flagged topics where possible."""
 
 READING_LEVELS = {
     "gentle": "Use the simplest possible words and very short sentences, as if explaining to someone exhausted and scared. Shorter is better.",
     "standard": "Use plain everyday English. Short sentences, calm and clear.",
     "detailed": "The reader wants a fuller explanation. You may use more detail and slightly longer sentences, but stay warm and jargon-free — explain every medical term you must use.",
-}
-
-TONE_TOOL_SCHEMA: dict[str, Any] = {
-    "type": "object",
-    "properties": {
-        "patient_response": {"type": "string"},
-        "doctor_questions": {"type": "array", "items": {"type": "string"}},
-    },
-    "required": ["patient_response", "doctor_questions"],
 }
 
 DISTRESS_PREAMBLE = (
