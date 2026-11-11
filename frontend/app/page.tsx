@@ -11,6 +11,7 @@ import { Chat, type ShowEvidenceOptions } from "@/components/chat/Chat";
 import { EvidencePanel, type EvidenceFocus } from "@/components/evidence/EvidencePanel";
 import { fetchCorpus, listDocuments } from "@/lib/api";
 import type { CorpusSummary, Evidence, SampleDocument } from "@/lib/types";
+import { useDialogFocus } from "@/lib/useDialogFocus";
 import { useMediaQuery } from "@/lib/useMediaQuery";
 
 export default function Home() {
@@ -25,6 +26,8 @@ export default function Home() {
   const [hoveredSourceKey, setHoveredSourceKey] = useState<string | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const wide = useMediaQuery("(min-width: 1280px)");
+  const closeDrawer = useCallback(() => setDrawerOpen(false), []);
+  const drawerRef = useDialogFocus<HTMLDivElement>(drawerOpen && !wide, closeDrawer);
 
   useEffect(() => {
     listDocuments().then(setDocuments);
@@ -44,6 +47,10 @@ export default function Home() {
 
   const handleEvidence = useCallback(
     (e: Evidence, opts?: ShowEvidenceOptions) => {
+      if (opts?.onlyIfActive) {
+        setEvidence((prev) => (prev?.messageId === e.messageId ? e : prev));
+        return;
+      }
       setEvidence(e);
       setHoveredSourceKey(null);
       setFocus((f) => (opts?.marker ? { marker: opts.marker, tick: (f?.tick ?? 0) + 1 } : null));
@@ -101,10 +108,14 @@ export default function Home() {
           role="dialog"
           aria-modal="true"
           aria-label="Evidence"
-          onClick={() => setDrawerOpen(false)}
+          onClick={closeDrawer}
         >
-          <div className="h-full w-full max-w-[400px]" onClick={(e) => e.stopPropagation()}>
-            {panel(() => setDrawerOpen(false))}
+          <div
+            ref={drawerRef}
+            className="h-full w-full max-w-[400px]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {panel(closeDrawer)}
           </div>
         </div>
       )}

@@ -83,7 +83,7 @@ def test_answer_pipeline_events(retriever):
     cited_keys = {(s["source"], s["chunk_index"]) for s in cited}
     for c in answer["citations"]:
         assert (c["source"], c["chunk_index"]) in cited_keys
-        assert "grounding" in c
+        assert c["grounding"]["checked"] is True
 
 
 def test_answer_pipeline_refusal(retriever):

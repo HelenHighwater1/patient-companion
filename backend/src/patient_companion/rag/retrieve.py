@@ -171,6 +171,7 @@ class Retriever:
                 "method": "rerank_margin",
                 "value": round(float(top1 - tail), 4),
                 "threshold": s.gate_min_rerank_margin,
+                "top_score": round(float(top1), 4),
                 "passed": passed,
             }
             if not passed:

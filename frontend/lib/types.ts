@@ -9,6 +9,8 @@ export interface CardBody {
 }
 
 export interface Grounding {
+  /** False when the cited passage wasn't among the retrieved chunks, so nothing was compared. */
+  checked: boolean;
   /** Embedding cosine between the claim and its cited passage. */
   cosine: number | null;
   flagged: boolean;
@@ -49,6 +51,8 @@ export interface RetrievalGate {
   method: "dense_cosine" | "rerank_margin";
   value: number;
   threshold: number;
+  /** Rerank only: the top passage's score. A non-negative score passes even with a small margin. */
+  top_score?: number;
   passed: boolean;
 }
 
@@ -65,7 +69,7 @@ export interface RetrievalTrace {
 export interface Evidence {
   messageId: string;
   question: string;
-  status: "answering" | "done" | "refused";
+  status: "answering" | "done" | "refused" | "error";
   trace: RetrievalTrace | null;
   sources: Source[];
   citations: Citation[];

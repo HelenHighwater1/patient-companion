@@ -191,6 +191,7 @@ def stream_answer(
             "title": meta.title,
             "url": meta.url,
             "grounding": {
+                "checked": mech is not None,
                 "cosine": round(mech["cosine"], 4) if mech else None,
                 "flagged": bool(mech["flagged"]) if mech else False,
                 "judge_score": judge.get(c.claim.strip()),

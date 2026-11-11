@@ -1,5 +1,6 @@
 "use client";
 
+import { isSupported } from "@/lib/evidence";
 import type { Citation, RetrievalTrace as Trace } from "@/lib/types";
 
 function Step({
@@ -32,17 +33,18 @@ export function RetrievalTrace({
   trace,
   citations,
   pending,
+  failed = false,
 }: {
   trace: Trace;
   citations: Citation[];
   pending: boolean;
+  failed?: boolean;
 }) {
   const { counts, gate } = trace;
   const outOfScope = trace.refusal_reason === "out_of_scope";
   const judged = citations.filter((c) => c.grounding);
-  const supported = judged.filter(
-    (c) => !c.grounding!.flagged && (c.grounding!.judge_score ?? 1) < 3,
-  ).length;
+  const supported = judged.filter(isSupported).length;
+  const unchecked = judged.filter((c) => !c.grounding!.checked).length;
   const total = trace.latencies_ms.total_ms;
 
   return (
@@ -94,12 +96,27 @@ export function RetrievalTrace({
             title={gate.passed ? "Confidence check passed" : "Confidence check failed"}
           >
             {gate.method === "dense_cosine" ? "Best similarity" : "Rerank margin"}{" "}
-            <strong>{fmt(gate.value)}</strong> {gate.passed ? "≥" : "<"} threshold{" "}
-            {fmt(gate.threshold)}
+            <strong>{fmt(gate.value)}</strong> {gate.value >= gate.threshold ? "≥" : "<"}{" "}
+            threshold {fmt(gate.threshold)}
+            {gate.passed && gate.value < gate.threshold && gate.top_score !== undefined && (
+              <>
+                , but the top passage scored <strong>{fmt(gate.top_score)}</strong> (≥ 0), which
+                is confident enough on its own
+              </>
+            )}
+            {!gate.passed &&
+              (gate.top_score !== undefined
+                ? `, and the top passage scored ${fmt(gate.top_score)} (< 0)`
+                : "")}
             {!gate.passed && " — so it declined to answer rather than guess."}
           </Step>
         )}
-        {!trace.refused && (
+        {!trace.refused && failed && (
+          <Step tone="terracotta" title="Answer didn't finish">
+            Something went wrong after retrieval, so these passages were never used.
+          </Step>
+        )}
+        {!trace.refused && !failed && (
           <Step
             tone={pending ? "ochre" : judged.length && supported < judged.length ? "terracotta" : "brand"}
             title={pending ? "Drafting and fact-checking…" : "Fact-checked every claim"}
@@ -107,7 +124,10 @@ export function RetrievalTrace({
             {pending
               ? "Each claim will be compared against the passage it cites."
               : judged.length
-                ? `${supported} of ${judged.length} cited claims matched their source passage.`
+                ? `${supported} of ${judged.length} cited claims matched their source passage.` +
+                  (unchecked
+                    ? ` ${unchecked} cited a passage that wasn't retrieved, so ${unchecked === 1 ? "it" : "they"} couldn't be checked.`
+                    : "")
                 : "No individual claims to check."}
           </Step>
         )}

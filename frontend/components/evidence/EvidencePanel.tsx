@@ -111,6 +111,7 @@ export function EvidencePanel({
             trace={evidence.trace}
             citations={evidence.citations}
             pending={evidence.status === "answering"}
+            failed={evidence.status === "error"}
           />
         )}
 

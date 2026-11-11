@@ -28,6 +28,8 @@ export interface ShowEvidenceOptions {
   marker?: number;
   /** Open the evidence drawer on narrow screens. */
   reveal?: boolean;
+  /** Only replace the panel if it's already showing this message. */
+  onlyIfActive?: boolean;
 }
 
 interface Props {
@@ -259,6 +261,20 @@ export function Chat({
         }
       },
     ).catch((err) => {
+      if (trace) {
+        onEvidence(
+          {
+            messageId: msgId,
+            question,
+            status: "error",
+            trace,
+            sources: retrieved,
+            citations: [],
+            flaggedGaps: [],
+          },
+          { onlyIfActive: true },
+        );
+      }
       appendMessage({
         id: msgId,
         role: "assistant",

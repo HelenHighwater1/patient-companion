@@ -18,3 +18,9 @@ export const citationsFor = (s: Source, citations: Citation[]) =>
     (c) =>
       c.source === s.source && (c.chunk_index === undefined || c.chunk_index === s.chunk_index),
   );
+
+/** A citation counts as supported only if it was actually checked and nothing flagged it. */
+export function isSupported(c: Citation): boolean {
+  const g = c.grounding;
+  return !!g && g.checked && !g.flagged && (g.judge_score ?? 1) < 3;
+}
