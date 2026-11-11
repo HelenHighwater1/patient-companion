@@ -10,8 +10,12 @@ import type {
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
 
+const LIST_DOCUMENTS_TIMEOUT_MS = 30_000;
+
 export async function listDocuments(): Promise<SampleDocument[]> {
-  const res = await fetch(`${API_URL}/api/documents`);
+  const res = await fetch(`${API_URL}/api/documents`, {
+    signal: AbortSignal.timeout(LIST_DOCUMENTS_TIMEOUT_MS),
+  });
   if (!res.ok) throw new Error(`Documents request failed (${res.status})`);
   return res.json();
 }
