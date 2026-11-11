@@ -117,7 +117,10 @@ export function AnswerMessage({
 
       <div className="flex items-center justify-between border-t border-warm-100 pt-2">
         <button
-          onClick={() => setShowSources((v) => !v)}
+          onClick={() => {
+            setActiveSource(null);
+            setShowSources((v) => !v);
+          }}
           className="text-xs font-medium text-brand-700 hover:underline"
         >
           {showSources ? "Hide sources" : `Sources (${citations.length || sources.length})`}
