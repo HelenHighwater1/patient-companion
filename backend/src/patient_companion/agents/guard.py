@@ -24,8 +24,8 @@ logger = logging.getLogger(__name__)
 _MECH_THRESHOLD = 0.35
 
 
-def _chunk_lookup(chunks: list[Chunk]) -> dict[tuple[str, int], str]:
-    return {(c.source, c.chunk_index): c.document for c in chunks}
+def _chunk_lookup(chunks: list[Chunk]) -> dict[tuple[str, int], Chunk]:
+    return {(c.source, c.chunk_index): c for c in chunks}
 
 
 def mechanical_scores(
@@ -35,27 +35,42 @@ def mechanical_scores(
     embedder: EmbeddingProvider,
 ) -> list[dict]:
     lookup = _chunk_lookup(chunks)
-    texts: list[str] = []
-    meta: list[tuple[str, str, int]] = []
+    pairs: list[tuple[str, Chunk]] = []
     for cit in citations:
         claim = cit.claim.strip()
-        chunk_txt = lookup.get((cit.source, cit.chunk_index), "")
-        if claim and chunk_txt:
-            texts += [claim, chunk_txt]
-            meta.append((claim, cit.source, cit.chunk_index))
-    if not meta:
+        chunk = lookup.get((cit.source, cit.chunk_index))
+        if claim and chunk and chunk.document:
+            pairs.append((claim, chunk))
+    if not pairs:
         return []
+
+    # Chunks retrieved from the store carry their ingest-time vectors, so only
+    # new claim text (and any chunk that lacks one) needs an embed call.
+    texts: list[str] = []
+    for claim, chunk in pairs:
+        texts.append(claim)
+        if chunk.embedding is None:
+            texts.append(chunk.document)
 
     vecs = np.asarray(embedder.embed(texts), dtype=np.float32)
     vecs /= np.linalg.norm(vecs, axis=1, keepdims=True) + 1e-12
     out = []
-    for i, (claim, src, idx) in enumerate(meta):
-        cos = float(np.dot(vecs[i * 2], vecs[i * 2 + 1]))
+    vi = 0
+    for claim, chunk in pairs:
+        claim_vec = vecs[vi]
+        vi += 1
+        if chunk.embedding is not None:
+            chunk_vec = np.asarray(chunk.embedding, dtype=np.float32)
+            chunk_vec /= np.linalg.norm(chunk_vec) + 1e-12
+        else:
+            chunk_vec = vecs[vi]
+            vi += 1
+        cos = float(np.dot(claim_vec, chunk_vec))
         out.append(
             {
                 "claim": claim,
-                "source": src,
-                "chunk_index": idx,
+                "source": chunk.source,
+                "chunk_index": chunk.chunk_index,
                 "cosine": cos,
                 "flagged": cos < _MECH_THRESHOLD,
             }

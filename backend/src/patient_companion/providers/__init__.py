@@ -4,7 +4,6 @@ from __future__ import annotations
 
 from patient_companion.config import Settings, get_settings
 from patient_companion.providers.base import EmbeddingProvider, LLMProvider
-from patient_companion.providers.caching import CachingEmbedder
 
 _llms: dict[str, LLMProvider] = {}
 _embedders: dict[str, EmbeddingProvider] = {}
@@ -28,16 +27,14 @@ def get_embedder(settings: Settings | None = None) -> EmbeddingProvider:
     s = settings or get_settings()
     key = f"{s.embed_provider}:{s.embedding_model}"
     if key not in _embedders:
-        inner: EmbeddingProvider
         if s.embed_provider == "mock":
             from patient_companion.providers.mock import MockEmbedder
 
-            inner = MockEmbedder()
+            _embedders[key] = MockEmbedder()
         else:
             from patient_companion.providers.openai_embed import OpenAIEmbedder
 
-            inner = OpenAIEmbedder(api_key=s.openai_api_key, model=s.embedding_model)
-        _embedders[key] = CachingEmbedder(inner)
+            _embedders[key] = OpenAIEmbedder(api_key=s.openai_api_key, model=s.embedding_model)
     return _embedders[key]
 
 
