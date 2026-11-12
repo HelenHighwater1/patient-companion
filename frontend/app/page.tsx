@@ -146,6 +146,9 @@ export default function Home() {
             {panel()}
           </div>
         </div>
+        <footer className="pb-3 text-center text-[11px] text-warm-700/60">
+          Demo only · Not HIPAA compliant · Not medical advice · Made by Helen Highwater
+        </footer>
       </div>
       {drawerOpen && !wide && (
         <div

@@ -27,9 +27,14 @@ export function Header({
           </div>
         </div>
         <div className="flex items-center gap-1 sm:gap-3">
-          <span className="hidden rounded-full bg-plum-50 px-3 py-1 text-xs font-bold text-plum-700 sm:inline">
-            ALS knowledge base · demo
-          </span>
+          <a
+            href="https://heyimhelen.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden rounded-full bg-plum-50 px-3 py-1 text-xs font-bold text-plum-700 transition-colors hover:bg-plum-100 sm:inline"
+          >
+            Portfolio Site
+          </a>
           <button
             onClick={onOpenEvidence}
             className="rounded-full bg-ochre-100 px-3 py-2 text-sm font-bold text-ochre-900 transition-colors hover:bg-ochre-200 xl:hidden"
