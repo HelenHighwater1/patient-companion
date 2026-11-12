@@ -1,3 +1,5 @@
+import pytest
+
 from patient_companion.agents.guard import mechanical_scores
 from patient_companion.providers import get_embedder
 from patient_companion.schemas import Chunk, Citation
@@ -53,3 +55,40 @@ def test_mechanical_scores_falls_back_to_embedding_chunk_text():
     )
     assert spy.calls == [["Riluzole slows ALS.", "Riluzole modestly slows ALS progression."]]
     assert scores[0]["cosine"] > 0
+
+
+def test_mechanical_scores_mixed_stored_and_fresh_vectors():
+    """One chunk has a stored vector, the other needs embedding — claims must
+    stay paired with the right chunk vector across the mixed batch."""
+
+    class _FakeEmbedder:
+        vectors = {
+            "claim one": [1.0, 0.0],
+            "claim two": [1.0, 0.0],
+            "fresh chunk text": [0.0, 1.0],
+        }
+
+        def __init__(self):
+            self.calls: list[list[str]] = []
+
+        def embed(self, texts):
+            self.calls.append(list(texts))
+            return [self.vectors[t] for t in texts]
+
+    chunks = [
+        Chunk(document="stored chunk text", source="a", embedding=[1.0, 0.0]),
+        Chunk(document="fresh chunk text", source="b"),
+    ]
+    citations = [
+        Citation(marker=1, claim="claim one", source="a", chunk_index=0),
+        Citation(marker=2, claim="claim two", source="b", chunk_index=0),
+    ]
+    embedder = _FakeEmbedder()
+    scores = mechanical_scores(citations, chunks, embedder=embedder)
+
+    assert embedder.calls == [["claim one", "claim two", "fresh chunk text"]]
+    assert [s["source"] for s in scores] == ["a", "b"]
+    assert scores[0]["cosine"] == pytest.approx(1.0)
+    assert scores[0]["flagged"] is False
+    assert scores[1]["cosine"] == pytest.approx(0.0)
+    assert scores[1]["flagged"] is True
