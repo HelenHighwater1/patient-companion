@@ -311,7 +311,10 @@ export function Chat({
   return (
     <div className="flex h-full flex-col">
       {/* toolbar */}
-      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-warm-100 px-5 py-3">
+      <div
+        data-tour="chat-toolbar"
+        className="flex flex-wrap items-center justify-between gap-2 border-b border-warm-100 px-5 py-3"
+      >
         <ReadingLevelToggle value={readingLevel} onChange={setReadingLevel} />
         <button
           onClick={openPrepSheet}

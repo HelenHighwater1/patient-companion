@@ -19,6 +19,7 @@ export function DocumentPanel({ documents, status, activeFilename, onLoad, onPre
   return (
     <aside className="flex h-full flex-col rounded-3xl bg-paper p-4 shadow-float">
       <h2 className="px-1 font-display text-xl font-bold text-warm-900">Sample documents</h2>
+      <p className="px-1 text-xs text-warm-700/70">ALS knowledge base · demo</p>
       <p className="mb-3 px-1 text-xs text-warm-700/70">Fictional — safe to explore.</p>
       <div className="-mx-1 space-y-3 overflow-y-auto px-1 pb-1">
         {documents.map((doc) => (
