@@ -232,6 +232,11 @@ class Retriever:
                 dense_cosine=(round(dense_cosines[row_idx], 4) if row_idx in dense_cosines else None),
                 fusion_score=round(fusion_scores.get(row_idx, 0.0), 5),
                 rerank_score=(float(rerank_scores[li]) if rerank_scores is not None else None),
+                embedding=(
+                    self.store.embeddings[row_idx].tolist()
+                    if self.store.embeddings is not None
+                    else None
+                ),
             )
             result.chunks.append(chunk)
 

@@ -33,6 +33,9 @@ class Chunk(BaseModel):
     dense_cosine: float | None = None
     fusion_score: float | None = None
     rerank_score: float | None = None
+    # Ingest-time vector, carried so the grounding audit can reuse it instead
+    # of re-embedding the chunk text.
+    embedding: list[float] | None = Field(default=None, exclude=True, repr=False)
 
 
 class Citation(BaseModel):
